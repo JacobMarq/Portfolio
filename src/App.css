@@ -1,5 +1,206 @@
+html,body {
+  margin: 0;
+  height: 100%;
+  background-color: #221f28;
+}
+
+/* =============================================
+<--------------- NavBar (start) ---------------> 
+==============================================*/
+
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  background-color: #141218;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.nav-link {
+  margin-left: 20px;
+  margin-right: 20px;
+  text-decoration: none;
+  color: #dadbdb;
+  position: relative;
+}
+.nav-link::after{
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  right: 50%;
+  background-color: transparent;
+  height: 2px;
+  width: 3px;
+}
+.nav-link:hover {
+  color: #e1e4e4;
+}
+.nav-link:hover::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 5%;
+  right: 0;
+  background-color: #c6c9c9;
+  height: 2px;
+  width: 92%;
+  transition: ease-in-out .3s;
+}
+
+/* 
+<--------------- active nav link ---------------> 
+*/
+
+.nav-link--active {
+  color: #b2b7dd;
+}
+.nav-link--active:hover{
+  color: #b2b7dd;
+  cursor: default;
+}
+.nav-link--active::after{
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 5%;
+  right: 0;
+  background-color: #b2b7dd;
+  height: 2px;
+  width: 92%;
+}
+.nav-link--active:hover::after {
+  content: "";
+  background-color: #b2b7dd;
+}
+
+/* =============================================
+<--------------- NavBar ( end ) ---------------> 
+==============================================*/
+
+/* 
+<--------------- home specific ---------------> 
+*/
+
+.home-name {
+  color: #ffff;
+  text-shadow: 0 1px 0 #CCCCCC, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15), 2px 2px 2px rgba(255,255,255,0), 2px 2px 2px rgba(255,255,255,0);
+}
+.home-text {
+  font-size: 2.5em;
+  color: #b2b7dd;
+  text-shadow: 0 1px 0 #a6abcc, 0 2px 0 #969ab6, 0 3px 0 #8c8faa, 0 4px 0 #75788f, 0 5px 0 #73768d, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15), 2px 2px 2px rgba(178,183,221,0), 2px 2px 2px rgba(178,183,221,0);
+}
+.home-text-muted {
+  font-size: .8em;
+  color: #54616e;
+}
+
+:root {
+  --clr-neon: #c4ceab;
+}
+
+.primary-neon-btn {
+  font-size: .8em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
+  border: var(--clr-neon) 3px solid;
+  background-color: transparent;
+  border-radius: 0.25em;
+  box-shadow: inset 0 0 0.3em 0 var(--clr-neon), 0 0 0.3em 0 var(--clr-neon);
+  transition: all 0.5s;
+  padding: .5em;
+}
+
+.primary-neon-btn:hover {
+  background-color: var(--clr-neon);
+  color: #384857;
+}
+
+.secondary-btn {
+  font-size: .8em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 0.25em;
+  background-color: transparent;
+  border: #384857 3px solid;
+  color: #fff;
+  transition: all 0.4s;
+  padding: .5em;
+}
+
+.secondary-btn:hover {
+  background-color: #384857;
+}
+
+/* ====================================================
+<--------------- Common Styles (start) ---------------> 
+==================================================== */
+
+/* 
+<--------------- display ---------------> 
+*/
+
+.d-inline-flex {
+  display: inline-flex;
+}
+
+/* 
+<--------------- margin ---------------> 
+*/
+
+.mt-25 {
+  margin-top: 25px;
+}
+.mt-5 {
+  margin-top: 5px;
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
+.mr-10 {
+  margin-right: 10px;
+}
+
+.ml-10 {
+  margin-left: 10px;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+/* 
+<--------------- padding ---------------> 
+*/
+
+.p-10 {
+  padding: 10px;
+}
+
+/* ====================================================
+<--------------- Common Styles ( end ) ---------------> 
+==================================================== */
+
+/* 
+<--------------- React defaults ---------------> 
+*/
+
 .App {
-  text-align: center;
+  text-align: flex-end;
 }
 
 .App-logo {
@@ -15,13 +216,14 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: calc(100vh - 59px);
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  padding-left: 10%;
 }
 
 .App-link {
@@ -36,3 +238,4 @@
     transform: rotate(360deg);
   }
 }
+
