@@ -267,7 +267,7 @@ html,body {
     opacity: 0;
   }
   to {
-    opacity: 100%;
+    opacity: 1;
   }
 }
 @-webkit-keyframes fade-in {
@@ -275,7 +275,7 @@ html,body {
     opacity: 0;
   }
   to {
-    opacity: 100%;
+    opacity: 1;
   }
 }
 
@@ -316,10 +316,6 @@ html,body {
 /* 
 <--------------- Contact ---------------> 
 */
-
-.contact-main {
-  animation: fade-in ease 1s;
-}
 
 input {
   width: 100%;
