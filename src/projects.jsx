@@ -30,14 +30,12 @@ class Projects extends React.Component {
                 if (i == carousel.length) {
                     i = 0;
                 }
-                if ( carousel[i].classList.contains("show") ){
-                    carousel[(i + 1) % carousel.length].classList.add("show");
-                    carousel[i].classList.remove("show");
-                    // if (hover_cancelled || long_press_cancelled){
-                    //     break;
-                    // }
-                    await loop_timer(2000);
-                }
+                carousel[i].classList.remove("show");
+                carousel[(i + 1) % carousel.length].classList.add("show");
+                // if (hover_cancelled || long_press_cancelled){
+                //     break;
+                // }
+                await loop_timer(2000);
             }
             // hover_cancelled = false;
             // long_press_cancelled = false;
@@ -109,7 +107,7 @@ class Projects extends React.Component {
             <div className="container projects">
                 <h1 className="contact-header mt-5p mb-5p">Projects</h1>
 
-                <div className="d-flex flex-column flex-jc-center">
+                <div className="d-flex flex-column flex-jc-center mb-5p">
                     
                     <h2 className="color-white text-center">The-Blog-Spot</h2>
                     <div id="BlogCard" className="project-card closed-card" onClick={(e) => openCard(e)}>
@@ -138,10 +136,10 @@ class Projects extends React.Component {
                             </div>
                         </div>
 
-                        <div className="show blog flex-column project-pic" style={{background: `url(${BlogPicOne}) no-repeat`, backgroundSize: '100% 100%'}}></div>
-                        <div className="blog flex-column project-pic" style={{background: `url(${BlogPicTwo}) no-repeat`, backgroundSize: '100% 100%'}}></div>
-                        <div className="blog flex-column project-pic" style={{background: `url(${BlogPicThree}) no-repeat`, backgroundSize: '100% 100%'}}></div>
-                        <div className="blog flex-column project-pic" style={{background: `url(${BlogPicFour}) no-repeat`, backgroundSize: '100% 100%'}}></div>
+                        <div className="show blog one flex-column project-pic" style={{background: `url(${BlogPicOne}) no-repeat`, backgroundSize: '100% 100%'}}></div>
+                        <div className="blog two flex-column project-pic" style={{background: `url(${BlogPicTwo}) no-repeat`, backgroundSize: '100% 100%'}}></div>
+                        <div className="blog three flex-column project-pic" style={{background: `url(${BlogPicThree}) no-repeat`, backgroundSize: '100% 100%'}}></div>
+                        <div className="blog four flex-column project-pic" style={{background: `url(${BlogPicFour}) no-repeat`, backgroundSize: '100% 100%'}}></div>
                     </div>
 
                     <h2 className="color-white text-center">JavaScript Calculator</h2>
@@ -167,7 +165,7 @@ class Projects extends React.Component {
                             </div>
                         </div>
 
-                        <div className="d-flex flex-column project-pic" style={{background: `url(${JSCalcPicOne}) no-repeat`, backgroundSize: '100% 100%'}}></div>
+                        <div className="d-flex flex-column project-pic show" style={{background: `url(${JSCalcPicOne}) no-repeat`, backgroundSize: '100% 100%'}}></div>
                     </div>
 
                     <h2 className="color-white text-center">Rock-Paper-Scissors</h2>
@@ -201,9 +199,9 @@ class Projects extends React.Component {
                             </div>
                         </div>
 
-                        <div className="show rps flex-column project-pic" style={{background: `url(${RPSPicOne}) no-repeat`, backgroundSize: '100% 100%'}}></div>
-                        <div className="rps flex-column project-pic" style={{background: `url(${RPSPicTwo}) no-repeat`, backgroundSize: '100% 100%'}}></div>
-                        <div className="rps flex-column project-pic" style={{background: `url(${RPSPicThree}) no-repeat`, backgroundSize: '100% 100%'}}></div>
+                        <div className="show rps one flex-column project-pic" style={{background: `url(${RPSPicOne}) no-repeat`, backgroundSize: '100% 100%'}}></div>
+                        <div className="rps two flex-column project-pic" style={{background: `url(${RPSPicTwo}) no-repeat`, backgroundSize: '100% 100%'}}></div>
+                        <div className="rps three flex-column project-pic" style={{background: `url(${RPSPicThree}) no-repeat`, backgroundSize: '100% 100%'}}></div>
                     </div>
 
                     <h2 className="color-white text-center">John Conway's Game of Life</h2>
@@ -231,8 +229,8 @@ class Projects extends React.Component {
                             </div>
                         </div>
 
-                        <div className="show gol flex-column project-pic" style={{background: `url(${GOLPicOne}) no-repeat`, backgroundSize: '100% 100%'}}></div>
-                        <div className="gol flex-column project-pic" style={{background: `url(${GOLPicTwo}) no-repeat`, backgroundSize: '100% 100%'}}></div>
+                        <div className="show gol one flex-column project-pic" style={{background: `url(${GOLPicOne}) no-repeat`, backgroundSize: '100% 100%'}}></div>
+                        <div className="gol two flex-column project-pic" style={{background: `url(${GOLPicTwo}) no-repeat`, backgroundSize: '100% 100%'}}></div>
                     </div>
                 </div>
             </div>
