@@ -115,8 +115,6 @@ html,body {
 .home-wrapper {
   animation: slide-in ease 1s;
   -webkit-animation: slide-in ease 1s;
-  -moz-animation: slide-in ease 1s;
-  -o-animation: slide-in ease 1s;
   margin-bottom: 30vh;
 }
 
@@ -151,8 +149,6 @@ html,body {
   box-shadow: inset 0 0 0.3em 0 var(--clr-neon), 0 0 0.3em 0 var(--clr-neon);
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -o-transition: all 0.5s;
   padding: .5em;
 }
 .primary-neon-btn:hover {
@@ -173,8 +169,6 @@ html,body {
   color: #fff;
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -o-transition: all 0.5s;
   padding: .5em;
 }
 .secondary-btn:hover {
@@ -191,26 +185,10 @@ html,body {
 }
 @-webkit-keyframes slide-in {
   from {
-    -webkit-transform: translateX(-200%);
+    transform: translateX(-200%);
   }
   to {
-    -webkit-transform: translateX(0%);
-  }
-}
-@-moz-keyframes slide-in {
-  from {
-    -moz-transform: translateX(-200%);
-  }
-  to {
-    -moz-transform: translateX(0%);
-  }
-}
-@-o-keyframes slide-in {
-  from {
-    -o-transform: translateX(-200%);
-  }
-  to {
-    -o-transform: translateX(0%);
+    transform: translateX(0%);
   }
 }
 
@@ -234,8 +212,6 @@ html,body {
 .about-wrapper {
   animation: fade-in ease-in 1s;
   -webkit-animation: fade-in ease-in 1s;
-  -moz-animation: fade-in ease-in 1s;
-  -o-animation: fade-in ease-in 1s;
   height: 48vmax;
   width: auto;
   left: 0;
@@ -262,9 +238,6 @@ html,body {
 .about-quote {
   animation: fall-in ease 1s;
   -webkit-animation: fall-in ease 1s;
-  -moz-animation: fall-in ease 1s;
-  -o-animation: fall-in ease 1s;
-  -khtml-animation: fall-in ease 1s;
   text-align: center;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 2.5em;
@@ -277,9 +250,6 @@ html,body {
 .about-cite {
   animation: fall-in ease 1s;
   -webkit-animation: fall-in ease 1s;
-  -moz-animation: fall-in ease 1s;
-  -o-animation: fall-in ease 1s;
-  -khtml-animation: fall-in ease 1s;
   font-size: 2em;
   color: #ceccab;
   z-index: 1;
@@ -287,12 +257,8 @@ html,body {
 .about-desc {
   animation: fade-in ease 1s;
   -webkit-animation: fade-in ease-in 1s;
-  -moz-animation: fade-in ease-in 1s;
-  -o-animation: fade-in ease-in 1s;
   animation: rise-in ease 1s;
   -webkit-animation: rise-in ease 1s;
-  -moz-animation: rise-in ease 1s;
-  -o-animation: rise-in ease 1s;
   font-size: 1.5em;
   color: #fff;
 }
@@ -331,26 +297,10 @@ html,body {
 }
 @-webkit-keyframes fall-in {
   from {
-    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
   }
   to {
-    -webkit-transform: translateY(0%);
-  }
-}
-@-moz-keyframes fall-in {
-  from {
-    -moz-transform: translateY(-50%);
-  }
-  to {
-    -moz-transform: translateY(0%);;
-  }
-}
-@-o-keyframes fall-in {
-  from {
-    -o-transform: translateY(-50%);
-  }
-  to {
-    -o-transform: translateY(0%);
+    transform: translateY(0%);
   }
 }
 
@@ -364,26 +314,10 @@ html,body {
 }
 @-webkit-keyframes rise-in {
   from {
-    -webkit-transform: translateY(400%);
+    transform: translateY(400%);
   }
   to {
-    -webkit-transform: translateY(0%);
-  }
-}
-@-moz-keyframes rise-in {
-  from {
-    -moz-transform: translateY(400%);
-  }
-  to {
-    -moz-transform: translateY(0%);
-  }
-}
-@-o-keyframes rise-in {
-  from {
-    -o-transform: translateY(400%);
-  }
-  to {
-    -o-transform: translateY(0%);
+    transform: translateY(0%);
   }
 }
 
@@ -394,8 +328,6 @@ html,body {
 .contact-main {
   animation: fade-in ease 1s;
   -webkit-animation: fade-in ease 1s;
-  -moz-animation: fade-in ease 1s;
-  -o-animation: fade-in ease 1s;
 }
 
 input {
@@ -429,8 +361,6 @@ div[role='alert'] {
   text-align: left;
   transition: ease .5s;
   -webkit-transition: ease .5s;
-  -moz-transition: ease .5s;
-  -o-transition: ease .5s;
 }
 .input-text:focus {
   color: #fff;
@@ -496,15 +426,11 @@ div[role='alert'] {
 .projects {
   animation: fade-in ease 1s;
   -webkit-animation: fade-in ease 1s;
-  -moz-animation: fade-in ease 1s;
-  -o-animation: fade-in ease 1s;
 }
 
 .project-card {
   transition: all ease-in-out .5s;
   -webkit-transition: all ease-in-out .5s;
-  -moz-transition: all ease-in-out .5s;
-  -o-transition: all ease-in-out .5s;
   cursor: pointer;
 }
 .project-card.closed-card {
@@ -524,8 +450,6 @@ div[role='alert'] {
   border-radius: .3em;
   transition: all ease-in-out .5s;
   -webkit-transition: all ease-in-out .5s;
-  -moz-transition: all ease-in-out .5s;
-  -o-transition: all ease-in-out .5s;
   box-shadow: 0 0 5px #000;
   z-index: 1;
 }
@@ -535,20 +459,14 @@ div[role='alert'] {
 .project-card.closed-card .project-pic {
   transform: translateY(-102.5%) translateX(-2.5%);
   -webkit-transform: translateY(-102.5%) translateX(-2.5%);
-  -moz-transform: translateY(-102.5%) translateX(-2.5%);
-  -o-transform: translateY(-102.5%) translateX(-2.5%);
 }
 .project-card.closed-card:hover .project-pic, .project-card.closed-card:focus .project-pic {
   transform: translateY(-105%) translateX(-5%);
   -webkit-transform: translateY(-105%) translateX(-5%);
-  -moz-transform: translateY(-105%) translateX(-5%);
-  -o-transform: translateY(-105%) translateX(-5%);
 }
 .project-card.open-card .project-pic {
   transform: translateY(-110%) translateX(-35%);
   -webkit-transform: translateY(-110%) translateX(-35%);
-  -moz-transform: translateY(-110%) translateX(-35%);
-  -o-transform: translateY(-110%) translateX(-35%);
 }
 
 .project-context {
@@ -558,8 +476,6 @@ div[role='alert'] {
   border-radius: .3em;
   transition: all ease-in-out .5s;
   -webkit-transition: all ease-in-out .5s;
-  -moz-transition: all ease-in-out .5s;
-  -o-transition: all ease-in-out .5s;
   box-shadow: 0 0 5px #000;
   z-index: 0;
 }
@@ -569,14 +485,10 @@ div[role='alert'] {
 .project-card.closed-card .project-context {
   transform: translateY(2.5%) translateX(2.5%);
   -webkit-transform: translateY(2.5%) translateX(2.5%);
-  -moz-transform: translateY(2.5%) translateX(2.5%);
-  -o-transform: translateY(2.5%) translateX(2.5%);
 }
 .project-card.open-card .project-context {
   transform: translateY(10%) translateX(35%);
   -webkit-transform: translateY(10%) translateX(35%);
-  -moz-transform: translateY(10%) translateX(35%);
-  -o-transform: translateY(10%) translateX(35%);
 }
 
 .project-desc {
@@ -610,7 +522,6 @@ div[role='alert'] {
 
 .unselectable {
   -moz-user-select: none;
-  -khtml-user-select: none;
   -webkit-user-select: none;
   -o-user-select: none;
   user-select: none;
@@ -843,8 +754,6 @@ div[role='alert'] {
 .App-header {
   animation: fade-in ease 1s;
   -webkit-animation: fade-in ease 1s;
-  -moz-animation: fade-in ease 1s;
-  -o-animation: fade-in ease 1s;
   background-color: #282c34;
   min-height: calc(100vh - 59px);
   display: flex;
