@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.df8f8947.chunk.css",
+    "main.css": "/Portfolio/static/css/main.921a7069.chunk.css",
     "main.js": "/Portfolio/static/js/main.f762506d.chunk.js",
     "main.js.map": "/Portfolio/static/js/main.f762506d.chunk.js.map",
     "runtime-main.js": "/Portfolio/static/js/runtime-main.c41d4a45.js",
@@ -10,7 +10,7 @@
     "static/js/3.55777533.chunk.js": "/Portfolio/static/js/3.55777533.chunk.js",
     "static/js/3.55777533.chunk.js.map": "/Portfolio/static/js/3.55777533.chunk.js.map",
     "index.html": "/Portfolio/index.html",
-    "static/css/main.df8f8947.chunk.css.map": "/Portfolio/static/css/main.df8f8947.chunk.css.map",
+    "static/css/main.921a7069.chunk.css.map": "/Portfolio/static/css/main.921a7069.chunk.css.map",
     "static/js/2.09be28e7.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.09be28e7.chunk.js.LICENSE.txt",
     "static/media/App.css": "/Portfolio/static/media/Lemon.2bf6b527.ttf",
     "static/media/Game.6fa4e61b.png": "/Portfolio/static/media/Game.6fa4e61b.png",
@@ -29,7 +29,7 @@
   "entrypoints": [
     "static/js/runtime-main.c41d4a45.js",
     "static/js/2.09be28e7.chunk.js",
-    "static/css/main.df8f8947.chunk.css",
+    "static/css/main.921a7069.chunk.css",
     "static/js/main.f762506d.chunk.js"
   ]
 }
