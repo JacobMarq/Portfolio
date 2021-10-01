@@ -1,5 +1,7 @@
 import React from 'react';
 import { Route, Switch, NavLink } from "react-router-dom";
+import Contact from './contact';
+import About from './about';
 import Projects from './projects';
 import Home from './home';
 import './App.css';
@@ -11,6 +13,9 @@ class App extends React.Component {
         <div>
           <nav>
             <ul id="navigation" className="navbar">
+              <li className="nav-logo">
+                Jacob's Portfolio
+              </li>
               <li>
                 <NavLink exact to="/" activeClassName="nav-link--active" className="nav-link">
                   Home
@@ -40,6 +45,12 @@ class App extends React.Component {
           </Route>
           <Route path="/projects">
             <Projects />
+          </Route>
+          <Route path="/about">
+            <About />
+          </Route>
+          <Route path="/contact">
+            <Contact />
           </Route>
         </Switch>
       </div>
