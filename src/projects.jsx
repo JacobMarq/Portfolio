@@ -7,8 +7,9 @@ import JSCalcPicOne from './img/JavaScript Calculator/main.png';
 import RPSPicOne from './img/rock-paper-scissors/analytics.png';
 import RPSPicTwo from './img/rock-paper-scissors/Round.png';
 import RPSPicThree from './img/rock-paper-scissors/lose.png';
-import GOLPicOne from "./img/John Conway's Game of Life/Game.png";
-import GOLPicTwo from "./img/John Conway's Game of Life/Result.png";
+import BPAPIPicOne from "./img/BPostsApi/start.png";
+import BPAPIPicTwo from "./img/BPostsApi/search.png";
+import BPAPIPicThree from "./img/BPostsApi/response.png";
 import GitHubLogo from "./img/Icons/GitHub-Mark-32px.png"
 import GlobeIcon from "./img/Icons/globe.svg"
 import './App.css';
@@ -118,7 +119,12 @@ class Projects extends React.Component {
                                 users can show their appreciation
                                 or disagreement for other users 
                                 content by liking, disliking,
-                                favoriting, and following. 
+                                favoriting, and following.
+                                <br />
+                                <br />
+
+                                - Currently deployed on Heroku Free
+                                  Dynos so initial load WILL BE SLOW.
                             </p>
                             <div className="d-flex flex-row flex-jc-space-between mt-auto project-card-footer">
                                 <div className="d-flex flex-row mt-auto">
@@ -142,6 +148,46 @@ class Projects extends React.Component {
                         <div className="blog four flex-column project-pic" style={{background: `url(${BlogPicFour}) no-repeat`, backgroundSize: '100% 100%'}}></div>
                     </div>
 
+                    <h2 className="color-white text-center">Blog Posts API</h2>
+                    <div id="GOLCard" className="project-card closed-card" onClick={(e) => openCard(e)}>
+                        <div className="d-flex flex-column project-context">
+                            <p className="ml-25p mt-10 h-75 project-desc">
+                                A Ruby on Rails JSON API that allows 
+                                a user to fetch blog posts from a 
+                                third party API with query strings.
+                                <br />
+                                <br />
+
+                                - utilizes multithreading for making
+                                  parallel requests
+                                <br />
+                                <br />
+
+                                - Currently deployed on Heroku Free
+                                  Dynos so initial load WILL BE SLOW.
+                                <br />
+                                <br />
+
+                                - Permitted Parameters are:
+                                  tags(required), sortBy, direction
+                            </p>
+                            <div className="d-flex flex-row flex-jc-space-between mt-auto project-card-footer">
+                                <div className="d-flex flex-row mt-auto ">
+                                    <a href="https://fathomless-eyrie-37734.herokuapp.com/v1/posts?tags=tech" className="ml-10 mb-5 project-link" style={{background: `url(${GlobeIcon}) no-repeat`, backgroundSize: '100% 100%'}}></a>
+                                </div>
+                                <div className="d-flex flex-row project-tools w-65 mt-auto ml-10">
+                                    <p className="ml-10 mb-10">Rails</p>
+                                    <p className="ml-10 mb-10">Heroku</p>
+                                    <p className="ml-10 mr-10 mb-10">Ruby</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="show gol one flex-column project-pic" style={{background: `url(${BPAPIPicOne}) no-repeat`, backgroundSize: '100% 100%'}}></div>
+                        <div className="gol two flex-column project-pic" style={{background: `url(${BPAPIPicTwo}) no-repeat`, backgroundSize: '100% 100%'}}></div>
+                        <div className="gol three flex-column project-pic" style={{background: `url(${BPAPIPicThree}) no-repeat`, backgroundSize: '100% 100%'}}></div>
+                    </div>
+                    
                     <h2 className="color-white text-center">JavaScript Calculator</h2>
                     <div id="CalcCard" className="project-card closed-card" onClick={(e) => openCard(e)}>
                         <div className="d-flex flex-column project-context">
@@ -204,34 +250,6 @@ class Projects extends React.Component {
                         <div className="rps three flex-column project-pic" style={{background: `url(${RPSPicThree}) no-repeat`, backgroundSize: '100% 100%'}}></div>
                     </div>
 
-                    <h2 className="color-white text-center">John Conway's Game of Life</h2>
-                    <div id="GOLCard" className="project-card closed-card" onClick={(e) => openCard(e)}>
-                        <div className="d-flex flex-column project-context">
-                            <p className="ml-25p mt-10 h-75 project-desc">
-                                A simple demonstration of John 
-                                Conway's Game of Life where 
-                                if a cell has too many or 
-                                too little living neighbors 
-                                it will die. Game end will 
-                                display a report of your
-                                games results.
-                            </p>
-                            <div className="d-flex flex-row flex-jc-space-between mt-auto project-card-footer">
-                                <div className="d-flex flex-row mt-auto ">
-                                    <a href="https://jacobmarq.github.io/Game-of-Life/" className="ml-10 mb-5 project-link" style={{background: `url(${GlobeIcon}) no-repeat`, backgroundSize: '100% 100%'}}></a>
-                                    <a href="https://github.com/JacobMarq/Game-of-Life" className="ml-10 mb-5 project-link" style={{background: `url(${GitHubLogo}) no-repeat`, backgroundSize: '100% 100%'}}></a>
-                                </div>
-                                <div className="d-flex flex-row project-tools w-65 mt-auto ml-10">
-                                    <p className="ml-10 mb-10">Html</p>
-                                    <p className="ml-10 mb-10">CSS</p>
-                                    <p className="ml-10 mr-10 mb-10">JavaScript</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="show gol one flex-column project-pic" style={{background: `url(${GOLPicOne}) no-repeat`, backgroundSize: '100% 100%'}}></div>
-                        <div className="gol two flex-column project-pic" style={{background: `url(${GOLPicTwo}) no-repeat`, backgroundSize: '100% 100%'}}></div>
-                    </div>
                 </div>
             </div>
         );
