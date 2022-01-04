@@ -2,7 +2,7 @@ import React from 'react';
 import { Route, Switch, NavLink } from "react-router-dom";
 import Contact from './contact';
 import About from './about';
-import Projects from './projects';
+import ProjectsDisplay from './projectsdisplay';
 import Home from './home';
 import './App.css';
 
@@ -44,7 +44,7 @@ class App extends React.Component {
             <Home />
           </Route>
           <Route path="/projects">
-            <Projects />
+            <ProjectsDisplay />
           </Route>
           <Route path="/about">
             <About />
