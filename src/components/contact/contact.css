@@ -1,0 +1,69 @@
+/* 
+<--------------- Contact ---------------> 
+*/
+
+.contact-main {
+    animation: fade-in ease 1s;
+  }
+  
+  input {
+    width: 100%;
+  }
+  textarea {
+    height: 10em;
+    width: 100%;
+  }
+  div[role='alert'] {
+    color: var(--clr-alert);
+    margin-top: 1em;
+  }
+  
+  .contact-header {
+    font-size: 2.5em;
+    color: var(--clr-white);
+  }
+  .input-text {
+    color: var(--clr-secondary);
+    background-color: transparent;
+    border-radius: .5em;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 3px solid var(--clr-secondary);
+    padding: 10px;
+    text-align: left;
+    transition: ease .5s;
+  }
+  .input-text:focus {
+    color: var(--clr-white);
+    border-bottom: 3px solid var(--clr-primary-light);
+    outline: none;
+  }
+  
+  .status-message {
+    opacity: 0;
+  }
+  .success {
+    opacity: 1;
+    color: var(--clr-white);
+    background-color: var(--clr-success-background);
+    border: var(--clr-success-border) 2px solid;
+    border-radius: .25em;
+  }
+  
+  .failure {
+    opacity: 1;
+    color: var(--clr-white);
+    background-color: var(--clr-failure-background);
+    border: var(--clr-failure-border) 2px solid;
+    border-radius: .25em;
+  }
+  
+  .message-chars-left {
+    color: var(--clr-white);
+  }
+  
+  .inquiry {
+    color: var(--clr-white)
+  }
+  

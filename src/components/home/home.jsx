@@ -1,6 +1,6 @@
-import './App.css';
+import './home.css';
 import React from 'react';
-import background from './img/homebackground.jpg'
+import background from '../../img/homebackground.jpg';
 import { Link } from 'react-router-dom';
 
 class Home extends React.Component {
@@ -19,7 +19,7 @@ class Home extends React.Component {
                         | Full Stack Developer
                     </p>
                     <div className="d-inline-flex">
-                        <Link to="/about" className="unselectable mr-10 mt-25 primary-neon-btn">
+                        <Link to="/about" className="unselectable mr-10 mt-25 primary-btn">
                             Learn More
                         </Link>
                         <Link to="/contact" className="unselectable ml-10 mt-25 secondary-btn">

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './App.css';
+import './about.css';
 
 class About extends React.Component {
     render() {
@@ -20,7 +20,7 @@ class About extends React.Component {
                 </h2>
                 
                 <div className="d-flex w-auto">
-                    <Link to="/projects" className="unselectable primary-neon-btn center p-10 about-desc mb-5p ">
+                    <Link to="/projects" className="unselectable primary-btn center p-10 mb-5p ">
                         View Projects
                     </Link>
                 </div>

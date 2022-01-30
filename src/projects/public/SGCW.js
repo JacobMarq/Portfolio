@@ -1,8 +1,8 @@
-import Project from "../project";
-import PicOne from '../img/SGCW/StainedGlassCW1.png';
-import PicTwo from '../img/SGCW/StainedGlassCW2.png';
-import PicThree from '../img/SGCW/StainedGlassCW3.png';
-import PicFour from '../img/SGCW/StainedGlassCW4.png';
+import Project from "../../project";
+import PicOne from '../../img/SGCW/StainedGlassCW1.png';
+import PicTwo from '../../img/SGCW/StainedGlassCW2.png';
+import PicThree from '../../img/SGCW/StainedGlassCW3.png';
+import PicFour from '../../img/SGCW/StainedGlassCW4.png';
 
 const description = 
 "A prototype for a client's business site " +

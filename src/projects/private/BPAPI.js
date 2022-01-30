@@ -1,7 +1,7 @@
-import Project from "../project";
-import BPAPIPicOne from "../img/BPostsApi/start.png";
-import BPAPIPicTwo from "../img/BPostsApi/search.png";
-import BPAPIPicThree from "../img/BPostsApi/response.png";
+import Project from "../../project";
+import BPAPIPicOne from "../../img/BPostsApi/start.png";
+import BPAPIPicTwo from "../../img/BPostsApi/search.png";
+import BPAPIPicThree from "../../img/BPostsApi/response.png";
 
 const description = 
 "A Ruby on Rails JSON API that allows " +

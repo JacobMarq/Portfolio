@@ -1,5 +1,5 @@
-import Project from "../project";
-import JSCalcPicOne from '../img/JavaScript Calculator/main.png';
+import Project from "../../project";
+import JSCalcPicOne from '../../img/JavaScript Calculator/main.png';
 
 const description = 
 "A JavaScript calculator based around the " +

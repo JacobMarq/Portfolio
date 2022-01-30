@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './App.css';
+import './contact.css';
 import { useForm } from 'react-hook-form';
 import { init, sendForm } from 'emailjs-com';
 init('user_XxDRdHVhjtqMWzEha7xIa');
@@ -50,41 +50,41 @@ const Contact = () => {
                     <input type='hidden' name='contact_number' value={contactNumber} />
 
                     <input 
-                    className="mt-5p input-text"
-                    type='text'
-                    maxLength='30'
-                    aria-invalid={errors.user_name ? 'true' : 'false'}
-                    {...register('user_name', { required: true }) } 
-                    placeholder='Name' />
-                    {errors.user_name && errors.user_name.type === "required" && (
-                        <div role='alert'>Name is required</div>
-                    )}
+                        className="mt-5p input-text"
+                        type='text'
+                        maxLength='30'
+                        aria-invalid={errors.user_name ? 'true' : 'false'}
+                        {...register('user_name', { required: true }) } 
+                        placeholder='Name' />
+                            {errors.user_name && errors.user_name.type === "required" && (
+                                <div role='alert'>Name is required</div>
+                            )}
                     <br/>
                     
                     <input 
-                    className="mt-5p input-text"
-                    type='email'
-                    aria-invalid={errors.user_email ? 'true' : 'false'}
-                    {...register('user_email', { required: true }) } 
-                    placeholder='Email' />
-                    {errors.user_email && errors.user_email.type === "required" && (
-                        <div role='alert'>Email is required</div>
-                    )}
+                        className="mt-5p input-text"
+                        type='email'
+                        aria-invalid={errors.user_email ? 'true' : 'false'}
+                        {...register('user_email', { required: true }) } 
+                        placeholder='Email' />
+                            {errors.user_email && errors.user_email.type === "required" && (
+                                <div role='alert'>Email is required</div>
+                            )}
                     <br/>
                     
                     <textarea 
-                    className="mt-5p input-text"
-                    maxLength='1500'
-                    aria-invalid={errors.message ? 'true' : 'false'}
-                    {...register('message', { required: true }) } 
-                    placeholder='Message' />
-                    {errors.message && errors.message.type === "required" && (
-                        <div role='alert'>Message is required</div>
-                    )}
-                    <p className='message-chars-left'>{ messageCharsLeft }</p>
+                        className="mt-5p input-text"
+                        maxLength='1500'
+                        aria-invalid={errors.message ? 'true' : 'false'}
+                        {...register('message', { required: true }) } 
+                        placeholder='Message' />
+                            {errors.message && errors.message.type === "required" && (
+                                <div role='alert'>Message is required</div>
+                            )}
+                            <p className='message-chars-left'>{ messageCharsLeft }</p>
                     <br/>
 
-                    <input className='unselectable w-auto p-10 mt-5p mb-25 center primary-neon-btn contact-send' type='submit' value='Send Message' />
+                    <input className='unselectable w-auto p-10 mt-5p mb-25 center primary-btn' type='submit' value='Send Message' />
                 </form>
             </div>
         );

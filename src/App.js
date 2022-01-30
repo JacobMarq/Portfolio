@@ -1,9 +1,9 @@
 import React from 'react';
 import { Route, Switch, NavLink } from "react-router-dom";
-import Contact from './contact';
-import About from './about';
-import ProjectsDisplay from './projectsdisplay';
-import Home from './home';
+import Contact from './components/contact/contact';
+import About from './components/about/about';
+import ProjectsDisplay from './components/projectsdisplay/projectsdisplay';
+import Home from './components/home/home';
 import './App.css';
 
 class App extends React.Component {
@@ -17,22 +17,22 @@ class App extends React.Component {
                 Jacob's Portfolio
               </li>
               <li>
-                <NavLink exact to="/" activeClassName="nav-link--active" className="nav-link">
+                <NavLink exact to="/" activeClassName="active" className="nav-link">
                   Home
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/about" activeClassName="nav-link--active" className="nav-link">
+                <NavLink to="/about" activeClassName="active" className="nav-link">
                   About
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/projects" activeClassName="nav-link--active" className="nav-link">
+                <NavLink to="/projects" activeClassName="active" className="nav-link">
                   Projects
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/contact" activeClassName="nav-link--active" className="nav-link">
+                <NavLink to="/contact" activeClassName="active" className="nav-link">
                   Contact
                 </NavLink>
               </li>

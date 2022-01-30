@@ -1,8 +1,8 @@
-import Project from "../project";
-import BlogPicOne from '../img/Blog/article-show.png';
-import BlogPicTwo from '../img/Blog/home.png';
-import BlogPicThree from '../img/Blog/user-profile.png';
-import BlogPicFour from '../img/Blog/responsive.png';
+import Project from "../../project";
+import BlogPicOne from '../../img/Blog/article-show.png';
+import BlogPicTwo from '../../img/Blog/home.png';
+import BlogPicThree from '../../img/Blog/user-profile.png';
+import BlogPicFour from '../../img/Blog/responsive.png';
 
 const description = 
 "A responsive blog app, with " +
