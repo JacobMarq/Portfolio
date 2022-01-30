@@ -15,9 +15,12 @@ class About extends React.Component {
                     </p>
                 </div>
                 
-                <h2 className="about-desc mt-10p mb-5p default-cursor unselectable">
-                    I build <span>elegant</span> and <span>efficient</span> applications. I'm experienced in <span>front</span> and <span>back-end web development</span> with a <span>passion</span> for the type of work that I do.
-                </h2>
+                <div className='about-desc-container mt-10p mb-5p'>
+                    <strong className='about-question'>Who am I?</strong>
+                    <p className="about-desc default-cursor unselectable">
+                        I build <span>elegant</span> and <span>efficient</span> applications. I'm experienced in <span>front</span> and <span>back-end web development</span> with a <span>passion</span> for the type of work that I do.
+                    </p>
+                </div>
                 
                 <div className="d-flex w-auto">
                     <Link to="/projects" className="unselectable primary-btn center p-10 mb-5p ">

@@ -7,7 +7,7 @@ class Home extends React.Component {
   render() {
     return (
         <div className="App">
-            <header className="App-header" style={{ background: `url(${background}) no-repeat center left fixed`, backgroundSize: "cover" }}>
+            <header className="App-header" style={{ background: `url(${background}) no-repeat left top fixed`, backgroundSize: "cover" }}>
                 <div className="home-wrapper">
                     <h1 className="home-name m-0 default-cursor unselectable">
                         Jacob Marquez

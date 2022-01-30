@@ -20,7 +20,8 @@
   }
   .home-text-muted {
     font-size: .8em;
-    color: var(--clr-tertiary);
+    font-weight: 600;
+    color: var(--clr-tertiary-light);
   }
 
   @keyframes slide-in {
