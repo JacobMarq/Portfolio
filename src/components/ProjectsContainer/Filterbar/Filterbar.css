@@ -1,0 +1,52 @@
+.table {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+}
+
+button > * {
+    pointer-events: none;
+}
+
+.horizontal-list {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    padding-top: 10px;
+    overflow-x: scroll;
+    flex-wrap: nowrap;
+    box-shadow: 0px 2px 5px inset rgba(0, 0, 0, 0.356);
+}
+    .horizontal-list li {
+        display: inline;
+    }
+        .horizontal-list li button {
+            color: var(--clr-white);
+            background-color: var(--clr-background);
+            border: 2.5px solid transparent;
+            border-radius: 5px;
+            padding: 5px;
+            margin: 0 5px 0 5px;
+            font-weight: 700;
+            cursor: pointer;
+        }
+        .horizontal-list li button:hover {
+            border: 2.5px solid var(--clr-tertiary-light);
+        }
+        .horizontal-list li button:active{
+            background-color: var(--clr-tertiary-light);
+        }
+        .horizontal-list li button.active {
+            background-color: var(--clr-tertiary);
+        }
+        .horizontal-list li button.active:hover {
+            background-color: var(--clr-tertiary);
+        }
+        .horizontal-list li button.active:active{
+            background-color: var(--clr-tertiary-light);
+        }
+            .horizontal-list li button img {
+                display: block;
+            }

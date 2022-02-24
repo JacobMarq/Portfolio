@@ -3,25 +3,21 @@
 */
 
 .contact-main {
-    animation: fade-in ease 1s;
-  }
+  animation: fade-in ease 1s;
+}
   
   input {
-    width: 100%;
+    width: 95%;
   }
   textarea {
     height: 10em;
-    width: 100%;
+    width: 95%;
   }
   div[role='alert'] {
     color: var(--clr-alert);
     margin-top: 1em;
   }
   
-  .contact-header {
-    font-size: 2.5em;
-    color: var(--clr-white);
-  }
   .input-text {
     color: var(--clr-secondary);
     background-color: transparent;
@@ -65,5 +61,9 @@
   
   .inquiry {
     color: var(--clr-white)
+  }
+
+  #send-message-btn {
+    font-size: 1.25em;
   }
   

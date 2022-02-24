@@ -22,7 +22,7 @@ const BLOG = new Project(
     [{id: "one", url: BlogPicOne}, {id: "two", url: BlogPicTwo}, {id: "three", url: BlogPicThree}, {id: "four", url: BlogPicFour}],
     "https://github.com/JacobMarq/Blog",
     "https://the-blog-spot.herokuapp.com/",
-    ["Heroku", "Html", "JavaScript", "CSS", "Ruby", "Rails"],
+    ["PostgreSQL", "Heroku", "HTML", "JavaScript", "CSS", "Ruby", "Rails"],
 );
 
 export default BLOG;

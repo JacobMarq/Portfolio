@@ -15,7 +15,7 @@ const JSCALC = new Project(
     [{id: "one", url: JSCalcPicOne}],
     "https://github.com/JacobMarq/Calculator",
     "https://jacobmarq.github.io/Calculator/",
-    ["JavaScript", "Html", "CSS"],
+    ["JavaScript", "HTML", "CSS"],
 );
 
 export default JSCALC;

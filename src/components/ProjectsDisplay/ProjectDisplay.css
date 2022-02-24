@@ -1,0 +1,121 @@
+/* 
+<--------------- Projects Display ---------------> 
+*/
+@media only screen and (min-width: 1500px) {
+  .project-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  }
+    .project-img-wrapper {
+      height: 250px;
+      width: 400px;
+    }
+    .project-column-left {
+      border-right: 2px solid var(--clr-tertiary);
+      width: 40%;
+    }
+
+    .project-column-right {
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+    }
+}
+@media only screen and (min-width: 800px) and (max-width: 1500px){
+  .project-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+    .project-img-wrapper {
+      height: 150px;
+      width: 250px;
+    }
+    .project-column-left {
+      border-right: 2px solid var(--clr-tertiary);
+      width: 40%;
+    }
+  
+    .project-column-right {
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+    }
+}
+@media only screen and (max-width: 800px){
+  .project-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+    .project-column-left {
+      border-right: 2px solid var(--clr-tertiary);
+      min-width: 100%;
+    }
+    .project-img-wrapper {
+      height: 60vw;
+      width: 100%;
+    }
+  
+    .project-column-right {
+      margin-left: 0;
+      margin-right: 0;
+      width: 100%;
+    }
+}
+  
+  .project-img-wrapper {
+    position: relative;
+  }
+    .project-pic {
+      position: absolute;
+      display: flex;
+      visibility: hidden;
+      background-color: var(--clr-secondary);
+      width: 100%;
+      height: 100%;
+      /* border-radius: .3em; */
+      transition: all ease-in-out .5s;
+      box-shadow: 0 0 5px #000;
+      z-index: 1;
+      overflow: hidden;
+      pointer-events: none;
+    }
+    .project-pic.show{
+      visibility: visible;
+    }
+
+  .project-column-right {
+    transition: all ease-in-out .5s;
+  }
+    .project-context {
+      height: 100%;
+      color: var(--clr-white);
+      border-radius: .3em;
+      transition: all ease-in-out .5s;
+      z-index: 0;
+    }
+    .project-desc {
+      overflow-y: scroll;
+      white-space: pre-wrap;
+    }
+    .project-link {
+      filter: invert(70%) sepia(45%) saturate(173%) hue-rotate(195deg) brightness(99%) contrast(87%);
+      height: 32px;
+      width: 32px;
+      color: transparent;
+    }
+    .project-link:hover, .project-link:focus {
+      filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(232deg) brightness(110%) contrast(101%);
+    }
+    .project-card-footer {
+      border-top: 2px solid var(--clr-tertiary);
+      margin-top: auto;
+      margin-bottom: 0%;
+    }
+      .project-tools {
+        overflow-x: auto;
+        font-size: .9em;
+      }
+  

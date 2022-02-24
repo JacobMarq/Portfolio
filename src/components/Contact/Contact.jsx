@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './contact.css';
+import './Contact.css';
 import { useForm } from 'react-hook-form';
 import { init, sendForm } from 'emailjs-com';
 init('user_XxDRdHVhjtqMWzEha7xIa');
@@ -40,9 +40,9 @@ const Contact = () => {
 
         return (
             <div className="container contact-main">
-                <h1 className="contact-header ml-5p mt-5p unselectable">Contact Me</h1>
+                <h1 className="header ml-5p mt-5p unselectable">Contact Me</h1>
 
-                <h3 className="inquiry ml-5p">For inquiries send me a message by filling out the form below.</h3>
+                <p className="inquiry ml-5p">For inquiries send me a message by filling out the form below.</p>
 
                 <p className="status-message">{statusMessage}</p>
                 <form className="ml-5p mr-5p" id='contact-form' onSubmit={ handleSubmit(onSubmit) }>
@@ -84,7 +84,7 @@ const Contact = () => {
                             <p className='message-chars-left'>{ messageCharsLeft }</p>
                     <br/>
 
-                    <input className='unselectable w-auto p-10 mt-5p mb-25 center primary-btn' type='submit' value='Send Message' />
+                    <input id='send-message-btn' className='unselectable w-auto p-10 mt-5p mb-25 center primary-btn' type='submit' value='Send Message' />
                 </form>
             </div>
         );
