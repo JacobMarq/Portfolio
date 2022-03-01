@@ -4,6 +4,7 @@
 
 .contact-main {
   animation: fade-in ease 1s;
+  padding-bottom: 5%;
 }
   
   input {

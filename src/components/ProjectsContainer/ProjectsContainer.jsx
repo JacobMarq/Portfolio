@@ -105,7 +105,7 @@ class ProjectsContainer extends React.Component {
     render() {
         const filteredProjects = this.filterProjects();
         return (
-            <div className='container mb-10p'>
+            <div className='container projects mb-10p'>
                 <AnimationOnScroll
                   animateIn='animate__fadeInUp'
                   initiallyVisible={false}

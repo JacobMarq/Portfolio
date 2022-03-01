@@ -2,3 +2,7 @@
     color: var(--clr-secondary);
     font-weight: 500;
 }
+
+.projects {
+    padding-bottom: 5%;
+}
