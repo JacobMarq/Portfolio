@@ -5,11 +5,12 @@ import BPAPI from "../../projects/private/BPAPI";
 import JSCALC from "../../projects/public/JSCalc";
 import SGCW from "../../projects/public/SGCW";
 import RPS from "../../projects/public/RPS";
-import Filterbar from './Filterbar/Filterbar'
+import FSA from "../../projects/private/FSA";
+import Filterbar from './Filterbar/Filterbar';
 import ProjectDisplay from '../ProjectsDisplay/ProjectDisplay';
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 
-const Projects = [BLOG, BPAPI, JSCALC, SGCW, RPS];
+const Projects = [BLOG, BPAPI, JSCALC, SGCW, RPS, FSA];
 
 class ProjectsContainer extends React.Component {
     constructor(props) {
@@ -104,7 +105,7 @@ class ProjectsContainer extends React.Component {
     render() {
         const filteredProjects = this.filterProjects();
         return (
-            <div className='container projects'>
+            <div className='container mb-10p'>
                 <AnimationOnScroll
                   animateIn='animate__fadeInUp'
                   initiallyVisible={false}
