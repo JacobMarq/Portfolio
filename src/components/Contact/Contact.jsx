@@ -39,7 +39,7 @@ const Contact = () => {
         }
 
         return (
-            <div className="container contact-main">
+            <div className="container contact-main mb-10p">
                 <h1 className="header ml-5p mt-5p unselectable">Contact Me</h1>
 
                 <p className="inquiry ml-5p">For inquiries send me a message by filling out the form below.</p>
