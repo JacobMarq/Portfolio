@@ -110,8 +110,8 @@ class ProjectsContainer extends React.Component {
                   animateIn='animate__fadeInUp'
                   initiallyVisible={false}
                   animateOnce={true}>
-                <h1 className='header'>Projects</h1>
-                <p className='color-white'>Hover over project images to preview slideshow</p>
+                <h1 className='header ml-10'>Projects</h1>
+                <p className='color-white ml-10'>Hover over project images to preview slideshow. (tap if on mobile)</p>
                 
                 <h3 className='filter-header text-center'>Filters</h3>
                 <Filterbar filterValues={this.state.filterValues} click={this.filterOnClickHandler}/>
@@ -122,7 +122,7 @@ class ProjectsContainer extends React.Component {
                   animateIn='animate__fadeIn'>
                 {filteredProjects.map(project => {
                     if(!project) {
-                        <p>no projects to load...</p>
+                        <p className='ml-10'>no projects to load...</p>
                     }
 
                     return(

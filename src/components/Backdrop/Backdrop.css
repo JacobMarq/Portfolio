@@ -9,4 +9,5 @@
     height: 85vh;
     width: 100%;
     background-color: var(--clr-backdrop);
+    overflow: hidden;
 }

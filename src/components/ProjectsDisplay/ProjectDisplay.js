@@ -30,7 +30,7 @@ const ProjectDisplay = props => {
     return (
         <div className="d-flex flex-column flex-jc-center mb-5p">
         
-            <h3 className="project-name">{project.name}</h3>
+            <h3 className="project-name ml-10">{project.name}</h3>
 
             <div className="project-container">
                 <div className="project-column-left">
