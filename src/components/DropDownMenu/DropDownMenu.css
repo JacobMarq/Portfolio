@@ -1,0 +1,81 @@
+@media (max-width: 700px) {
+    .dropdown-menu-wrapper {
+        display: block;
+    }
+}
+@media (min-width: 700px) {
+    .dropdown-menu-wrapper {
+        display: none;
+    }
+}
+
+.dropdown-menu-wrapper {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    max-height: 0;
+    z-index: 0;
+    transition: max-height .3s ease-out;
+}
+.dropdown-menu-wrapper.active {
+    max-height: 50vh;
+    overflow-y: scroll;
+    transition: max-height .3s ease-in;
+}
+
+.dropdown-menu {
+    margin-top: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: var(--clr-background);
+}
+.dropdown-menu li {
+    padding: 30px 0 30px 0;
+}
+.dropdown-menu li a {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: auto;
+    width: fit-content;
+    background-color: transparent;
+    color: var(--clr-white);
+    transition: all .2s ease-in-out;
+    position: relative;
+}
+.dropdown-menu li a:hover,
+.dropdown-menu li a:focus {
+    color: var(--clr-white);
+}
+.dropdown-menu li a:hover:active,
+.dropdown-menu li a:focus:active {
+    transition: 0s;
+    color: var(--clr-secondary);
+}
+    .dropdown-menu li a::after{
+        content: "";
+        position: absolute;
+        bottom: -2px;
+        background-color: transparent;
+        height: 2px;
+        width: 3px;
+    }
+    .dropdown-menu li a:hover::after,
+    .dropdown-menu li a:focus::after {
+        content: "";
+        position: absolute;
+        bottom: -2px;
+        background-color: var(--clr-white);
+        height: 2px;
+        width: 92%;
+        transition: ease-in-out .3s;
+    }
+    .dropdown-menu li a:hover:active::after,
+    .dropdown-menu li a:focus:active::after{
+        transition: 0s;
+        background-color: var(--clr-secondary);
+    }

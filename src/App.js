@@ -4,21 +4,27 @@ import Contact from './components/Contact/Contact';
 import About from './components/About/About';
 import ProjectsContainer from './components/ProjectsContainer/ProjectsContainer';
 import Home from './components/Home/Home';
+import Backdrop from './components/Backdrop/Backdrop';
+import BurgerButton from './components/BurgerButton/BurgerButton';
+import DropDownMenu from './components/DropDownMenu/DropDownMenu';
 import './App.css';
 import 'animate.css/animate.min.css';
 
 class App extends React.Component {
   state = {
-    menuActive: false,
-    burgerActive: false,
-    backdropActive: false,
+    navMenuActive: false
   };
 
-  menuClickHandler = () => {
+  navMenuClickHandler = () => {
     this.setState(prevState => {
-      return { menuActive: !prevState.menuActive,
-                burgerActive: !prevState.burgerActive,
-                backdropActive: !prevState.backdropActive }
+      const body = document.getElementById('body');
+
+      if(prevState.navMenuActive)
+        body.classList.remove('non-scrollable');
+      else
+        body.classList.add('non-scrollable');
+
+      return { navMenuActive: !prevState.navMenuActive };
     });
   }
 
@@ -31,6 +37,7 @@ class App extends React.Component {
               <NavLink exact to="/" className="nav-logo">
                 Jacob's Portfolio
               </NavLink>
+              <BurgerButton click={this.navMenuClickHandler} active={this.state.navMenuActive} />
 
               <li>
                 <NavLink exact to="/" activeClassName="active" className="nav-link">
@@ -54,6 +61,9 @@ class App extends React.Component {
               </li>
             </ul>
           </nav>
+          
+          <DropDownMenu click={this.navMenuClickHandler} show={this.state.navMenuActive} />
+          <Backdrop click={this.navMenuClickHandler} show={this.state.navMenuActive} />
         </div>
         <Switch>
           <Route exact path="/">

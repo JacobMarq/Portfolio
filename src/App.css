@@ -23,17 +23,26 @@ h3 {
     margin-left: 15%;
     margin-right: 15%;
   }
+  .nav-link {
+    display: inline;
+  }
 }
 @media only screen and (max-width: 1000px){
   .container {
     margin-left: 5%;
     margin-right: 5%;
   }
+  .nav-link {
+    display: inline;
+  }
 }
 @media only screen and (max-width: 700px){
   .container {
     margin-left: 0;
     margin-right: 0;
+  }
+  .nav-link {
+    display: none;
   }
 }
 
@@ -45,91 +54,6 @@ h3 {
 @font-face {
   font-family: 'Lemon';
   src: url(./fonts/Lemon.ttf) format('truetype');
-}
-
-@keyframes slide-in-left {
-  from {
-    transform: translateX(-200%);
-  }
-  to {
-    transform: translateX(0%);
-  }
-}
-@-webkit-keyframes slide-in-left {
-  from {
-    transform: translateX(-200%);
-  }
-  to {
-    transform: translateX(0%);
-  }
-}
-
-@keyframes slide-in-right {
-  from {
-    transform: translateX(200%);
-  }
-  to {
-    transform: translateX(0%);
-  }
-}
-@-webkit-keyframes slide-in-right {
-  from {
-    transform: translateX(200%);
-  }
-  to {
-    transform: translateX(0%);
-  }
-}
-
-@keyframes fade-in {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@-webkit-keyframes fade-in {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fall-in {
-  from {
-    transform: translateY(-75%);
-  }
-  to {
-    transform: translateY(0%);
-  }
-}
-@-webkit-keyframes fall-in {
-  from {
-    transform: translateY(-75%);
-  }
-  to {
-    transform: translateY(0%);
-  }
-}
-
-@keyframes rise-in {
-  from {
-    transform: translateY(400%);
-  }
-  to {
-    transform: translateY(0);
-  }
-}
-@-webkit-keyframes rise-in {
-  from {
-    transform: translateY(400%);
-  }
-  to {
-    transform: translateY(0%);
-  }
 }
 
 :root {
@@ -145,6 +69,15 @@ h3 {
   --clr-success-border: #7dc474;
   --clr-failure-background: #8f2a2a;
   --clr-failure-border: #af4141;
+  --clr-backdrop: #000000a1;
+}
+
+.scrollable {
+  overflow-y: auto !important;
+}
+
+.non-scrollable {
+  overflow: hidden;
 }
 
 /* =============================================
@@ -496,3 +429,87 @@ h3 {
 <--------------- Common Styles ( end ) ---------------> 
 ==================================================== */
 
+@keyframes slide-in-left {
+  from {
+    transform: translateX(-200%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+@-webkit-keyframes slide-in-left {
+  from {
+    transform: translateX(-200%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes slide-in-right {
+  from {
+    transform: translateX(200%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+@-webkit-keyframes slide-in-right {
+  from {
+    transform: translateX(200%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fall-in {
+  from {
+    transform: translateY(-75%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+@-webkit-keyframes fall-in {
+  from {
+    transform: translateY(-75%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes rise-in {
+  from {
+    transform: translateY(400%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes rise-in {
+  from {
+    transform: translateY(400%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
