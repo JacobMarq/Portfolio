@@ -12,8 +12,7 @@ class Home extends React.Component {
                 <AnimationOnScroll 
                   className="home-wrapper"
                   animateIn='animate__slideInLeft'
-                  animateOut='animate__slideOutLeft'
-                  initiallyVisible={true}>
+                  animateOut='animate__slideOutLeft'>
                     <h1 className="home-name m-0 default-cursor unselectable">
                         Jacob Marquez
                     </h1>

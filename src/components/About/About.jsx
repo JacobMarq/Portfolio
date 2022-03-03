@@ -9,8 +9,7 @@ class About extends React.Component {
             <div className="container">
                 <AnimationOnScroll 
                   animateIn='animate__fadeInDown' 
-                  animateOnce={true}
-                  initiallyVisible={true}>
+                  animateOnce={true}>
                     <div className="d-flex flex-jc-center flex-column w-auto about-wrapper mt-10p mb-10p">
                         <h1 className="about-quote p-10 mb-0 default-cursor">
                             "...<span>PASSION</span> IS THE KEY THAT OPENS THE DOOR TO <span>JOY</span> AND <span>ABUNDANCE</span>."
