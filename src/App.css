@@ -112,6 +112,7 @@ h3 {
   text-decoration: none;
   color: var(--clr-white);
   position: relative;
+  overflow-x: hidden;
 }
 .nav-link::after{
   content: "";

@@ -2,14 +2,14 @@ import React from 'react';
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 import { Link } from 'react-router-dom';
 import './About.css';
-
 class About extends React.Component {
     render() {
         return (
             <div className="container">
                 <AnimationOnScroll 
                   animateIn='animate__fadeInDown' 
-                  animateOnce={true}>
+                  animateOnce={true}
+                  initiallyVisible={window.innerWidth <= 700 ? true : false}>
                     <div className="d-flex flex-jc-center flex-column w-auto about-wrapper mt-10p mb-10p">
                         <h1 className="about-quote p-10 mb-0 default-cursor">
                             "...<span>PASSION</span> IS THE KEY THAT OPENS THE DOOR TO <span>JOY</span> AND <span>ABUNDANCE</span>."
