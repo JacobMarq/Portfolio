@@ -6,6 +6,7 @@ import JS from '../../../img/Icons/js.png';
 import REACTJS from '../../../img/Icons/reactjs.png';
 import RUBY from '../../../img/Icons/ruby.png';
 import RAILS from '../../../img/Icons/rails.png';
+import { Scrollbars } from 'react-custom-scrollbars-2';
 
 const html = 'HTML';
 const css = 'CSS';
@@ -51,32 +52,39 @@ const Filterbar = props => {
 
     return (
         <div className='table'>
-            <ul className='horizontal-list'>
-                <li><button id={html} className={htmlButtonClass} onClick={props.click}>
-                    <img src={HTML5} alt="html5 logo" />
-                    HTML
-                    </button></li>
-                <li><button id={css} className={cssButtonClass} onClick={props.click}>
-                    <img src={CSS3} alt="CSS3 logo" />
-                    CSS
-                    </button></li>
-                <li><button id={js} className={jsButtonClass} onClick={props.click}>
-                    <img src={JS} alt="JavaScript logo" />
-                    JavaScript
-                    </button></li>
-                <li><button id={ruby} className={rubyButtonClass} onClick={props.click}>
-                    <img src={RUBY} alt="Ruby logo" />
-                    Ruby
-                    </button></li>
-                <li><button id={reactjs} className={reactButtonClass} onClick={props.click}>
-                    <img src={REACTJS} alt="React.js logo" />
-                    React.js
-                    </button></li>
-                <li><button id={rails} className={railsButtonClass} onClick={props.click}>
-                    <img src={RAILS} alt="Rails logo" />
-                    Rails
-                    </button></li>
-            </ul>
+            <Scrollbars
+                className='scroll-shadow'
+                style={{height: 130}}
+                renderTrackHorizontal={props => <div {...props} className="track-horizontal"/>}
+                renderThumbHorizontal={props => <div {...props} className="thumb-horizontal"/>}
+                thumbSize={100}>
+                <ul className='horizontal-list'>
+                    <li><button id={html} className={htmlButtonClass} onClick={props.click}>
+                        <img src={HTML5} alt="html5 logo" />
+                        HTML
+                        </button></li>
+                    <li><button id={css} className={cssButtonClass} onClick={props.click}>
+                        <img src={CSS3} alt="CSS3 logo" />
+                        CSS
+                        </button></li>
+                    <li><button id={js} className={jsButtonClass} onClick={props.click}>
+                        <img src={JS} alt="JavaScript logo" />
+                        JavaScript
+                        </button></li>
+                    <li><button id={ruby} className={rubyButtonClass} onClick={props.click}>
+                        <img src={RUBY} alt="Ruby logo" />
+                        Ruby
+                        </button></li>
+                    <li><button id={reactjs} className={reactButtonClass} onClick={props.click}>
+                        <img src={REACTJS} alt="React.js logo" />
+                        React.js
+                        </button></li>
+                    <li><button id={rails} className={railsButtonClass} onClick={props.click}>
+                        <img src={RAILS} alt="Rails logo" />
+                        Rails
+                        </button></li>
+                </ul>
+            </Scrollbars>
         </div>
     );
 };

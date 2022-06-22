@@ -98,7 +98,6 @@
       z-index: 0;
     }
     .project-desc {
-      overflow-y: scroll;
       white-space: pre-wrap;
     }
     .project-link {
@@ -116,7 +115,16 @@
       margin-bottom: 0%;
     }
       .project-tools {
-        overflow-x: auto;
         font-size: .9em;
       }
+
+.track-horizontal {
+  min-width: 100%;
+  z-index: 150;
+  bottom: 0;
+}
+.thumb {
+  cursor: pointer;
+  background: var(--clr-secondary);
+}
   

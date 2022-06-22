@@ -21,7 +21,7 @@ const SGCW = new Project(
         {id: "four", url: PicFour}],
     "https://github.com/JacobMarq/stained-glass-cw",
     "https://jacobmarq.github.io/stained-glass-cw/",
-    ["React", "HTML", "CSS", "JavaScript", "Adobe Illustrator"],
+    ["React", "HTML", "CSS", "JavaScript", "Ai"],
 );
 
 export default SGCW;

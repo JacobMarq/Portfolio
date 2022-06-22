@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import GitHubLogo from "../../img/Icons/GitHub-Mark-32px.png";
 import GlobeIcon from "../../img/Icons/globe.svg";
 import './ProjectDisplay.css';
+import { Scrollbars } from 'react-custom-scrollbars-2';
 
 const ProjectPicDefaultClasses = " flex-column project-pic";
 const ProjectPicShow = " show flex-column project-pic"
@@ -68,17 +69,30 @@ const ProjectDisplay = props => {
                 <div className="project-column-right">
                     <div className="d-flex flex-column project-context">
                         
-                        <p className="ml-5p mt-10 h-75 project-desc">
-                            {project.description}
-                        </p>
+                        <Scrollbars
+                            style={{ height: 200 }}
+                            hideTracksWhenNotNeeded={true}
+                            renderThumbVertical={props => <div {...props} class='thumb'/>}
+                            autoHideTimeout={0}
+                            autoHideDuration={25}>
+                            <p className="mt-10 h-75 project-desc">
+                                {project.description}
+                            </p>
+                        </Scrollbars>
                         
                         <div className="d-flex flex-row flex-jc-space-between mt-auto project-card-footer"> 
                             
-                            <div className="d-flex flex-row project-tools w-65 mt-auto ml-10">
-                                {project.technologies.map((tech, key) => 
-                                    <p key={key} className="ml-10 mr-10 mb-10">{tech}</p>
-                                )}
-                            </div>
+                            <Scrollbars
+                                style={{height: 50}}
+                                renderTrackHorizontal={props => <div {...props} className="track-horizontal"/>}
+                                renderThumbHorizontal={props => <div {...props} className="thumb"/>}
+                                thumbSize={100}>
+                                <div className="d-flex flex-row project-tools w-65 mt-auto ml-10">
+                                    {project.technologies.map((tech, key) => 
+                                        <p key={key} className="ml-10 mr-10 mb-10 unselectable">{tech}</p>
+                                    )}
+                                </div>
+                            </Scrollbars>
 
                         </div>
                     </div>
