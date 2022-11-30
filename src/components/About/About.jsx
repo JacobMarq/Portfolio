@@ -22,7 +22,7 @@ class About extends React.Component {
                             - David Cuschieri
                         </p>
                     </div>
-                </AnimationOnScroll>;
+                </AnimationOnScroll>
                 
                 <div className='about-desc-container mt-10p mb-5p'>
                     <AnimationOnScroll 
