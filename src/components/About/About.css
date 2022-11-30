@@ -100,6 +100,7 @@
     color: var(--clr-secondary);
   }
   .about-cite {
+    font-family: 'Lemon';
     color: var(--clr-primary-light);
     z-index: 1;
   }
@@ -128,7 +129,8 @@
 }
 
 .view-resume-btn {
-  font-size: .9em;
+  font-size: 1rem;
+  font-weight: 600;
   display: flex;
   justify-content: center;
   align-items: center;

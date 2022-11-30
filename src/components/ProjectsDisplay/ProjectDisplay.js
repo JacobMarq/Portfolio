@@ -12,7 +12,7 @@ const ProjectDisplay = props => {
     const [activeImageIndex, setIndex] = useState(0);
     const [hovered, setHovered] = useState(false);
 
-    const { project } = props;
+    const { project, toggleDetailedView } = props;
 
     //check if image is hovered
     //use a counter ranged from 0 to the length of a project image array
@@ -66,7 +66,7 @@ const ProjectDisplay = props => {
                             </a>
                         </>
                         :
-                        <button className="mb-10 project-details-btn">
+                        <button onClick={toggleDetailedView} className="mb-10 project-details-btn">
                             View project details
                         </button> }
                     </div>

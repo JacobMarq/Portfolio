@@ -5,11 +5,11 @@ import GlobeIcon from "../../img/Icons/globe.svg";
 import { Scrollbars } from 'react-custom-scrollbars-2';
 
 function ProjectsFeature(props) {
-    const { project } = props;
+    const { project, toggleDetailedView } = props;
 
     return (
         <>
-            <div className="featured-container">
+            <div className="featured-container mb-25">
                 <h3 className="project-name ml-10 text-center">{project.name}</h3>
 
                 <div className="d-flex flex-row">
@@ -40,14 +40,14 @@ function ProjectsFeature(props) {
                         </a>
                     </>
                     :
-                    <button className="mb-10 project-details-btn center">
+                    <button onClick={toggleDetailedView} className="mb-25 project-details-btn center">
                         View project details
                     </button> }
                 </div>
 
 
-                <div className="d-flex flex-column project-context">
-                    <div className="d-flex flex-row flex-jc-space-between mt-auto featured-tool-bar"> 
+                <div className="d-flex flex-column project-context mb-25">
+                    <div className="d-flex flex-row flex-jc-space-between mt-auto featured-tool-bar mb-25"> 
                         
                         <Scrollbars
                             style={{height: 50}}

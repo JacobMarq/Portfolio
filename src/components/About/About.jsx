@@ -115,13 +115,14 @@ class About extends React.Component {
                             Vue, and expanding my JavaScript
                             knowledge by working with Node.js on the back-end.
                             I also am building my knowledge of Laravel
-                            using PHP.
+                            using PHP and MySQL.
                         </p>
                     </AnimationOnScroll>
                 </div>
                 
+                <p className='text-center color-white mb-10'>- redirects to public Google Drive folder -</p>
                 <div className="d-flex w-auto">
-
+                    
                     <button onClick={viewResume} className="unselectable view-resume-btn center p-10 mb-5p">
                         View Resume/CV
                     </button>

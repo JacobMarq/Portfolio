@@ -11,6 +11,7 @@ import ProjectDisplay from '../ProjectsDisplay/ProjectDisplay';
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 import { BENEV, BenevDetailed } from '../../projects/featured/BENEV';
 import ProjectsFeature from '../ProjectsFeature/ProjectsFeature';
+import ProjectsDetailedView from '../ProjectsDetailedView/ProjectsDetailedView';
 
 const Projects = [BLOG, BPAPI, JSCALC, SGCW, RPS, FSA, BENEV];
 
@@ -18,6 +19,7 @@ class ProjectsContainer extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
+            detailedView: false,
             projects: Projects,
             filterValues: [],
         }
@@ -103,8 +105,18 @@ class ProjectsContainer extends React.Component {
         const filterClicked = e.target.id;
         this.updateFilterValues(filterClicked);
     };
+
+    toggleDetailedView = () => {
+        this.setState(prevState => ({
+            detailedView: !prevState.detailedView
+        }));
+    }
     
     render() {
+        if (this.state.detailedView) {
+            return <ProjectsDetailedView project={BenevDetailed} toggleDetailedView={this.toggleDetailedView}/>
+        }
+
         const filteredProjects = this.filterProjects();
         return (
             <div className='container projects mb-10p mr-5p ml-5p'>
@@ -114,14 +126,14 @@ class ProjectsContainer extends React.Component {
                   animateOnce={true}>
                     <h1 className='header ml-10'>Projects</h1>
 
-                    <h2 className='ml-10'>Featured Project</h2>
-                    <ProjectsFeature project={BENEV}/>
+                    <h2 className='ml-10 featured-header'>Featured Project</h2>
+                    <ProjectsFeature project={BENEV} toggleDetailedView={this.toggleDetailedView}/>
                     
-                    <h3 className='filter-header text-center'>Filters</h3>
+                    <h3 className='filter-header mt-25 text-center'>FILTERS:</h3>
                     <Filterbar filterValues={this.state.filterValues} click={this.filterOnClickHandler}/>
 
-                    <p className='filter-results text-center'>{filteredProjects.length} result(s)</p>
-                    <p className='color-white ml-10'>Hover over project images to preview slideshow. (tap if on mobile)</p>
+                    <p className='filter-results text-center mb-25'>{filteredProjects.length} result(s)</p>
+                    <p className='color-white ml-10 mb-25'>Hover over project images to preview slideshow. (tap if on mobile)</p>
                 </AnimationOnScroll>
                 <AnimationOnScroll
                   animateIn='animate__fadeIn'>
@@ -132,7 +144,7 @@ class ProjectsContainer extends React.Component {
 
                         return(
                             
-                        <ProjectDisplay key={project.id} project={project}/>
+                        <ProjectDisplay key={project.id} project={project} toggleDetailedView={this.toggleDetailedView}/>
                         );
                     })}
                 </AnimationOnScroll>
