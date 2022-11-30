@@ -9,8 +9,8 @@ const description =
 "third party API with query strings." +
 "\n\n- utilizes multithreading for making " +
 "parallel requests" +
-"\n\n- Currently deployed on Heroku Free " +
-"Dynos so initial load WILL BE SLOW. " +
+"\n\n- Recently moved from Heroku to Render " +
+"due to the recent removal of Heroku's free tier" +
 "\n\n- Permitted Parameters are: " +
 "\ntags(required), sortBy, direction";
 
@@ -24,7 +24,7 @@ const BPAPI = new Project(
         {id: "three", url: BPAPIPicThree}],
     "",
     "https://fathomless-eyrie-37734.herokuapp.com/v1/posts?tags=tech",
-    ["Heroku", "Ruby", "Rails"],
+    ["Render", "Heroku", "Ruby", "Rails"],
 );
 
 export default BPAPI;

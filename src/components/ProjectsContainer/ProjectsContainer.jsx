@@ -9,8 +9,10 @@ import FSA from "../../projects/private/FSA";
 import Filterbar from './Filterbar/Filterbar';
 import ProjectDisplay from '../ProjectsDisplay/ProjectDisplay';
 import { AnimationOnScroll } from 'react-animation-on-scroll';
+import { BENEV, BenevDetailed } from '../../projects/featured/BENEV';
+import ProjectsFeature from '../ProjectsFeature/ProjectsFeature';
 
-const Projects = [BLOG, BPAPI, JSCALC, SGCW, RPS, FSA];
+const Projects = [BLOG, BPAPI, JSCALC, SGCW, RPS, FSA, BENEV];
 
 class ProjectsContainer extends React.Component {
     constructor(props) {
@@ -105,31 +107,34 @@ class ProjectsContainer extends React.Component {
     render() {
         const filteredProjects = this.filterProjects();
         return (
-            <div className='container projects mb-10p'>
+            <div className='container projects mb-10p mr-5p ml-5p'>
                 <AnimationOnScroll
-                  animateIn='animate__fadeInUp'
+                  animateIn='animate__fadeInDown'
                   initiallyVisible={false}
                   animateOnce={true}>
-                <h1 className='header ml-10'>Projects</h1>
-                <p className='color-white ml-10'>Hover over project images to preview slideshow. (tap if on mobile)</p>
-                
-                <h3 className='filter-header text-center'>Filters</h3>
-                <Filterbar filterValues={this.state.filterValues} click={this.filterOnClickHandler}/>
+                    <h1 className='header ml-10'>Projects</h1>
 
-                <p className='filter-results text-center'>{filteredProjects.length} result(s)</p>
+                    <h2 className='ml-10'>Featured Project</h2>
+                    <ProjectsFeature project={BENEV}/>
+                    
+                    <h3 className='filter-header text-center'>Filters</h3>
+                    <Filterbar filterValues={this.state.filterValues} click={this.filterOnClickHandler}/>
+
+                    <p className='filter-results text-center'>{filteredProjects.length} result(s)</p>
+                    <p className='color-white ml-10'>Hover over project images to preview slideshow. (tap if on mobile)</p>
                 </AnimationOnScroll>
                 <AnimationOnScroll
                   animateIn='animate__fadeIn'>
-                {filteredProjects.map(project => {
-                    if(!project) {
-                        <p className='ml-10'>no projects to load...</p>
-                    }
+                    {filteredProjects.map(project => {
+                        if(!project) {
+                            <p className='ml-10'>no projects to load...</p>
+                        }
 
-                    return(
-                        
-                    <ProjectDisplay key={project.id} project={project}/>
-                    );
-                })}
+                        return(
+                            
+                        <ProjectDisplay key={project.id} project={project}/>
+                        );
+                    })}
                 </AnimationOnScroll>
             </div>
         );

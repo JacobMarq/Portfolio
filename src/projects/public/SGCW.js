@@ -6,7 +6,7 @@ import PicFour from '../../img/SGCW/StainedGlassCW4.png';
 
 const description = 
 "A prototype for a client's business site " +
-"made with simple functionality to match " +
+"made with focused calls-to-action to meet " +
 "the current needs of the company" +
 "\n\nCustom icons made with Adobe Illustrator";
 

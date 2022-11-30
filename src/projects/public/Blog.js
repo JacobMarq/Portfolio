@@ -11,8 +11,8 @@ const description =
 "or disagreement for other users " +
 "content by liking, disliking, " +
 "favoriting, and following." +
-"\n\n- Currently deployed on Heroku Free " +
-"Dynos so initial load WILL BE SLOW.";
+"\n\n- Recently moved from Heroku to Render " +
+"due to the recent removal of Heroku's free tier";
 
 const BLOG = new Project(
     1,
@@ -25,7 +25,7 @@ const BLOG = new Project(
         {id: "four", url: BlogPicFour}],
     "https://github.com/JacobMarq/Blog",
     "https://the-blog-spot.herokuapp.com/",
-    ["PostgreSQL", "Heroku", "HTML", "JavaScript", "CSS", "Ruby", "Rails"],
+    ["PostgreSQL", "Render", "Heroku", "HTML", "JavaScript", "CSS", "Ruby", "Rails"],
 );
 
 export default BLOG;

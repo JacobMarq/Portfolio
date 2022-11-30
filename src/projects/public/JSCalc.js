@@ -2,10 +2,9 @@ import Project from "../../project";
 import JSCalcPicOne from '../../img/JavaScript Calculator/main.png';
 
 const description = 
-"A JavaScript calculator based around the " +
-"functionality of the standard Window's " +
-"calculator. Also, featuring a history/memory " +
-"tab and keyboard functionality.";
+"A JavaScript calculator " +
+"featuring a history/memory tab " +
+"that allows keyboard inputs.";
 
 const JSCALC = new Project(
     3,

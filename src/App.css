@@ -65,8 +65,10 @@ h3 {
 }
 
 :root {
-  --clr-primary: #c4ceab;
-  --clr-primary-light: #ceccab;
+  /* --clr-primary: #c4ceab; */
+  --clr-primary: #6f66dc;
+  --clr-primary-light: #9d8bd5;
+  /* --clr-primary-light: #ceccab; */
   --clr-secondary: #b2b7dd;
   --clr-tertiary: #384857;
   --clr-tertiary-light: #54616e;
@@ -193,7 +195,7 @@ h3 {
 .primary-btn:hover,
 .primary-btn:focus {
   background-color: var(--clr-primary);
-  color: var(--clr-background);
+  color: var(--clr-white);
 }
 
 .secondary-btn {
@@ -313,6 +315,9 @@ h3 {
   margin-bottom: 0;
 }
 
+.mr-5 {
+  margin-right: 5px;
+}
 .mr-10 {
   margin-right: 10px;
 }
@@ -322,7 +327,9 @@ h3 {
 .mr-5p {
   margin-right: 5%;
 }
-
+.mr-auto {
+  margin-right: auto;
+}
 
 .ml-5 {
   margin-left: 5px;
@@ -335,6 +342,9 @@ h3 {
 }
 .ml-5p {
   margin-left: 5%;
+}
+.ml-10p {
+  margin-left: 10%;
 }
 .ml-2-5p {
   margin-left: 2.5%;
@@ -395,6 +405,9 @@ h3 {
 }
 .w-25 {
   width: 25%;
+}
+.w-fc {
+  width: fit-content;
 }
 
 /* 

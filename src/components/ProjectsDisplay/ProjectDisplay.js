@@ -48,21 +48,27 @@ const ProjectDisplay = props => {
                     </div>
                     
                     <div className="d-flex flex-row mt-5p">  
-                        <a target={project.link === "" ? "_self" : "_blank"}
-                            rel='noreferrer'
-                            href={project.link === "" ? "/" : project.link}
-                            className="ml-10 mb-5 project-link"
-                            style={{background: `url(${project.link === "" ? "" : GlobeIcon}) no-repeat`, backgroundSize: '100% 100%'}}>
-                            view app
-                        </a>
-                        
-                        <a target={project.github === "" ? "_self" : "_blank"}
-                            rel='noreferrer'
-                            href={project.github === "" ? "/" : project.github}
-                            className="ml-10 mb-5 project-link"
-                            style={{background: `url(${project.github === "" ? "" : GitHubLogo}) no-repeat`, backgroundSize: '100% 100%'}}>
-                            view repo
-                        </a>
+                        { (project.link || project.github) ? <>
+                            <a target={project.link === "" ? "_self" : "_blank"}
+                                rel='noreferrer'
+                                href={project.link === "" ? "/" : project.link}
+                                className="ml-10 mb-5 project-link"
+                                style={{background: `url(${project.link === "" ? "" : GlobeIcon}) no-repeat`, backgroundSize: '100% 100%'}}>
+                                view app
+                            </a>
+                            
+                            <a target={project.github === "" ? "_self" : "_blank"}
+                                rel='noreferrer'
+                                href={project.github === "" ? "/" : project.github}
+                                className="ml-10 mb-5 project-link"
+                                style={{background: `url(${project.github === "" ? "" : GitHubLogo}) no-repeat`, backgroundSize: '100% 100%'}}>
+                                view repo
+                            </a>
+                        </>
+                        :
+                        <button className="mb-10 project-details-btn">
+                            View project details
+                        </button> }
                     </div>
                 </div>
 
@@ -72,7 +78,7 @@ const ProjectDisplay = props => {
                         <Scrollbars
                             style={{ height: 200 }}
                             hideTracksWhenNotNeeded={true}
-                            renderThumbVertical={props => <div {...props} class='thumb'/>}
+                            renderThumbVertical={props => <div {...props} className='thumb'/>}
                             autoHideTimeout={0}
                             autoHideDuration={25}>
                             <p className="mt-10 h-75 project-desc">

@@ -4,6 +4,10 @@ import { Link } from 'react-router-dom';
 import './About.css';
 class About extends React.Component {
     render() {
+        const viewResume = () => {
+            window.open('https://drive.google.com/drive/folders/1HSE2ZuenJ2AvAGx91oOXywwQpzKWmqcM?usp=sharing')
+        }
+
         return (
             <div className="container">
                 <AnimationOnScroll 
@@ -60,29 +64,32 @@ class About extends React.Component {
                       className='about-desc' 
                       animateIn='animate__slideInRight'
                       animateOnce={true}>
+                        <h3>Front-end</h3>
                         <p className="about-p default-cursor unselectable">
                             My experience with Front-end development has
-                            been centered around React. Starting with the
-                            standard HTML, CSS, and JavaScript my goal is 
-                            to keep my code clean, structed, and concise.
-                            With React I began using only Standard Components,
-                            and have since learned about Functional Components;
-                            React Hooks such as useEffect, useState, useMemo,
-                            and useRef; and managing global state with the 
-                            help of Redux.
+                            been focused around JavaScript / TypeScript,
+                            using React with Redux. I am also becoming more
+                            experienced with Mobile Development through
+                            React Native.
                         </p>
                         <br />
 
+                        <h3>Back-end</h3>
                         <p className="about-p default-cursor unselectable">
-                            My Back-end language of choice is Ruby. The Rails
-                            framework has proven to be intuitive and a pleasure
-                            to work with. As a result my experience with
-                            databases began with MySQL and SQLite through
-                            focused learning. Upon further understanding Rails
-                            and its production environment I took on learning
-                            the nuance between SQLite and PostgreSQL. While Ruby
-                            is my language of choice, I am always open to working
-                            with whatever tools best fit the job at hand. 
+                            My server side language of choice is Ruby but I
+                            also have professional experience with PHP and Python.
+                            The frameworks I've developed with are Rails and Laravel.
+                            Database languages I use are MySQL, PostgreSQL, and SQLite,
+                            with a preference for PostgreSQL.
+                        </p>
+                        <br />
+                        
+                        <h3>General Knowledge</h3>
+                        <p className="about-p default-cursor unselectable">
+                            I've designed and developed REST APIs. I am familiar with
+                            3rd party APIs, WebSockets, Webhooks, and SDK integration. 
+                            I also have implemented analytical tools for data virtualization,
+                            and visualization for business needs. 
                         </p>
                     </AnimationOnScroll>
                 </div>
@@ -103,19 +110,21 @@ class About extends React.Component {
                       animateOnce={true}>
                         <p className="about-p default-cursor unselectable">
                             My current progression goals include
-                            becoming more well rounded with React
-                            and Redux, implementing SASS, tinkering
+                            becoming advanced with React, tinkering
                             with a true Front-end Framework such as
-                            Vue, and expanding my JavaScript 
-                            knowledge by working with Node.js.
+                            Vue, and expanding my JavaScript
+                            knowledge by working with Node.js on the back-end.
+                            I also am building my knowledge of Laravel
+                            using PHP.
                         </p>
                     </AnimationOnScroll>
                 </div>
                 
                 <div className="d-flex w-auto">
-                    <Link to="/projects" id='view-projects-btn' className="unselectable primary-btn center p-10 mb-5p">
-                        View Projects
-                    </Link>
+
+                    <button onClick={viewResume} className="unselectable view-resume-btn center p-10 mb-5p">
+                        View Resume/CV
+                    </button>
                 </div>
             </div>
         );
