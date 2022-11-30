@@ -17,7 +17,7 @@ function ProjectsFeature(props) {
                         <img className="featured-img" src={project.images[0].url} />
                     </div>
                     <div className="featured-img-mobile-wrapper">
-                        <img className="featured-img" src={project.images[0].url} />
+                        <img className="featured-img" src={project.featuredProjectImg} />
                     </div>
                 </div>
                 
