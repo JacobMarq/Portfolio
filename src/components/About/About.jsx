@@ -56,7 +56,7 @@ class About extends React.Component {
                       animateIn='animate__slideInLeft' 
                       animateOnce={true}>
                         <h2 className='about-h2'>
-                            Current Skills
+                            Skills
                         </h2>
                     </AnimationOnScroll>
 
@@ -100,7 +100,7 @@ class About extends React.Component {
                       animateIn='animate__slideInLeft' 
                       animateOnce={true}>
                         <h2 className='about-h2'>
-                            Progression Goals
+                            Current Goals
                         </h2>
                     </AnimationOnScroll>
 
@@ -109,7 +109,7 @@ class About extends React.Component {
                       animateIn='animate__slideInRight'
                       animateOnce={true}>
                         <p className="about-p default-cursor unselectable">
-                            My current progression goals include
+                            My current progress goals include
                             becoming advanced with React, tinkering
                             with a true Front-end Framework such as
                             Vue, and expanding my JavaScript

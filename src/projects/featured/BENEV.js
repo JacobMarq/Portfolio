@@ -46,7 +46,7 @@ const body3 =
 export const BENEV = new Project(
     999,
     "bpapi",
-    "BENEVV Web & Mobile Apps",
+    "BENEVV Web & Mobile",
     description,
     [   {id: "one", url: BENEVVHOME},
         {id: "two", url: DONATIONMAIN},
@@ -59,7 +59,7 @@ export const BENEV = new Project(
 );
 
 export const BenevDetailed = {
-    name: "BENEVV Web & Mobile Apps",
+    name: "BENEVV Web & Mobile",
     mainImg: BENEVVHOME,
     descImg: BENEVVMOBILE,
     description: description + extendedDesc,
