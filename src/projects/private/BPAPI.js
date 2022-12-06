@@ -22,8 +22,8 @@ const BPAPI = new Project(
     [   {id: "one", url: BPAPIPicOne}, 
         {id: "two", url: BPAPIPicTwo}, 
         {id: "three", url: BPAPIPicThree}],
+    "https://github.com/JacobMarq/blog_posts",
     "",
-    "https://fathomless-eyrie-37734.herokuapp.com/v1/posts?tags=tech",
     ["Render", "Heroku", "Ruby", "Rails"],
 );
 

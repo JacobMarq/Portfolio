@@ -24,7 +24,7 @@ const BLOG = new Project(
         {id: "three", url: BlogPicThree}, 
         {id: "four", url: BlogPicFour}],
     "https://github.com/JacobMarq/Blog",
-    "https://the-blog-spot.herokuapp.com/",
+    "https://theblogspot.onrender.com/",
     ["PostgreSQL", "Render", "Heroku", "HTML", "JavaScript", "CSS", "Ruby", "Rails"],
 );
 
