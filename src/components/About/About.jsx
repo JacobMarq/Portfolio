@@ -39,13 +39,15 @@ class About extends React.Component {
                       animateIn='animate__slideInRight'
                       animateOnce={true}>
                         <p className="about-p default-cursor unselectable">
-                            My name is Jacob Marquez, I build 
+                            My name is Jacob Marquez, I am a Software Developer @ IMS Integration
+                            with 2+ years of Full Stack experience I build 
                             <span> elegant</span> and <span>efficient </span> 
                             applications. I'm experienced in 
                             <span> Front</span> and <span>
                             Back-end web development </span> 
                             with a <span>passion </span> 
-                            for the type of work that I do.
+                            for the type of work that I do. I am also familiar with
+                            automation, AI, and Machine Learning.
                         </p>
                     </AnimationOnScroll>
                 </div>
@@ -67,20 +69,17 @@ class About extends React.Component {
                         <h3>Front-end</h3>
                         <p className="about-p default-cursor unselectable">
                             My experience with Front-end development has
-                            been focused around JavaScript / TypeScript,
-                            using React with Redux. I am also becoming more
-                            experienced with Mobile Development through
-                            React Native.
+                            been primarily focused around JavaScript and TypeScript,
+                            using React with Redux, React Native, and AngularJS.
                         </p>
                         <br />
 
                         <h3>Back-end</h3>
                         <p className="about-p default-cursor unselectable">
-                            My server side language of choice is Ruby but I
-                            also have professional experience with PHP and Python.
-                            The frameworks I've developed with are Rails and Laravel.
-                            Database languages I use are MySQL, PostgreSQL, and SQLite,
-                            with a preference for PostgreSQL.
+                            My expertise for back end languages is with Ruby, Java, and Python
+                            with some additional experience in PHP from an Intership at Smarttwigs.
+                            The frameworks I've developed with are Rails, Django, Struts and Laravel.
+                            Database languages I use are MySQL, PostgreSQL, and SQLite.
                         </p>
                         <br />
                         
@@ -89,7 +88,9 @@ class About extends React.Component {
                             I've designed and developed REST APIs. I am familiar with
                             3rd party APIs, WebSockets, Webhooks, and SDK integration. 
                             I also have implemented analytical tools for data virtualization,
-                            and visualization for business needs. 
+                            and visualization for business needs. At my current position I've
+                            built a suite of automation tools to aid in improving developer
+                            efficiency reducing maintainence time for our support team.
                         </p>
                     </AnimationOnScroll>
                 </div>
@@ -110,12 +111,10 @@ class About extends React.Component {
                       animateOnce={true}>
                         <p className="about-p default-cursor unselectable">
                             My current progress goals include
-                            becoming advanced with React, tinkering
-                            with a true Front-end Framework such as
-                            Vue, and expanding my JavaScript
-                            knowledge by working with Node.js on the back-end.
-                            I also am building my knowledge of Laravel
-                            using PHP and MySQL.
+                            expanding my existing my existing knowledge of Full Stack development
+                            and getting a better hold on Ai and Machine Learning. Over the past
+                            2 years I've become proficient at developing and maintaing applications
+                            from Front to back however, there is always more to learn.
                         </p>
                     </AnimationOnScroll>
                 </div>
