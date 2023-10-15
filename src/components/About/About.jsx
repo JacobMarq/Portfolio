@@ -1,11 +1,12 @@
 import React from 'react';
 import { AnimationOnScroll } from 'react-animation-on-scroll';
-import { Link } from 'react-router-dom';
 import './About.css';
+import Pdf from '../../documents/JacobMarquez.pdf';
+
 class About extends React.Component {
     render() {
         const viewResume = () => {
-            window.open('https://drive.google.com/drive/folders/1HSE2ZuenJ2AvAGx91oOXywwQpzKWmqcM?usp=sharing')
+            window.open(Pdf)
         }
 
         return (
@@ -24,6 +25,12 @@ class About extends React.Component {
                     </div>
                 </AnimationOnScroll>
                 
+                <div className="d-flex w-auto">
+                    <button onClick={viewResume} className="unselectable view-resume-btn center p-15" label='Resume'>
+                        View Resume/CV
+                    </button>
+                </div>
+
                 <div className='about-desc-container mt-10p mb-5p'>
                     <AnimationOnScroll 
                       className='about-question' 
@@ -117,14 +124,6 @@ class About extends React.Component {
                             from Front to back however, there is always more to learn.
                         </p>
                     </AnimationOnScroll>
-                </div>
-                
-                <p className='text-center color-white mb-10'>- redirects to public Google Drive folder -</p>
-                <div className="d-flex w-auto">
-                    
-                    <button onClick={viewResume} className="unselectable view-resume-btn center p-10 mb-5p">
-                        View Resume/CV
-                    </button>
                 </div>
             </div>
         );

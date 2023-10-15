@@ -1,4 +1,3 @@
-import react from "react";
 import './ProjectsFeature.css';
 import GitHubLogo from "../../img/Icons/GitHub-Mark-32px.png";
 import GlobeIcon from "../../img/Icons/globe.svg";
@@ -14,11 +13,13 @@ function ProjectsFeature(props) {
 
                 <div className="d-flex flex-row">
                     <div className="featured-img-desktop-wrapper">
-                        <img className="featured-img" src={project.images[0].url} />
+                        <img className="featured-img" src={project.images[0].url} alt='featured project desktop view'/>
                     </div>
+                    { project.featuredMobileImg ?
                     <div className="featured-img-mobile-wrapper">
-                        <img className="featured-img" src={project.featuredProjectImg} />
-                    </div>
+                        <img className="featured-img" src={project.featuredMobileImg} alt='featured project mobile view'/>
+                    </div>:
+                    <></>}
                 </div>
                 
                 <div className="d-flex flex-row mt-5p">
@@ -40,7 +41,7 @@ function ProjectsFeature(props) {
                         </a>
                     </>
                     :
-                    <button onClick={toggleDetailedView} className="mb-25 project-details-btn center">
+                    <button id={project.id} onClick={toggleDetailedView} className="mb-25 project-details-btn center">
                         View project details
                     </button> }
                 </div>

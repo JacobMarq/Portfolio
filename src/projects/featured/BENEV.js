@@ -8,6 +8,9 @@ import REALTIMECHATMOBILE from "../../img/BENEVV/RealTimeChatMobile.png";
 import ORGANIZATIONHOME from "../../img/BENEVV/OrganizationHome.png";
 import DONATIONCHECKOUT from "../../img/BENEVV/DonationPaymentCard.png";
 import BENEVVPAYMENTS from "../../img/BENEVV/BenevvPayments.png";
+import {DetailedProject, DetailedProjectSection } from "../../detailedProject";
+
+const name = "BENEVV Web & Mobile";
 
 const description = 
 "Owned by SmartTwigs, BENEVV is a social platform meant for sharing and " +
@@ -22,7 +25,7 @@ const extendedDesc =
 "BENEVV uses PHP, the Laravel framework, and MySQL " +
 "for its database. ";
 
-const body1 =
+const p1 =
 "Organizations using BENEVV need access to as much information " +
 "about their campaigns and events as possible. This demand " +
 "led to the implementation of gathering important analytics " +
@@ -31,12 +34,12 @@ const body1 =
 "bringing this page to life was one of my most recent tasks " +
 "as part of the SmartTwigs team. ";
 
-const body2 =
+const p2 =
 "As a form of social media platform, BENEVV needed a way for " +
 "users to communicate effectively. This meant introducing a " +
 "Real-Time messaging feature. ";
 
-const body3 =
+const p3 =
 "Supporting community efforts is a large factor of what " +
 "BENEVV stands for. Part of that support involves monetary " +
 "aid in the form of donations. My first task as part of the " +
@@ -44,9 +47,9 @@ const body3 =
 "the donation checkout process for Web and Mobile. ";
 
 export const BENEV = new Project(
-    999,
+    1000,
     "bpapi",
-    "BENEVV Web & Mobile",
+    name,
     description,
     [   {id: "one", url: BENEVVHOME},
         {id: "two", url: DONATIONMAIN},
@@ -58,19 +61,33 @@ export const BENEV = new Project(
     BENEVVMAINMOBILE,
 );
 
-export const BenevDetailed = {
-    name: "BENEVV Web & Mobile",
-    mainImg: BENEVVHOME,
-    descImg: BENEVVMOBILE,
-    description: description + extendedDesc,
-    refName: "BENEVV",
-    header1: "Data Visualization",
-    bodyImg1: ORGANIZATIONHOME,
-    body1: body1,
-    header2: "Real Time Chat",
-    bodyImg2: REALTIMECHATMOBILE,
-    body2: body2,
-    header3: "Donation Workflow",
-    bodyImg3: DONATIONCHECKOUT,
-    body3: body3,
-}
+const section1 = new DetailedProjectSection(
+    "BENEVV",
+    BENEVVMOBILE,
+    description + extendedDesc,
+);
+const section2 = new DetailedProjectSection(
+    "Data Visualization",
+    ORGANIZATIONHOME,
+    p1
+);
+const section3 = new DetailedProjectSection(
+    "Real Time Chat",
+    REALTIMECHATMOBILE,
+    p2
+);
+const section4 = new DetailedProjectSection(
+    "Donation Workflow",
+    DONATIONCHECKOUT,
+    p3
+);
+
+export const BenevDetailed = new DetailedProject(
+    1000,
+    name,
+    BENEVVHOME,
+    section1,
+    section2,
+    section3,
+    section4
+);

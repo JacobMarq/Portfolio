@@ -20,6 +20,7 @@ class Home extends React.Component {
                     <p className="home-text m-0 default-cursor unselectable">
                         Software Developer
                     </p>
+                    {/* eslint-disable-next-line */}
                     <p className="home-text-muted mt-5 mb-0 default-cursor">
                         // Full Stack web development
                     </p>

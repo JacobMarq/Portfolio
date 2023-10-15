@@ -1,0 +1,11 @@
+.orb {
+    display: block;
+    width: 25px;
+    height: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50px;
+    background-color: var(--clr-tertiary);
+}

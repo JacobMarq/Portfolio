@@ -14,13 +14,17 @@ import ProjectsFeature from '../ProjectsFeature/ProjectsFeature';
 import ProjectsDetailedView from '../ProjectsDetailedView/ProjectsDetailedView';
 
 const Projects = [BLOG, BPAPI, JSCALC, SGCW, RPS, FSA, BENEV];
+const DetailedProjects = [BenevDetailed];
 
 class ProjectsContainer extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
             detailedView: false,
+            curDetailedView: 0,
             projects: Projects,
+            featuredProjects: Projects.filter((project) => project.id >= 1000),
+            detailedProjects: DetailedProjects,
             filterValues: [],
         }
     };
@@ -106,15 +110,20 @@ class ProjectsContainer extends React.Component {
         this.updateFilterValues(filterClicked);
     };
 
-    toggleDetailedView = () => {
+    toggleDetailedView = (e) => {
         this.setState(prevState => ({
-            detailedView: !prevState.detailedView
+            detailedView: !prevState.detailedView,
+            curDetailedView: parseInt(e.target.id)
         }));
+    }
+
+    getDetailedView() {
+        return this.state.detailedProjects.find((project) => project.id === this.state.curDetailedView);
     }
     
     render() {
         if (this.state.detailedView) {
-            return <ProjectsDetailedView project={BenevDetailed} toggleDetailedView={this.toggleDetailedView}/>
+            return <ProjectsDetailedView project={this.getDetailedView()} toggleDetailedView={this.toggleDetailedView}/>
         }
 
         const filteredProjects = this.filterProjects();
@@ -126,8 +135,10 @@ class ProjectsContainer extends React.Component {
                   animateOnce={true}>
                     <h1 className='header ml-10'>Projects</h1>
 
-                    <h2 className='ml-10 featured-header'>Featured Project</h2>
-                    <ProjectsFeature project={BENEV} toggleDetailedView={this.toggleDetailedView}/>
+                    <h2 className='ml-10 featured-header'>Featured Projects</h2>
+                    {this.state.featuredProjects.map((featuredProject, index) => {
+                        return <ProjectsFeature key={index} project={featuredProject} toggleDetailedView={this.toggleDetailedView}/>;
+                    })}
                     
                     <h3 className='filter-header mt-25 text-center'>FILTERS:</h3>
                     <Filterbar filterValues={this.state.filterValues} click={this.filterOnClickHandler}/>
@@ -135,19 +146,15 @@ class ProjectsContainer extends React.Component {
                     <p className='filter-results text-center mb-25'>{filteredProjects.length} result(s)</p>
                     <p className='color-white ml-10 mb-25'>Hover over project images to preview slideshow. (tap if on mobile)</p>
                 </AnimationOnScroll>
-                <AnimationOnScroll
-                  animateIn='animate__fadeIn'>
                     {filteredProjects.map(project => {
                         if(!project) {
                             <p className='ml-10'>no projects to load...</p>
                         }
 
                         return(
-                            
-                        <ProjectDisplay key={project.id} project={project} toggleDetailedView={this.toggleDetailedView}/>
+                            <ProjectDisplay key={project.id} project={project} toggleDetailedView={this.toggleDetailedView}/>
                         );
                     })}
-                </AnimationOnScroll>
             </div>
         );
     };

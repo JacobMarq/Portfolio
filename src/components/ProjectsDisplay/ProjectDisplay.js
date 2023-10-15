@@ -66,7 +66,7 @@ const ProjectDisplay = props => {
                             </a>
                         </>
                         :
-                        <button onClick={toggleDetailedView} className="mb-10 project-details-btn">
+                        <button id={project.id} onClick={toggleDetailedView} className="mb-10 project-details-btn">
                             View project details
                         </button> }
                     </div>

@@ -84,7 +84,7 @@ const Contact = () => {
                             <p className='message-chars-left'>{ messageCharsLeft }</p>
                     <br/>
 
-                    <input id='send-message-btn' className='unselectable w-auto p-10 mt-5p mb-25 center primary-btn' type='submit' value='Send Message' />
+                    <input id='send-message-btn' className='unselectable w-auto p-15 mt-5p mb-25 center primary-btn' type='submit' value='Send Message' />
                 </form>
             </div>
         );
