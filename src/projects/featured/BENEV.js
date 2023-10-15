@@ -48,6 +48,7 @@ const p3 =
 
 export const BENEV = new Project(
     1000,
+    "Featured",
     "bpapi",
     name,
     description,

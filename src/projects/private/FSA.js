@@ -14,6 +14,7 @@ const description =
 
 const FSA = new Project(
     6,
+    "Private",
     "fsa",
     "Students Assessment",
     description,

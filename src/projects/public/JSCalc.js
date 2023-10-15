@@ -8,6 +8,7 @@ const description =
 
 const JSCALC = new Project(
     3,
+    "Public",
     "jscalc",
     "JavaScript Calculator",
     description,

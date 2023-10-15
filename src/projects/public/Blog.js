@@ -16,6 +16,7 @@ const description =
 
 const BLOG = new Project(
     1,
+    "Public",
     "blog",
     "The-Blog-Spot",
     description,

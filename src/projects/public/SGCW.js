@@ -12,6 +12,7 @@ const description =
 
 const SGCW = new Project(
     4,
+    "Public",
     "sgcw",
     "Stained-Glass-CW",
     description,

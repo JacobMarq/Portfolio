@@ -16,6 +16,7 @@ const description =
 
 const BPAPI = new Project(
     2,
+    "Private",
     "bpapi",
     "Blog Posts API",
     description,

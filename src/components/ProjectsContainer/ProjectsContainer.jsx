@@ -1,20 +1,11 @@
 import './ProjectsContainer.css';
 import React from 'react';
-import BLOG from "../../projects/public/Blog";
-import BPAPI from "../../projects/private/BPAPI";
-import JSCALC from "../../projects/public/JSCalc";
-import SGCW from "../../projects/public/SGCW";
-import RPS from "../../projects/public/RPS";
-import FSA from "../../projects/private/FSA";
 import Filterbar from './Filterbar/Filterbar';
 import ProjectDisplay from '../ProjectsDisplay/ProjectDisplay';
 import { AnimationOnScroll } from 'react-animation-on-scroll';
-import { BENEV, BenevDetailed } from '../../projects/featured/BENEV';
 import ProjectsFeature from '../ProjectsFeature/ProjectsFeature';
 import ProjectsDetailedView from '../ProjectsDetailedView/ProjectsDetailedView';
-
-const Projects = [BLOG, BPAPI, JSCALC, SGCW, RPS, FSA, BENEV];
-const DetailedProjects = [BenevDetailed];
+import { DetailedProjects, Projects } from '../../projects';
 
 class ProjectsContainer extends React.Component {
     constructor(props) {
@@ -23,7 +14,7 @@ class ProjectsContainer extends React.Component {
             detailedView: false,
             curDetailedView: 0,
             projects: Projects,
-            featuredProjects: Projects.filter((project) => project.id >= 1000),
+            featuredProjects: Projects.filter((project) => project.type === "Featured"),
             detailedProjects: DetailedProjects,
             filterValues: [],
         }
