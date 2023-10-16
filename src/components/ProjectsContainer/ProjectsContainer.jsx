@@ -7,6 +7,13 @@ import ProjectsFeature from '../ProjectsFeature/ProjectsFeature';
 import ProjectsDetailedView from '../ProjectsDetailedView/ProjectsDetailedView';
 import { DetailedProjects, Projects } from '../../projects';
 
+// Add a current page pointer to state
+// (Optional) add # to display value to state; # to display select dropdown to UI; 3(default),5,7 
+// Edit filtered projects map to use slice (begin, end) and calculate based on # to display and cur page
+// Add page counter 0 - max(pages), "Page X of (Total Pages)"
+// Add page traversal method: next, back, first, last
+// Add arrows and buttons to UI for page traversal methods
+
 class ProjectsContainer extends React.Component {
     constructor(props) {
         super(props);

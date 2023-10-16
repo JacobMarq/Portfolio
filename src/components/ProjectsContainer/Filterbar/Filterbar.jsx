@@ -27,7 +27,7 @@ const Filterbar = props => {
     const handleMouseMove = (e) => {
       if (!isScrolling) return;
       const x = e.pageX - divRef.current.offsetLeft;
-      const walk = (x - startX) * 2; //scroll-fast
+      const walk = (x - startX) * 2;
       divRef.current.scrollLeft = scrollX - walk;
     };
 

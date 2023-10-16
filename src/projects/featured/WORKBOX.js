@@ -10,7 +10,7 @@ import DONATIONCHECKOUT from "../../img/BENEVV/DonationPaymentCard.png";
 import BENEVVPAYMENTS from "../../img/BENEVV/BenevvPayments.png";
 import {DetailedProject, DetailedProjectSection } from "../../detailedProject";
 
-const name = "BENEVV Web & Mobile";
+const name = "Workbox";
 
 const description = 
 "Owned by SmartTwigs, BENEVV is a social platform meant for sharing and " +
@@ -46,10 +46,10 @@ const p3 =
 "SmartTwigs engineering team was to handle the development of " +
 "the donation checkout process for Web and Mobile. ";
 
-export const BENEV = new Project(
+export const WORKBOX = new Project(
     1000,
     "Featured",
-    "benevv",
+    "workbox",
     name,
     description,
     [   {id: "one", url: BENEVVHOME},
@@ -58,12 +58,12 @@ export const BENEV = new Project(
         {id: "four", url: BENEVVPAYMENTS}],
     "",
     "",
-    ["React", "ReactNative", "Expo", "TypeScript", "JavaScript", "PHP", "Laravel", "MySQL"],
+    ["Angular", "Java", "JavaScript", "MySQL"],
     BENEVVMAINMOBILE,
 );
 
 const section1 = new DetailedProjectSection(
-    "BENEVV",
+    "Workbox",
     BENEVVMOBILE,
     description + extendedDesc,
 );
@@ -83,7 +83,7 @@ const section4 = new DetailedProjectSection(
     p3
 );
 
-export const BenevDetailed = new DetailedProject(
+export const WorkboxDetailed = new DetailedProject(
     1000,
     name,
     BENEVVHOME,

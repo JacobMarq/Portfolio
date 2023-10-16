@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import GitHubLogo from "../../img/Icons/GitHub-Mark-32px.png";
 import GlobeIcon from "../../img/Icons/globe.svg";
+import ViewFileIcon from "../../img/Icons/view-file.png";
 import './ProjectDisplay.css';
 import { Scrollbars } from 'react-custom-scrollbars-2';
 
@@ -53,7 +54,7 @@ const ProjectDisplay = props => {
                                 rel='noreferrer'
                                 href={project.link === "" ? "/" : project.link}
                                 className="ml-10 mb-5 project-link"
-                                style={{background: `url(${project.link === "" ? "" : GlobeIcon}) no-repeat`, backgroundSize: '100% 100%'}}>
+                                style={{background: `url(${project.link === "" ? "" : project.type === "School" ? ViewFileIcon : GlobeIcon}) no-repeat`, backgroundSize: '100% 100%'}}>
                                 view app
                             </a>
                             
