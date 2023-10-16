@@ -72,6 +72,7 @@ h3 {
   --clr-secondary: #b2b7dd;
   --clr-tertiary: #384857;
   --clr-tertiary-light: #54616e;
+  --clr-tertiary-disabled: #54616e8c;
   --clr-white: #fff;
   --clr-background: #221f28;
   --clr-alert: rgb(255, 0, 0);
@@ -215,6 +216,18 @@ h3 {
 .secondary-btn:hover,
 .secondary-btn:focus {
   background-color: var(--clr-tertiary);
+}
+.secondary-btn.disabled {
+  cursor: default;
+  background-color: transparent;
+  border: var(--clr-tertiary-disabled) 3px solid;
+  color: var(--clr-tertiary-disabled);
+}
+.secondary-btn.disabled:hover,
+.secondary-btn.disabled:focus {
+  background-color: transparent;
+  border: var(--clr-tertiary-disabled) 3px solid;
+  color: var(--clr-tertiary-disabled);
 }
 
 /* ====================================================

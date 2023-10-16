@@ -1,11 +1,11 @@
 import Project from "../../project";
-import IrisDTCPicOne from "../../img/IrisDTC/Title Image.png";
+import IrisDTCPicOne from "../../img/IrisDTC/TitleImage.png";
 import IrisDTCPicTwo from "../../img/IrisDTC/Tree1.png";
 import IrisDTCPicThree from "../../img/IrisDTC/Tree2.png";
 import IrisDTCFile from '../../documents/IrisDecisionTreeClassifier.pdf';
 
 const IRISDTC = new Project(
-    379,
+    3795,
     "School",
     "irisdtc",
     "Iris Decision Tree Classifier",

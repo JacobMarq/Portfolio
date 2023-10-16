@@ -1,9 +1,9 @@
 import Project from "../../project";
-import CCFraudPicOne from "../../img/CCFraud/Title Image.png";
+import CCFraudPicOne from "../../img/CCFraud/TitleImage.png";
 import CCFraudFile from '../../documents/CreditCardFraudDetection.pdf';
 
 const CCFRAUD = new Project(
-    379,
+    3793,
     "School",
     "ccfraud",
     "CC Fraud Detection",

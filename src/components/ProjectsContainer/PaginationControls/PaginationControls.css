@@ -1,0 +1,11 @@
+.pagination-console {
+    display: flex;
+    width: min-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pagination-btn {
+    margin-left: 5px;
+    margin-right: 5px;
+}
