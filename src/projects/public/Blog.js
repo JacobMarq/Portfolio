@@ -27,6 +27,8 @@ const BLOG = new Project(
     "https://github.com/JacobMarq/Blog",
     "https://theblogspot.onrender.com/",
     ["PostgreSQL", "Render", "Heroku", "HTML", "JavaScript", "CSS", "Ruby", "Rails"],
+    "",
+    "Y"
 );
 
 export default BLOG;

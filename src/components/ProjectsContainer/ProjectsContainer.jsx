@@ -10,6 +10,7 @@ import ProjectsListLengthSelect from './ProjectsListLengthSelect/ProjectsListLen
 import PaginationControls from './PaginationControls/PaginationControls';
 
 const numToDisplayOptions = [3,5,7];
+const projects = Projects.filter((project) => project.active === "Y");
 
 class ProjectsContainer extends React.Component {
     constructor(props) {
@@ -19,9 +20,9 @@ class ProjectsContainer extends React.Component {
             numToDisplay: numToDisplayOptions[0],
             detailedView: false,
             curDetailedView: 0,
-            projects: Projects,
-            filteredProjects: Projects,
-            featuredProjects: Projects.filter((project) => project.type === "Featured"),
+            projects: projects,
+            filteredProjects: projects,
+            featuredProjects: projects.filter((project) => project.type === "Featured"),
             detailedProjects: DetailedProjects,
             filterValues: [],
         }
@@ -122,6 +123,7 @@ class ProjectsContainer extends React.Component {
     };
 
     toggleDetailedView = (e) => {
+        console.log(parseInt(e.target.id));
         this.setState(prevState => ({
             detailedView: !prevState.detailedView,
             curDetailedView: parseInt(e.target.id),

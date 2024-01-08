@@ -23,6 +23,8 @@ const SGCW = new Project(
     "https://github.com/JacobMarq/stained-glass-cw",
     "https://jacobmarq.github.io/stained-glass-cw/",
     ["React", "HTML", "CSS", "JavaScript", "Ai"],
+    "",
+    "Y"
 );
 
 export default SGCW;

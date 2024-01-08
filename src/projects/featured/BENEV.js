@@ -60,26 +60,31 @@ export const BENEV = new Project(
     "",
     ["React", "ReactNative", "Expo", "TypeScript", "JavaScript", "PHP", "Laravel", "MySQL"],
     BENEVVMAINMOBILE,
+    "Y"
 );
 
 const section1 = new DetailedProjectSection(
-    "BENEVV",
+    "What is BENEVV?",
     BENEVVMOBILE,
-    description + extendedDesc,
+    "S",
+    description + extendedDesc
 );
 const section2 = new DetailedProjectSection(
     "Data Visualization",
     ORGANIZATIONHOME,
+    "P",
     p1
 );
 const section3 = new DetailedProjectSection(
     "Real Time Chat",
     REALTIMECHATMOBILE,
+    "M",
     p2
 );
 const section4 = new DetailedProjectSection(
     "Donation Workflow",
     DONATIONCHECKOUT,
+    "P",
     p3
 );
 

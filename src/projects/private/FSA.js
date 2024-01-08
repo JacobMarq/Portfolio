@@ -25,6 +25,8 @@ const FSA = new Project(
     "https://github.com/JacobMarq/hatchways-frontend-assessment",
     "https://students-assessments.netlify.app/",
     ["Netlify", "React", "HTML", "CSS"],
+    "",
+    "Y"
 );
 
 export default FSA;

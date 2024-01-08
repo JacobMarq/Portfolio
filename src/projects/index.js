@@ -5,9 +5,9 @@ import SGCW from "./public/SGCW";
 import RPS from "./public/RPS";
 import FSA from "./private/FSA";
 import { BENEV, BenevDetailed } from './featured/BENEV';
-// import { WORKBOX, WorkboxDetailed } from "./featured/WORKBOX";
+import { IMSI, IMSIDetailed } from "./featured/WORKBOX";
 import CCFRAUD from "./school/CCFraudDetection";
 import IRISDTC from "./school/IrisDecisionTreeClassifier";
 
-export const Projects = [BLOG, BPAPI, JSCALC, SGCW, RPS, FSA, BENEV, CCFRAUD, IRISDTC];
-export const DetailedProjects = [BenevDetailed];
+export const Projects = [BLOG, BPAPI, JSCALC, SGCW, RPS, FSA, IMSI, BENEV, CCFRAUD, IRISDTC];
+export const DetailedProjects = [IMSIDetailed, BenevDetailed];

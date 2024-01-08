@@ -26,6 +26,8 @@ const BPAPI = new Project(
     "https://github.com/JacobMarq/blog_posts",
     "",
     ["Render", "Heroku", "Ruby", "Rails"],
+    "",
+    "Y"
 );
 
 export default BPAPI;

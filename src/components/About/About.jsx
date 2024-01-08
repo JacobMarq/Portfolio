@@ -46,15 +46,15 @@ class About extends React.Component {
                       animateIn='animate__slideInRight'
                       animateOnce={true}>
                         <p className="about-p default-cursor unselectable">
-                            My name is Jacob Marquez, I am a Software Developer @ IMS Integration
-                            with 2+ years of Full Stack experience I build 
+                            My name is Jacob Marquez, I am a Software Developer @ IMS Integrations
+                            with 4+ years of Full Stack experience. I build 
                             <span> elegant</span> and <span>efficient </span> 
-                            applications. I'm experienced in 
-                            <span> Front</span> and <span>
-                            Back-end web development </span> 
-                            with a <span>passion </span> 
-                            for the type of work that I do. I am also familiar with
-                            automation, AI, and Machine Learning.
+                            applications. I have a thorough understanding
+                            of <span>Software Design Patterns</span> and finding the right tool for the job.
+                            
+                            My primary experience is with technologies such as <span>React</span>, <span>React Native</span>, <span>AngularJS</span>, <span>Ruby on Rails</span>, <span>Maven</span>, <span>Java</span>, <span>Python</span>, and <span>MySQL</span>.
+                            
+                            I am also familiar with Automation, AI, and Machine Learning through personal projects and experience at University.
                         </p>
                     </AnimationOnScroll>
                 </div>
@@ -85,8 +85,8 @@ class About extends React.Component {
                         <p className="about-p default-cursor unselectable">
                             My expertise for back end languages is with Ruby, Java, and Python
                             with some additional experience in PHP from an Intership at Smarttwigs.
-                            The frameworks I've developed with are Rails, Django, Struts and Laravel.
-                            Database languages I use are MySQL, PostgreSQL, and SQLite.
+                            The frameworks I've developed with are Rails, Django, Maven, and Laravel.
+                            Database languages I use are MySQL, PostgreSQL, IBMDb2, SOQL, and SQLite.
                         </p>
                         <br />
                         
@@ -118,10 +118,11 @@ class About extends React.Component {
                       animateOnce={true}>
                         <p className="about-p default-cursor unselectable">
                             My current progress goals include
-                            expanding my existing my existing knowledge of Full Stack development
+                            expanding my existing knowledge of Full Stack development
                             and getting a better hold on Ai and Machine Learning. Over the past
-                            2 years I've become proficient at developing and maintaing applications
-                            from Front to back however, there is always more to learn.
+                            4 years I've become proficient at developing and maintaing applications
+                            from Front to back however, there is always more to learn and improve on.
+                            I take pride in my work but am always open to other perspectives and constructive feedback.
                         </p>
                     </AnimationOnScroll>
                 </div>

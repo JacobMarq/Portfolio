@@ -15,6 +15,8 @@ const RPS = new Project(
     "https://github.com/JacobMarq/Rock-Paper-Scissors",
     "https://jacobmarq.github.io/Rock-Paper-Scissors/",
     ["HTML", "CSS", "JavaScript"],
+    "",
+    "Y"
 );
 
 export default RPS;

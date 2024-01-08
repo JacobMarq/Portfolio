@@ -18,6 +18,8 @@ const IRISDTC = new Project(
     "",
     IrisDTCFile,
     ["Python"],
+    "",
+    "Y"
 );
 
 export default IRISDTC;

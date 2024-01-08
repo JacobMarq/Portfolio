@@ -14,6 +14,8 @@ const CCFRAUD = new Project(
     "",
     CCFraudFile,
     ["Python"],
+    "",
+    "Y"
 );
 
 export default CCFRAUD;

@@ -16,6 +16,8 @@ const JSCALC = new Project(
     "https://github.com/JacobMarq/Calculator",
     "https://jacobmarq.github.io/Calculator/",
     ["JavaScript", "HTML", "CSS"],
+    "",
+    "Y"
 );
 
 export default JSCALC;

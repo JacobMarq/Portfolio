@@ -1,94 +1,92 @@
 import Project from "../../project";
-import BENEVVHOME from "../../img/BENEVV/BenevvHome.png";
-import BENEVVMOBILE from "../../img/BENEVV/BENEVVMOBILE.png";
-import BENEVVMAINMOBILE from "../../img/BENEVV/BenevvMainMobile.png";
-import DONATIONMAIN from "../../img/BENEVV/DonationMain.png";
-import REALTIMECHAT from "../../img/BENEVV/RealTimeChat.png";
-import REALTIMECHATMOBILE from "../../img/BENEVV/RealTimeChatMobile.png";
-import ORGANIZATIONHOME from "../../img/BENEVV/OrganizationHome.png";
-import DONATIONCHECKOUT from "../../img/BENEVV/DonationPaymentCard.png";
-import BENEVVPAYMENTS from "../../img/BENEVV/BenevvPayments.png";
+import IMSILOGO from "../../img/Workbox/IMSI-Logo.png";
+import WBLANDINGPAGE from "../../img/Workbox/WB-Landing-Page.png";
+import WBDATACHART from "../../img/Workbox/piechart.png";
+import OAOIDSCAN from "../../img/Workbox/IDSCAN.png";
+import KEYSTONE from "../../img/Workbox/KEYSTONE-CORE.png";
 import {DetailedProject, DetailedProjectSection } from "../../detailedProject";
 
-const name = "Workbox";
+const name = "IMS Integration";
 
 const description = 
-"Owned by SmartTwigs, BENEVV is a social platform meant for sharing and " +
-"supporting community/organization campaigns, programs, " +
-"and events to give back to the community and " +
-"promote social change. ";
+"IMS Integration, is a company that provides a suite of Industry Leading Software Solutions " +
+"tailored to meet the specific standards and requirements of Credit Unions around the US. " +
+"As a Software Developer at IMSI, I've contributed to upgrading, maintaining, and offering technical support for existing solutions, " +
+"as well as Designing, Developing, and Implementing new features and functionality. ";
 
 const extendedDesc =
-"BENEVV is a full scale web app built using React.js, with Redux, " +
-"in TypeScript. In combination with a full scale Mobile " +
-"App using ReactNative with Expo. On the back-end " +
-"BENEVV uses PHP, the Laravel framework, and MySQL " +
-"for its database. ";
+"Improvements don't stop at the user. Achievements I'm most proud of during my time at IMSI include: " +
+"Assisting in rewriting IMSI's master application, Workbox, from Struts2 to AngularJS. " +
+"utilizing python scripting to create a suite of scripts that have improved response times, " +
+"automating our Certificate renewal process for an extensive lists of over 100 clients, " +
+"and expanding IMSI's software documentation for users and developers alike. ";
 
 const p1 =
-"Organizations using BENEVV need access to as much information " +
-"about their campaigns and events as possible. This demand " +
-"led to the implementation of gathering important analytics " +
-"and displaying that data back to the Organization in a " +
-"clean and readible format. Utilizing some 3rd-party services, " +
-"bringing this page to life was one of my most recent tasks " +
-"as part of the SmartTwigs team. ";
+"Credit Unions depend on IMSI's software for collecting data on their online services and handling generation of their eStatements, Taxes, and Reports. " +
+"I utilized JasperSoft and Adobe Acrobat to manage clients disclosures and documents. " +
+"This required thorough requirements gathering, troubleshooting, and communication to ensure pixel perfect accuracy. " +
+"Due to performance needs, since it was standard to process hundreds of thousands or even millions of documents, " +
+"we would have to accomplish certain goals with minimal solutions often utilizing basic MySQL functionality.";
 
 const p2 =
-"As a form of social media platform, BENEVV needed a way for " +
-"users to communicate effectively. This meant introducing a " +
-"Real-Time messaging feature. ";
+"Working with Credit Unions means having the highest quality security. " +
+"With Fraud being an evergrowing problem, and experiencing exponential growth in the last 2 years, " +
+"I would handle making upgrades to our integrations with 3rd party identity verification providers. " +
+"This process was challenging and required collaboration between IMSI, our clients, and 3rd party providers. " +
+"We also had regular security training for handling highly sensitive data and Industry best practices. ";
 
-const p3 =
-"Supporting community efforts is a large factor of what " +
-"BENEVV stands for. Part of that support involves monetary " +
-"aid in the form of donations. My first task as part of the " +
-"SmartTwigs engineering team was to handle the development of " +
-"the donation checkout process for Web and Mobile. ";
+// const p3 = "Corelation Integrations";
 
-export const WORKBOX = new Project(
-    1000,
+export const IMSI = new Project(
+    1001,
     "Featured",
-    "workbox",
+    "imsi",
     name,
     description,
-    [   {id: "one", url: BENEVVHOME},
-        {id: "two", url: DONATIONMAIN},
-        {id: "three", url: REALTIMECHAT},
-        {id: "four", url: BENEVVPAYMENTS}],
+    [   
+        {id: "one", url: IMSILOGO},
+        {id: "two", url: WBLANDINGPAGE},
+        {id: "three", url: WBDATACHART},
+        {id: "four", url: OAOIDSCAN},
+        {id: "five", url: KEYSTONE},
+    ],    
     "",
     "",
-    ["Angular", "Java", "JavaScript", "MySQL"],
-    BENEVVMAINMOBILE,
+    ["Angular", "Java", "JavaScript", "MySQL", "IBMDb2"],
+    "",
+    "Y"
 );
 
-const section1 = new DetailedProjectSection(
-    "Workbox",
-    BENEVVMOBILE,
-    description + extendedDesc,
+const section1  = new DetailedProjectSection(
+    "What is IMS Integration?",
+    WBLANDINGPAGE,
+    "L",
+    description + extendedDesc
 );
 const section2 = new DetailedProjectSection(
-    "Data Visualization",
-    ORGANIZATIONHOME,
+    "Data Visualization & Report Generation",
+    WBDATACHART,
+    "S",
     p1
 );
 const section3 = new DetailedProjectSection(
-    "Real Time Chat",
-    REALTIMECHATMOBILE,
+    "Safe, Secure, & Compliant",
+    OAOIDSCAN,
+    "P",
     p2
 );
-const section4 = new DetailedProjectSection(
-    "Donation Workflow",
-    DONATIONCHECKOUT,
-    p3
-);
+// const section4 = new DetailedProjectSection(
+//     "Corelation Integration",
+//     KEYSTONE,
+//     "S",
+//     p3
+// );
 
-export const WorkboxDetailed = new DetailedProject(
-    1000,
+export const IMSIDetailed = new DetailedProject(
+    1001,
     name,
-    BENEVVHOME,
+    IMSILOGO,
     section1,
     section2,
     section3,
-    section4
 );

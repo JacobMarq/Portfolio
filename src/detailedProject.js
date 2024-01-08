@@ -1,7 +1,10 @@
 export class DetailedProjectSection {
-    constructor( header, image, paragraph ) {
+    constructor( header, image, imgType, paragraph ) {
         this.header = header;
-        this.image = image;
+        this.image = {  
+            src: image,
+            type: imgType
+        };
         this.paragraph = paragraph;
     }
 };
