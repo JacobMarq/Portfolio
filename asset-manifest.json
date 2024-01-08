@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.5694ca77.chunk.css",
-    "main.js": "/Portfolio/static/js/main.a50139e3.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.a50139e3.chunk.js.map",
+    "main.css": "/Portfolio/static/css/main.9447483d.chunk.css",
+    "main.js": "/Portfolio/static/js/main.53bd90f8.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.53bd90f8.chunk.js.map",
     "runtime-main.js": "/Portfolio/static/js/runtime-main.83a13864.js",
     "runtime-main.js.map": "/Portfolio/static/js/runtime-main.83a13864.js.map",
     "static/css/2.cc77c331.chunk.css": "/Portfolio/static/css/2.cc77c331.chunk.css",
@@ -12,7 +12,7 @@
     "static/js/3.8e3d9714.chunk.js.map": "/Portfolio/static/js/3.8e3d9714.chunk.js.map",
     "index.html": "/Portfolio/index.html",
     "static/css/2.cc77c331.chunk.css.map": "/Portfolio/static/css/2.cc77c331.chunk.css.map",
-    "static/css/main.5694ca77.chunk.css.map": "/Portfolio/static/css/main.5694ca77.chunk.css.map",
+    "static/css/main.9447483d.chunk.css.map": "/Portfolio/static/css/main.9447483d.chunk.css.map",
     "static/js/2.4e756b82.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.4e756b82.chunk.js.LICENSE.txt",
     "static/media/BENEVVMOBILE.216e4245.png": "/Portfolio/static/media/BENEVVMOBILE.216e4245.png",
     "static/media/App.css": "/Portfolio/static/media/Lemon.2bf6b527.ttf",
@@ -22,8 +22,11 @@
     "static/media/CreditCardFraudDetection.b9f7a03c.pdf": "/Portfolio/static/media/CreditCardFraudDetection.b9f7a03c.pdf",
     "static/media/DonationMain.1b8ef12d.png": "/Portfolio/static/media/DonationMain.1b8ef12d.png",
     "static/media/DonationPaymentCard.a004ee43.png": "/Portfolio/static/media/DonationPaymentCard.a004ee43.png",
+    "static/media/IDSCAN.c394d8e2.png": "/Portfolio/static/media/IDSCAN.c394d8e2.png",
+    "static/media/IMSI-Logo.30d166e9.png": "/Portfolio/static/media/IMSI-Logo.30d166e9.png",
     "static/media/IrisDecisionTreeClassifier.7a0d7105.pdf": "/Portfolio/static/media/IrisDecisionTreeClassifier.7a0d7105.pdf",
     "static/media/JacobMarquez.b0618d38.pdf": "/Portfolio/static/media/JacobMarquez.b0618d38.pdf",
+    "static/media/KEYSTONE-CORE.d4f71d99.png": "/Portfolio/static/media/KEYSTONE-CORE.d4f71d99.png",
     "static/media/OrganizationHome.585085bb.png": "/Portfolio/static/media/OrganizationHome.585085bb.png",
     "static/media/RealTimeChat.8bae4c56.png": "/Portfolio/static/media/RealTimeChat.8bae4c56.png",
     "static/media/RealTimeChatMobile.a20b9583.png": "/Portfolio/static/media/RealTimeChatMobile.a20b9583.png",
@@ -36,6 +39,7 @@
     "static/media/TitleImage.f8d2683b.png": "/Portfolio/static/media/TitleImage.f8d2683b.png",
     "static/media/Tree1.9c5efdb9.png": "/Portfolio/static/media/Tree1.9c5efdb9.png",
     "static/media/Tree2.d03b8ab8.png": "/Portfolio/static/media/Tree2.d03b8ab8.png",
+    "static/media/WB-Landing-Page.9e3dac53.png": "/Portfolio/static/media/WB-Landing-Page.9e3dac53.png",
     "static/media/analytics.698018c8.png": "/Portfolio/static/media/analytics.698018c8.png",
     "static/media/article-show.c785ea41.png": "/Portfolio/static/media/article-show.c785ea41.png",
     "static/media/globe.5ef68a8a.svg": "/Portfolio/static/media/globe.5ef68a8a.svg",
@@ -46,6 +50,7 @@
     "static/media/main.5ddd6b5a.png": "/Portfolio/static/media/main.5ddd6b5a.png",
     "static/media/nameSearch.739a5314.png": "/Portfolio/static/media/nameSearch.739a5314.png",
     "static/media/nameTagSearch.8623d536.png": "/Portfolio/static/media/nameTagSearch.8623d536.png",
+    "static/media/piechart.f8a34b0a.png": "/Portfolio/static/media/piechart.f8a34b0a.png",
     "static/media/python.22958214.png": "/Portfolio/static/media/python.22958214.png",
     "static/media/response.d530d0ab.png": "/Portfolio/static/media/response.d530d0ab.png",
     "static/media/responsive.5260118d.png": "/Portfolio/static/media/responsive.5260118d.png",
@@ -58,7 +63,7 @@
     "static/js/runtime-main.83a13864.js",
     "static/css/2.cc77c331.chunk.css",
     "static/js/2.4e756b82.chunk.js",
-    "static/css/main.5694ca77.chunk.css",
-    "static/js/main.a50139e3.chunk.js"
+    "static/css/main.9447483d.chunk.css",
+    "static/js/main.53bd90f8.chunk.js"
   ]
 }
