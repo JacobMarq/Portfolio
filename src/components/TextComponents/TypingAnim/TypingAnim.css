@@ -1,0 +1,103 @@
+.typing-anim-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-self: flex-end;
+    width: max-content;
+    margin-right: auto;
+}
+
+/* Typing effect */
+.typing-character {
+    animation: typing 0.2s forwards;
+    visibility: hidden;
+}
+.typing-character.reverse {
+    animation: typingReverse 0.2s forwards;
+    visibility: hidden;
+}
+
+@keyframes typing {
+    0% {
+        background-color: transparent;
+        visibility: hidden;
+    }
+    1% {
+        background-color: #f5b6ff;
+        visibility: visible;
+    }
+    99% {
+        background-color: #f5b6ff;
+        visibility: visible;
+    }
+    100% {
+        background-color: transparent;
+        visibility: visible;
+    }
+}
+@keyframes typingReverse {
+    0% {
+        background-color: transparent;
+        visibility: visible;
+    }
+    1% {
+        background-color: #f5b6ff;
+        visibility: visible;
+    }
+    99% {
+        background-color: #f5b6ff;
+        visibility: visible;
+    }
+    100% {
+        background-color: transparent;
+        visibility: hidden;
+        
+    }
+}
+
+@keyframes typeHighlighted{
+    0% {
+        background-color: #f5b6ff;
+        visibility: visible;
+    }
+    49% {
+        background-color: #f5b6ff;
+        visibility: visible;
+    }
+    50% {
+        background-color: transparent;
+        visibility: visible;
+    }
+    100% {
+        background-color: transparent;
+        visibility: visible;
+    }
+}
+@keyframes typeHighlightedReversed{
+    0% {
+        background-color: #f5b6ff;
+        visibility: hidden;
+    }
+    49% {
+        background-color: #f5b6ff;
+        visibility: hidden;
+    }
+    50% {
+        background-color: #f5b6ff;
+        visibility: visible;
+    }
+    100% {
+        background-color: #f5b6ff;
+        visibility: visible;
+    }
+}
+
+@keyframes hide {
+    0% {
+        visibility: hidden;
+    }
+    100% {
+        visibility: hidden;
+    }
+}
+  

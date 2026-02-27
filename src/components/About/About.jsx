@@ -2,6 +2,7 @@ import React from 'react';
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 import './About.css';
 import Pdf from '../../documents/JacobMarquez.pdf';
+import StyledDownButton from '../ButtonComponent/StyledDownButton/StyledDownButton.jsx';
 
 class About extends React.Component {
     render() {
@@ -126,6 +127,7 @@ class About extends React.Component {
                         </p>
                     </AnimationOnScroll>
                 </div>
+                <StyledDownButton/>
             </div>
         );
     }

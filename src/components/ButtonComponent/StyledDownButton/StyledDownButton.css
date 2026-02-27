@@ -1,0 +1,164 @@
+@media only screen and (min-width: 2000px)
+{
+  .down-btn-container {
+    margin-top: auto;
+    margin-bottom: 15vh;
+  }
+}
+
+@media only screen and (min-width: 1500px) and (max-width: 2000px)
+{
+  .down-btn-container {
+    margin-top: auto;
+    margin-bottom: 15vh;
+  }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1500px)
+{
+  .down-btn-container {
+    margin-top: 5vh;
+    margin-bottom: auto;
+  }
+}
+
+@media only screen and (max-width: 800px)
+{
+  .down-btn-container {
+    margin-top: auto;
+    margin-bottom: 25vh;
+  }
+}
+
+.down-btn-container {
+    position: relative;
+    cursor: pointer;
+    user-select: auto;
+    pointer-events: all;
+    z-index: 100;
+    width: 200px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: transparent;
+}
+
+.down-btn-dashed-cir {
+    position: absolute;
+    user-select: none;
+    pointer-events: none;
+    z-index: 101;
+    top: 0;
+    left: 0;
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    border: 5px dashed #f5b6ff;
+    transition: all .2s ease-in-out;
+    animation: slow-rotate-dashed-cir 60s reverse infinite linear;
+}
+.down-btn-container:hover .down-btn-dashed-cir {
+    animation: slow-rotate-dashed-cir 10s infinite linear;
+    width: calc(190px + 5%);
+    height: calc(190px + 5%);
+    top: -2.5%;
+    left: -2.5%;
+}
+
+@keyframes slow-rotate-dashed-cir {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+    
+}
+
+.down-btn-solid-cir {
+    position: absolute;
+    user-select: none;
+    pointer-events: none;
+    z-index: 102;
+    top: 15px;
+    left: 15px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 10px solid rgb(249, 147, 255);
+    transition: box-shadow .2s ease-in-out;
+    box-shadow: 0px 0px 7.5px 7.5px rgba(34, 34, 34, 0.904);
+}
+/* .down-btn-container:hover .down-btn-solid-cir {
+    box-shadow: 0px 0px 3px 3px rgba(235, 235, 235, 0.815);
+} */
+.down-btn-container:active .down-btn-solid-cir {
+    box-shadow: 0px 0px 5px 5px rgba(235, 235, 235, 0.815);
+}
+/* .down-btn-container:hover .down-btn-solid-cir {
+    box-shadow: 0px 0px 5px 5px white;
+    box-shadow: 0px 0px 5px 5px black inset;
+} */
+
+.down-btn-solid-cir-inner {
+    position: absolute;
+    user-select: none;
+    pointer-events: none;
+    z-index: 102;
+    top: 20px;
+    left: 20px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #EEEEEE;
+    transition: box-shadow .2s ease-in-out;
+}
+.down-btn-container:hover .down-btn-solid-cir-inner {
+    box-shadow: 0px 0px 5px 5px white;
+    box-shadow: 0px 0px 10px 10px rgba(14, 14, 14, 0.753) inset;
+}
+
+.down-btn-tri {
+    z-index: 103;
+    position: absolute;
+    user-select: none;
+    pointer-events: none;
+    transform: translateX(-50%);
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    transition: all .2s ease-in-out;
+}
+.down-btn-tri-container .down-btn-tri:nth-child(1) {
+    top: 102.5px;
+}
+.down-btn-tri-container .down-btn-tri:nth-child(2) {
+    top: 95px;
+}
+.down-btn-tri-container .down-btn-tri:nth-child(3) {
+    top: 57.5px;
+}
+.down-btn-tri-container .down-btn-tri:nth-child(4) {
+    top: 50px;
+}
+.down-btn-tri-container .down-btn-tri:nth-child(odd) {
+    border-top: 55px solid #f5b6ff;
+}
+.down-btn-tri-container .down-btn-tri:nth-child(even) {
+    border-top: 55px solid rgb(249, 147, 255);
+}
+
+.down-btn-container:hover .down-btn-tri-container .down-btn-tri:nth-child(odd) {
+    border-left-width: 27.5px !important;
+    border-right-width: 27.5px !important;
+    border-top-width: 50px !important;
+    transition: all .1s ease-in-out;
+}
+.down-btn-container:hover .down-btn-tri-container .down-btn-tri:nth-child(2n) {
+    border-left-width: 27.5px !important;
+    border-right-width: 27.5px !important;
+    border-top-width: 50px !important;
+    transition: all .1s ease-in-out;
+}

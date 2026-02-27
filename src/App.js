@@ -30,12 +30,19 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className="App">
+      // <div className="App" style={{ background: `url(${PurpleSky6}) no-repeat left top fixed`, backgroundSize: "100% 130%"}}>
+      <div className='App'>
+        <div className='shade'></div>
         <div>
           <nav>
             <ul id="navigation" className="navbar">
               <NavLink exact to="/" className="nav-logo">
-                Jacob's Portfolio
+                <h1 className="home-name m-0 no-pe main-3d-sm">
+                    Jacob Marquez
+                </h1>
+                <p className="home-text m-0 no-pe">
+                    Software Developer
+                </p>
               </NavLink>
               <BurgerButton click={this.navMenuClickHandler} active={this.state.navMenuActive} />
 
@@ -46,7 +53,7 @@ class App extends React.Component {
               </li>
               <li>
                 <NavLink to="/about" activeClassName="active" className="nav-link">
-                  About
+                  About me
                 </NavLink>
               </li>
               <li>
