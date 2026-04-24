@@ -231,6 +231,6 @@
 }
 
 .featured-header {
-    padding-bottom: 10px;
-    border-bottom: solid 2px var(--clr-tertiary);
+    padding-bottom: 0;
+    /* border-bottom: solid 2px var(--clr-secondary); */
 }
