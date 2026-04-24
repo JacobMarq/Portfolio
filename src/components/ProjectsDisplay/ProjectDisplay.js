@@ -77,7 +77,7 @@ const ProjectDisplay = props => {
                     <div className="d-flex flex-column project-context">
                         
                         <Scrollbars
-                            style={{ height: 200 }}
+                            style={{ height: 250 }}
                             hideTracksWhenNotNeeded={true}
                             renderThumbVertical={props => <div {...props} className='thumb'/>}
                             autoHideTimeout={0}
@@ -90,7 +90,7 @@ const ProjectDisplay = props => {
                         <div className="d-flex flex-row flex-jc-space-between mt-auto project-card-footer"> 
                             
                             <Scrollbars
-                                style={{height: 50}}
+                                style={{height: 75}}
                                 renderTrackHorizontal={props => <div {...props} className="track-horizontal"/>}
                                 renderThumbHorizontal={props => <div {...props} className="thumb"/>}
                                 thumbSize={100}>

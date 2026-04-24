@@ -51,7 +51,7 @@ function ProjectsFeature(props) {
                     <div className="d-flex flex-row flex-jc-space-between mt-auto featured-tool-bar mb-25"> 
                         
                         <Scrollbars
-                            style={{height: 50}}
+                            style={{height: 75}}
                             renderTrackHorizontal={props => <div {...props} className="track-horizontal"/>}
                             renderThumbHorizontal={props => <div {...props} className="thumb"/>}
                             thumbSize={100}>
@@ -65,7 +65,7 @@ function ProjectsFeature(props) {
                     </div>
 
                     <Scrollbars
-                        style={{ height: 100 }}
+                        style={{ height: 200 }}
                         hideTracksWhenNotNeeded={true}
                         renderThumbVertical={props => <div {...props} className='thumb'/>}
                         autoHideTimeout={0}

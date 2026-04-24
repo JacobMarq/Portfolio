@@ -8,8 +8,9 @@
 }
 
   .featured-tool-bar {
-    border-top: 2px solid var(--clr-tertiary);
-    border-bottom: 2px solid var(--clr-tertiary);
+    /* border-top: 2px solid var(--clr-tertiary); */
+    /* border-bottom: 2px solid var(--clr-tertiary); */
+    height: fit-content !important;
     margin-top: auto;
     margin-bottom: 10px;
   }

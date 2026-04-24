@@ -79,13 +79,14 @@ button > * {
             border: 2.5px solid var(--clr-tertiary-light);
         }
         .horizontal-list li button:active{
-            background-color: var(--clr-tertiary-light);
+            background-color: var(--clr-new-text);
         }
         .horizontal-list li button.active {
-            background-color: var(--clr-tertiary);
+            background-color: var(--clr-secondary);
         }
         .horizontal-list li button.active:hover {
-            background-color: var(--clr-tertiary);
+            background-color: var(--clr-secondary);
+            border: 2.5px solid var(--clr-new-text);
         }
         .horizontal-list li button.active:active{
             background-color: var(--clr-tertiary-light);
