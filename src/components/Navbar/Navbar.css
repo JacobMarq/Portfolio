@@ -1,0 +1,51 @@
+/* =============================================
+<--------------- NavBar (start) ---------------> 
+==============================================*/
+
+.nav-hook
+{
+  font-size: calc(10px + 2.7vmin);
+  line-height: 1em;
+}
+
+.nav-text
+{
+  font-size: calc(7.5px + 1.25vmin);
+  font-weight: 600;
+  line-height: 1.25em;
+  color: var(--clr-new-text);
+}
+
+.sticky-nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Keeps it above other content */
+  width: 100%;
+  background-color: var(--clr-background);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  background-color: transparent;
+  height: 10vh;
+  padding: 0 5%;
+  z-index: 1;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.nav-logo {
+  margin-right: auto;
+  text-decoration: none;
+}
+.nav-logo:focus {
+  outline: white;
+}
+
+
+/* =============================================
+<--------------- NavBar ( end ) ---------------> 
+==============================================*/

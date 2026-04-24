@@ -41,7 +41,7 @@ function ProjectsFeature(props) {
                         </a>
                     </>
                     :
-                    <button id={project.id} onClick={toggleDetailedView} className="mb-25 project-details-btn center">
+                    <button id={project.id} onClick={toggleDetailedView} className="mb-25 primary-btn center">
                         View project details
                     </button> }
                 </div>

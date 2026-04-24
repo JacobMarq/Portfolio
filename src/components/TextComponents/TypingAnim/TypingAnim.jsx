@@ -62,7 +62,7 @@ const TypingAnim = ({ componentType, classNames, textValues, textPrefixValue, te
   }, [animPlayDirection]);
 
   useEffect(() => {
-    const changeTextInterval = animationDuration * (text.length * 1.5) * 1000;
+    const changeTextInterval = animationDuration * (text.length * 1.8) * 1000;
 
     const intervalId = setInterval(() => {
       if (animPlayDirection === 'normal') {

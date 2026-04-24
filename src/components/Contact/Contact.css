@@ -2,6 +2,131 @@
 <--------------- Contact ---------------> 
 */
 
+@media only screen and (min-width: 800px){
+  .contact-desc-container {
+    display: inline-flex;
+  }
+    .contact-desc {
+      width: 90%;
+      height: 45vh;
+    }
+
+  #contact {
+    scroll-margin-top: 5vh;
+    padding: 5% 0 10% 0;
+  }
+
+  .contact-content {
+    flex-direction: row;
+  }
+
+  .contact-text-container {
+    width: 100%;
+    margin-top: auto;
+    margin-left: 0;
+    margin-right: auto;
+    margin-bottom: auto;
+  }
+
+  .contact-image-container {
+    height: 25vw;
+    width: 27vw;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: 0;
+    margin-bottom: auto;
+    box-shadow: 0 0 10vw 1vw var(--clr-background);
+  }
+}
+
+@media only screen and (max-width: 800px){
+  .contact-desc-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    width: 65%;
+  }
+    .contact-desc {
+      width: 100%;
+    }
+
+  #contact {
+    scroll-margin-top: 0;
+    padding: 20% 0 ;
+  }
+
+  .contact-content {
+    flex-direction: column-reverse;
+  }
+
+  .contact-text-container {
+    width: 100%;
+    margin-top: 2.5vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5vh;
+  }
+
+  .contact-image-container {
+    height: 25vh;
+    width: 27vh;
+    margin-top: 2.5vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2.5vh;
+    box-shadow: 0 0 0 0;
+  }
+}
+
+.contact-content {
+  display: flex;
+  width: auto;
+  margin-bottom: auto;
+}
+
+.contact-text-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-image-container {
+  border-radius: 5%;
+  z-index: 2;
+}
+
+.contact-me-image {
+  height: 100%;
+  width: 100%;
+  border: solid 5px var(--clr-secondary);
+  border-radius: 5%;
+  overflow: hidden;
+  box-shadow: 0 0 1vw 0 var(--clr-secondary);
+  z-index: 3;
+}
+
+.contact-desc-container {
+  align-items: center;
+}
+
+.link {
+  filter: brightness(0) saturate(100%) invert(78%) sepia(0%) saturate(7467%) hue-rotate(22deg) brightness(121%) contrast(83%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .contact-main {
   animation: fade-in ease 1s;
   padding-bottom: 5%;

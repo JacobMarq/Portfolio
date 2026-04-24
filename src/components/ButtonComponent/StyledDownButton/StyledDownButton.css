@@ -32,15 +32,21 @@
 
 .down-btn-container {
     position: relative;
+    display: flex;
     cursor: pointer;
     user-select: auto;
     pointer-events: all;
     z-index: 100;
-    width: 200px;
-    height: 200px;
+    width: 24vh;
+    height: 24vh;
     margin-left: auto;
     margin-right: auto;
+    border: none;
     background-color: transparent;
+}
+.down-btn-container:hover,
+.down-btn-container:focus {
+    outline: none;
 }
 
 .down-btn-dashed-cir {
@@ -49,30 +55,26 @@
     pointer-events: none;
     z-index: 101;
     top: 0;
-    left: 0;
+    left: -1px;
     width: 190px;
     height: 190px;
     border-radius: 50%;
-    border: 5px dashed #f5b6ff;
+    border: 5px dashed var(--clr-new-secondary);
     transition: all .2s ease-in-out;
+    background-color: var(--clr-background);
+    box-shadow: 0px 0px 20px 15px var(--clr-background);
     animation: slow-rotate-dashed-cir 60s reverse infinite linear;
 }
-.down-btn-container:hover .down-btn-dashed-cir {
+.down-btn-container:hover .down-btn-dashed-cir,
+.down-btn-container:focus .down-btn-dashed-cir {
     animation: slow-rotate-dashed-cir 10s infinite linear;
     width: calc(190px + 5%);
     height: calc(190px + 5%);
     top: -2.5%;
     left: -2.5%;
 }
-
-@keyframes slow-rotate-dashed-cir {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-    
+.down-btn-container:active .down-btn-dashed-cir {
+    border-color: var(--clr-new-text);
 }
 
 .down-btn-solid-cir {
@@ -80,25 +82,22 @@
     user-select: none;
     pointer-events: none;
     z-index: 102;
-    top: 15px;
-    left: 15px;
+    top: 20px;
+    left: 20px;
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    border: 10px solid rgb(249, 147, 255);
-    transition: box-shadow .2s ease-in-out;
-    box-shadow: 0px 0px 7.5px 7.5px rgba(34, 34, 34, 0.904);
+    background-color: var(--clr-new-pop);
+    border: 5px solid var(--clr-new-pop);
+    transition: all .2s ease-in-out;
 }
-/* .down-btn-container:hover .down-btn-solid-cir {
-    box-shadow: 0px 0px 3px 3px rgba(235, 235, 235, 0.815);
-} */
+.down-btn-container:hover .down-btn-solid-cir,
+.down-btn-container:focus .down-btn-solid-cir {
+    background-color: var(--clr-new-pop-bright);
+}
 .down-btn-container:active .down-btn-solid-cir {
-    box-shadow: 0px 0px 5px 5px rgba(235, 235, 235, 0.815);
+    box-shadow: 0px 0px 2.5px 2.5px var(--clr-new-text);
 }
-/* .down-btn-container:hover .down-btn-solid-cir {
-    box-shadow: 0px 0px 5px 5px white;
-    box-shadow: 0px 0px 5px 5px black inset;
-} */
 
 .down-btn-solid-cir-inner {
     position: absolute;
@@ -110,16 +109,72 @@
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    border: 5px solid #EEEEEE;
-    transition: box-shadow .2s ease-in-out;
+    border: 5px solid var(--clr-new-pop);
+    transition: all .2s ease-in-out;
 }
-.down-btn-container:hover .down-btn-solid-cir-inner {
-    box-shadow: 0px 0px 5px 5px white;
-    box-shadow: 0px 0px 10px 10px rgba(14, 14, 14, 0.753) inset;
+.down-btn-container:hover .down-btn-solid-cir-inner,
+.down-btn-container:focus .down-btn-solid-cir-inner {
+    box-shadow: 0px 0px 5px 2px var(--clr-new-pop) inset, 0px 0px 5px 1px var(--clr-new-pop);
 }
 
-.down-btn-tri {
-    z-index: 103;
+.down-btn-tri-container {
+    z-index: 104;
+    position: absolute;
+    user-select: none;
+    pointer-events: none;
+    transform: translateX(-50%);
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    transition: all .2s ease-in-out;
+}
+
+.down-btn-chevron {
+  user-select: none;
+  pointer-events: none;
+  position: absolute;
+  z-index: 1;
+  scale: 100%;
+}
+.down-btn-container:hover .down-btn-tri-container .down-btn-chevron,
+.down-btn-container:focus .down-btn-tri-container .down-btn-chevron {
+    scale: 95%;
+    transition: all .1s ease-in-out;
+}
+
+
+@keyframes slow-rotate-dashed-cir {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+    
+}
+
+/* .down-btn-solid-cir {
+    // Adds a subtle glow
+    box-shadow: 0 0 0.3em 0 var(--clr-new-pop);
+   
+    box-shadow: 0px 0px 10px 10px rgba(26, 26, 26, 0.753) inset;
+    
+    // OLD COLOR SHADOW
+    box-shadow: 0px 0px 7.5px 7.5px rgba(34, 34, 34, 0.904);
+} */
+
+/* .down-btn-container:hover .down-btn-solid-cir {
+    box-shadow: 0px 0px 3px 3px rgba(235, 235, 235, 0.815);
+} */
+/* .down-btn-container:hover .down-btn-solid-cir {
+    box-shadow: 0px 0px 5px 5px white;
+    box-shadow: 0px 0px 5px 5px black inset;
+} */
+
+/* .down-btn-tri {
+    z-index: 105;
     position: absolute;
     user-select: none;
     pointer-events: none;
@@ -161,4 +216,4 @@
     border-right-width: 27.5px !important;
     border-top-width: 50px !important;
     transition: all .1s ease-in-out;
-}
+} */

@@ -1,48 +1,85 @@
 /* 
 <--------------- About ---------------> 
 */
-@media only screen and (min-width: 800px){
-  .about-wrapper::after {
-    height: 40vmax;
-    width: 95%;
-    left: 2.5%;
+@media only screen and (min-width: 1400px){
+  #about {
+    scroll-margin-top: -3vw;
+    padding: 10% 0;
   }
-    .about-quote {
-      font-size: 2.5em;
-    }
-    .about-cite {
-      font-size: 2em;
-    }
+
+  .about-content {
+    flex-direction: row;
+  }
 
   .about-desc-container {
     display: inline-flex;
   }
-    .about-h2 {
-      font-size: 2.5em;
-    }
-    .about-p {
-      font-size: 1.25em;
+    .about-desc {
+      width: 90%;
     }
 
-    .about-question {
-      width: 45%;
-    }
-    .about-desc {
-      width: 50%;
-    }
-}
-@media only screen and (max-width: 800px){
-  .about-wrapper::after {
-    height: 42vmax;
-    width: 130%;
-    left: -14.5%;
+  .about-text-container {
+    width: 60%;
+    margin-top: auto;
+    margin-left: 0;
+    margin-right: auto;
+    margin-bottom: auto;
   }
-    .about-quote {
-      font-size: 1.5em;
+
+  .about-image-container {
+    width: 27vw;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: 0;
+    margin-bottom: auto;
+    box-shadow: 0 0 10vw 1vw var(--clr-background);
+  }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1400px){
+  #about {
+    scroll-margin-top: 2vw;
+    padding: 10% 0;
+  }
+
+  .about-content {
+    flex-direction: row;
+  }
+
+  .about-desc-container {
+    display: inline-flex;
+  }
+    .about-desc {
+      width: 90%;
     }
-    .about-cite {
-      font-size: 1em;
-    }
+
+  .about-text-container {
+    width: 60%;
+    margin-top: auto;
+    margin-left: 0;
+    margin-right: auto;
+    margin-bottom: auto;
+  }
+
+  .about-image-container {
+    width: 27vw;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: 0;
+    margin-bottom: auto;
+    box-shadow: 0 0 10vw 1vw var(--clr-background);
+  }
+}
+
+@media only screen and (max-width: 800px){
+  #about {
+    scroll-margin-top: -3vh;
+    padding: 20% 0 ;
+  }
+
+  .about-content {
+    flex-direction: column-reverse;
+  }
 
   .about-desc-container {
     display: flex;
@@ -51,82 +88,85 @@
     margin-right: auto;
     width: 65%;
   }
-    .about-h2 {
-      font-size: 2em;
-    }
-    .about-p {
-      font-size: 1em;
-    }
-
-    .about-question {
-      width: 100%;
-    }
     .about-desc {
       width: 100%;
     }
+
+  .about-text-container {
+    width: 70%;
+    margin-top: 1vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5vh;
+  }
+
+  .about-image-container {
+    width: 27vh;
+    margin-top: 2.5vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1vh;
+    box-shadow: 0 0 0 0;
+  }
 }
 
-.about-header {
-  color: var(--clr-white);
+@media only screen and (max-width: 500px){
+  #about {
+    scroll-margin-top: 3.7vh;
+    padding: 20% 0 ;
+  }
+
+  .about-image-container {
+    width: 27vh;
+    margin-top: 2.5vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    box-shadow: 0 0 0 0;
+  }
+
+    .about-text-container {
+    width: 70%;
+    margin-top: 0vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5vh;
+  }
 }
 
-.about-wrapper {
-  height: 48vmax;
+.about-content {
+  display: flex;
   width: auto;
-  left: 0;
-  z-index: 0;
-  border-radius: 100% 100% 100% 100% / 100% 100% 100% 100% ;
 }
-.about-wrapper::after {
-  content: "";
-  clip-path: polygon(50% 0%, 80% 50%, 50% 100%, 20% 50%);
-  position: absolute;
-  background: rgb(56,72,87);
-  background: -moz-linear-gradient(90deg, rgba(56,72,87,1) 0%, rgba(49,60,73,1) 10%, rgba(39,40,51,1) 26%, rgba(34,31,40,1) 57%);
-  background: -webkit-linear-gradient(90deg, rgba(56,72,87,1) 0%, rgba(49,60,73,1) 10%, rgba(39,40,51,1) 26%, rgba(34,31,40,1) 57%);
-  background: linear-gradient(90deg, rgba(56,72,87,1) 0%, rgba(49,60,73,1) 10%, rgba(39,40,51,1) 26%, rgba(34,31,40,1) 57%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#384857",endColorstr="#221f28",GradientType=1); 
+
+.about-text-container {
+  display: flex;
+  flex-direction: column;
 }
-.about-wrapper-scale {
-  padding: 50%;
+
+.about-image-container {
+  border-radius: 5%;
+  z-index: 2;
 }
-  .about-quote {
-    text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: var(--clr-white);
-    z-index: 1;
-  }
-  .about-quote span {
-    color: var(--clr-secondary);
-  }
-  .about-cite {
-    font-family: 'Lemon';
-    color: var(--clr-primary-light);
-    z-index: 1;
-  }
+
+.about-me-image {
+  height: 100%;
+  width: 100%;
+  border: solid 5px var(--clr-secondary);
+  border-radius: 5%;
+  overflow: hidden;
+  box-shadow: 0 0 1vw 0 var(--clr-secondary);
+  z-index: 3;
+}
 
 .about-desc-container {
   align-items: center;
 }
-  .about-question {
-    padding: 0 25px 0 0;
-    text-align: center;
-    font-weight: 300;
-    color: var(--clr-secondary);
-  }
   .about-desc {
     padding: 0 0 0 25px;
-    font-weight: 500;
-    color: var(--clr-white);
-    border-left: 3px solid var(--clr-tertiary);
+    /* border-left: 3px solid var(--clr-tertiary); */
+    border-left: 3px solid var(--clr-secondary);
   }
-    .about-desc span {
-      color: var(--clr-secondary);
-    }
-    
-#view-projects-btn {
-  font-size: 1.25em;
-}
 
 .view-resume-btn {
   font-size: 1.25rem;
@@ -137,17 +177,17 @@
   cursor: pointer;
   text-decoration: none;
   color: var(--clr-white);
-  border: var(--clr-primary) 3px solid;
-  background-color: transparent;
+  border: var(--clr-new-pop) 3px solid;
+  background-color: var(--clr-new-pop);
   border-radius: 0.25em;
-  box-shadow: inset 0 0 0.3em 0 var(--clr-primary), 0 0 0.3em 0 var(--clr-primary);
   transition: all 0.5s;
   padding: .5em;
 }
-.view-resume-btn:hover {
-  background-color: var(--clr-primary);
+.view-resume-btn:hover,
+.view-resume-btn:focus {
+  background-color: var(--clr-new-pop-bright);
+  box-shadow: 0px 0px 5px 2.5px var(--clr-new-pop) inset, 0px 0px 5px 1px var(--clr-new-pop);
 }
 .view-resume-btn:active {
-  background-color: var(--clr-primary);
+  box-shadow: 0px 0px 4px .5px var(--clr-new-text);
 }
-  

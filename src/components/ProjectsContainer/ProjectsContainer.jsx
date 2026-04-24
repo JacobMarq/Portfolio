@@ -8,6 +8,10 @@ import ProjectsDetailedView from '../ProjectsDetailedView/ProjectsDetailedView';
 import { DetailedProjects, Projects } from '../../projects';
 import ProjectsListLengthSelect from './ProjectsListLengthSelect/ProjectsListLengthSelect';
 import PaginationControls from './PaginationControls/PaginationControls';
+import AboutImg from '../../img/About-Img/Non-Selfie-Sq.JPG'
+import SocialsBar from '../SocialsBar/SocialsBar.jsx';
+import WireframeDove3 from '../../img/HomeComponentImages/Wireframe_Dove_Blend_3.png';
+import WireframeDove from '../../img/HomeComponentImages/Wireframe_Dove_Blend.png';
 
 const numToDisplayOptions = [3,5,7];
 const projects = Projects.filter((project) => project.active === "Y");
@@ -182,41 +186,51 @@ class ProjectsContainer extends React.Component {
 
     render() {
         if (this.state.detailedView) {
-            return <ProjectsDetailedView project={this.getDetailedView()} toggleDetailedView={this.toggleDetailedView}/>
+            return <div id="projects" className='container'><ProjectsDetailedView project={this.getDetailedView()} toggleDetailedView={this.toggleDetailedView}/></div>
         }
 
         return (
-            <div className='container projects mb-10p mr-5p ml-5p'>
-                <AnimationOnScroll
-                  animateIn='animate__fadeInDown'
-                  initiallyVisible={false}
-                  animateOnce={true}>
-                    <h1 className='header ml-10'>Projects</h1>
+            <div id="projects" className='container'>
+                <div className='projects-content'>
+                    <h1 className="section-title default-cursor mb-0 mt-5p">
+                        Project Catalog
+                    </h1>
 
-                    <h2 className='ml-10 featured-header'>Featured Project(s)</h2>
-                    {this.state.featuredProjects.map((featuredProject, index) => {
-                        return <ProjectsFeature key={index} project={featuredProject} toggleDetailedView={this.toggleDetailedView}/>;
+                    {/* <div className='projects-image-container'>
+                        <button className='projects-image'><h2 className='catalog-title'>Work Experience</h2><img src={WireframeDove} className="" alt='work-experience-image'/></button>
+                        <button className='projects-image'><h2 className='catalog-title'>Web-Dev Projects</h2><img src={WireframeDove} className="" alt='web-dev-projects-image'/></button>
+                        <button className='projects-image'><h2 className='catalog-title'>Other Projects</h2><img src={WireframeDove} className="" alt='other-projects-image'/></button>
+                    </div> */}
+
+                    <AnimationOnScroll
+                        animateIn='animate__fadeInDown'
+                        initiallyVisible={false}
+                        animateOnce={true}>
+                        <h2 className='ml-10 featured-header'>Featured Project(s)</h2>
+                        {this.state.featuredProjects.map((featuredProject, index) => {
+                            return <ProjectsFeature key={index} project={featuredProject} toggleDetailedView={this.toggleDetailedView}/>;
+                        })}
+                        
+                        <h3 className='filter-header mt-25 text-center'>FILTERS:</h3>
+                        <Filterbar filterValues={this.state.filterValues} click={this.filterOnClickHandler}/>
+
+                        <p className='filter-results text-center mb-0'>{this.state.filteredProjects.length} result(s)</p>
+                        <ProjectsListLengthSelect numToDisplayOptions={numToDisplayOptions} handleSelectChange={this.handleSelectChange}/>
+                        <PaginationControls handlePageTraversal={this.handlePageTraversal} currentPage={this.state.currentPage} totalPages={this.getTotalPages()}/>
+
+                        <p className='color-white ml-10 mb-25'>Hover over project images to preview slideshow. (tap if on mobile)</p>
+                    </AnimationOnScroll>
+                    {this.state.filteredProjects.slice(this.determineStart(), this.determineEnd()).map(project => {
+                        if(!project) {
+                            return <p className='ml-10'>no projects to load...</p>;
+                        }
+
+                        return(
+                            <ProjectDisplay key={project.id} project={project} toggleDetailedView={this.toggleDetailedView}/>
+                        );
                     })}
-                    
-                    <h3 className='filter-header mt-25 text-center'>FILTERS:</h3>
-                    <Filterbar filterValues={this.state.filterValues} click={this.filterOnClickHandler}/>
-
-                    <p className='filter-results text-center mb-0'>{this.state.filteredProjects.length} result(s)</p>
-                    <ProjectsListLengthSelect numToDisplayOptions={numToDisplayOptions} handleSelectChange={this.handleSelectChange}/>
                     <PaginationControls handlePageTraversal={this.handlePageTraversal} currentPage={this.state.currentPage} totalPages={this.getTotalPages()}/>
-
-                    <p className='color-white ml-10 mb-25'>Hover over project images to preview slideshow. (tap if on mobile)</p>
-                </AnimationOnScroll>
-                {this.state.filteredProjects.slice(this.determineStart(), this.determineEnd()).map(project => {
-                    if(!project) {
-                        return <p className='ml-10'>no projects to load...</p>;
-                    }
-
-                    return(
-                        <ProjectDisplay key={project.id} project={project} toggleDetailedView={this.toggleDetailedView}/>
-                    );
-                })}
-                <PaginationControls handlePageTraversal={this.handlePageTraversal} currentPage={this.state.currentPage} totalPages={this.getTotalPages()}/>
+                </div>
             </div>
         );
     };

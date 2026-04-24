@@ -10,18 +10,29 @@
   .home-hook
   {
     /*font-size: 3.75vw;*/
-    font-size: 20vh;
+    font-size: 15vh;
     align-self: flex-start;
   }
   .home-text-muted
   {
-    font-size: calc(17px + 8vmin);
+    font-size: calc(17px + 6vmin);
   }
   .bird
   {
     top: -16%;
     left: 16vw;
     height: 32.5%;
+  }
+  .wf-dove
+  {
+    top: 10vh;
+    left: 20vw;
+  }
+  .wf-ls
+  {
+    top: -10%;
+    left: 0;
+    width: 100vw;
   }
 }
 
@@ -33,19 +44,28 @@
   }
   .home-hook
   {
-    /*font-size: 3.75vw;*/
-    font-size: 10vw;
+    font-size: 7.5vw;
     align-self: flex-start;
   }
   .home-text-muted
   {
-    font-size: calc(17px + 8vmin);
+    font-size: calc(17px + 4vmin);
   }
   .bird
   {
-    top: -16%;
-    left: 16vw;
-    height: 32.5%;
+    top: 10vh;
+    left: 20vw;
+  }
+  .wf-dove
+  {
+    top: 10vh;
+    left: 20vw;
+  }
+  .wf-ls
+  {
+    top: -10%;
+    left: 0;
+    width: 100vw;
   }
 }
 
@@ -56,6 +76,17 @@
     top: -16%;
     left: 14vw;
     height: 32.5%;
+  }
+  .wf-dove
+  {
+    top: 10vh;
+    left: 16vw;
+  }
+  .wf-ls
+  {
+    top: -10%;
+    left: -5%;
+    width: 125vw;
   }
   .home-hook
   {
@@ -73,6 +104,17 @@
     right: 0;
     height: 35%;
   }
+  .wf-dove
+  {
+    top: -7.5vh;
+    right: -50vh;
+  }
+  .wf-ls
+  {
+    top: -5%;
+    left: -15%;
+    width: 125vw;
+  }
   .home-hook
   {
     font-size: 12vw;
@@ -89,6 +131,17 @@
     right: 10%;
     height: 50%;
   }
+  .wf-dove
+  {
+    top: -15vh;
+    right: -40vh;
+  }
+  .wf-ls
+  {
+    top: -5%;
+    left: -15%;
+    width: 125vw;
+  }
   .home-hook
   {
     font-size: 7vw;
@@ -103,7 +156,7 @@
   }
   .home-text-muted
   {
-    font-size: calc(17px + 5vmin);
+    font-size: calc(17px + 4vmin);
   }
 }
 
@@ -125,13 +178,24 @@
   }
   .home-text-muted
   {
-    font-size: 6vw;
+    font-size: 5vw;
   }
   .bird
   {
     top: calc(5% + 4vw);
     right: 0;
     height: 40%;
+  }
+  .wf-dove
+  {
+    top: calc(15% + 4vw);
+    right: -50vh;
+  }
+  .wf-ls
+  {
+    top: 0;
+    left: -55%;
+    width: 200vw;
   }
 }
 
@@ -167,20 +231,6 @@
   box-shadow: 0 0 9px 15px rgba(1, 32, 119, 0.096);
 }
   
-.home-name
-{
-  font-size: calc(10px + 3vmin);
-  /* font-size: 2.25em; */
-  line-height: 1em;
-}
-.home-text
-{
-  font-size: calc(7.5px + 1.25vmin);
-  font-weight: 600;
-  /* font-size: 1.25em; */
-  line-height: 1.25em;
-  color: var(--clr-primary);
-}
 .intro-text
 {
   font-weight: 600 !important;
@@ -190,14 +240,15 @@
 }
 .home-hook
 {
-  line-height: .9em;
+  line-height: .85em;
   transform: scaleY(1.10);
   font-family: 'ErasITCDemi';
   font-weight: normal !important;
   margin-right: auto;
   margin-bottom: 0;
-  margin-top: .5%;
-  color: #f993ff;
+  margin-top: 2.5%;
+  /* color: #f993ff; */
+  color: var(--clr-new-text);
 } 
 .home-text-muted
 {
@@ -211,7 +262,8 @@
   margin-bottom: auto;
   margin-left: 0%;
   margin-right: 0%;
-  color: #f5b6ff;
+  /* color: #f5b6ff; */
+  color: var(--clr-new-pop);
 }
 
 /* BIRD */
@@ -224,6 +276,27 @@
   z-index: 999;
   /* animation: birdShiftLeftRight 4s ease-in-out infinite; 2s duration, infinite looping */
 }
+
+.wf-dove
+{
+  user-select: none;
+  pointer-events: none;
+  position: absolute;
+  z-index: 1;
+  height: 100%;
+  opacity: 70%;
+  /* animation: birdShiftLeftRight 4s ease-in-out infinite; 2s duration, infinite looping */
+}
+.wf-ls
+{
+  user-select: none;
+  pointer-events: none;
+  position: absolute;
+  z-index: 1;
+  height: 125%;
+  opacity: 60%;
+}
+
 
 @keyframes birdShiftLeftRight {
   0%, 100% {
