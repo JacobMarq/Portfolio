@@ -10,7 +10,7 @@ import DONATIONCHECKOUT from "../../img/BENEVV/DonationPaymentCard.png";
 import BENEVVPAYMENTS from "../../img/BENEVV/BenevvPayments.png";
 import {DetailedProject, DetailedProjectSection } from "../../detailedProject";
 
-const name = "BENEVV Web & Mobile";
+const name = "BENEVV Web & Mobile - Smarttwigs";
 
 const description = 
 "Owned by SmartTwigs, BENEVV is a social platform meant for sharing and " +
@@ -63,30 +63,30 @@ export const BENEV = new Project(
     "Y"
 );
 
-const section1 = new DetailedProjectSection(
-    "What is BENEVV?",
-    BENEVVMOBILE,
-    "S",
-    description + extendedDesc
-);
-const section2 = new DetailedProjectSection(
-    "Data Visualization",
-    ORGANIZATIONHOME,
-    "P",
-    p1
-);
-const section3 = new DetailedProjectSection(
-    "Real Time Chat",
-    REALTIMECHATMOBILE,
-    "M",
-    p2
-);
-const section4 = new DetailedProjectSection(
-    "Donation Workflow",
-    DONATIONCHECKOUT,
-    "P",
-    p3
-);
+const section1 = new DetailedProjectSection({
+    header: "What is BENEVV?",
+    image: BENEVVMOBILE,
+    imgType: "S",
+    paragraph: description + extendedDesc
+});
+const section2 = new DetailedProjectSection({
+    header: "Data Visualization",
+    image: ORGANIZATIONHOME,
+    imgType: "P",
+    paragraph: p1
+});
+const section3 = new DetailedProjectSection({
+    header: "Real Time Chat",
+    image: REALTIMECHATMOBILE,
+    imgType: "M",
+    paragraph: p2
+});
+const section4 = new DetailedProjectSection({
+    header: "Donation Workflow",
+    image: DONATIONCHECKOUT,
+    imgType: "P",
+    paragraph: p3
+});
 
 export const BenevDetailed = new DetailedProject(
     1000,

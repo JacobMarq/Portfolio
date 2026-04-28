@@ -2,8 +2,9 @@ import './DetailedSection.css';
 
 function DetailedSection(props) {
     const { index, length, section } = props;
+    const pClassName = "detailed-desc " + (section.image.type === "" ? "ml-0 maxw-delimit" : "");
     const rowClassName = "detailed-row " + (index === (length - 1) ? "mt-5p mb-10p" : (index <= 1 ? "mt-5p mb-5p" : "mt-10p mb-10p"));
-    const imgClassName = (section.image.type === "M" ? "detailed-mobile-img" : (section.image.type === "P" ? "detailed-portrait-img" : (section.image.type === "L" ? "detailed-landscape-img" : "detailed-square-img")));
+    const imgClassName = (section.image.type === "" ? "" : (section.image.type === "M" ? "detailed-mobile-img" : (section.image.type === "P" ? "detailed-portrait-img" : (section.image.type === "L" ? "detailed-landscape-img" : "detailed-square-img"))));
 
     if (index === 0) {
         return (
@@ -11,9 +12,9 @@ function DetailedSection(props) {
                 <div className={rowClassName}>
                     <div className="d-flex flex-column detailed-p">
                         <h2>{section.header}</h2>
-                        <p className="color-white detailed-desc">{section.paragraph}</p>
+                        <p className={pClassName}>{section.paragraph}</p>
                     </div>
-                    <img className={imgClassName} src={section.image.src} alt='description'/>
+                    {(section.image.type === "" ? <div/> : <img className={imgClassName} src={section.image.src} alt='description'/>)}
                 </div>            
             </>
         );
@@ -22,10 +23,10 @@ function DetailedSection(props) {
         return (
             <>
                 <div className={rowClassName}>
-                    <img className={imgClassName} src={section.image.src} alt={"section " + index}/>
+                    {(section.image.type  === "" ? <div/> : <img className={imgClassName} src={section.image.src} alt={"section " + index}/>)}
                     <div className="d-flex flex-column detailed-p">
                         <h2>{section.header}</h2>
-                        <p className="color-white detailed-desc">{section.paragraph}</p>
+                        <p className={pClassName}>{section.paragraph}</p>
                     </div>
                 </div>              
             </>
@@ -38,9 +39,9 @@ function DetailedSection(props) {
                     <div className={rowClassName}>
                         <div className="d-flex flex-column detailed-p">
                             <h2>{section.header}</h2>
-                            <p className="color-white detailed-desc">{section.paragraph}</p>
+                            <p className={pClassName}>{section.paragraph}</p>
                         </div>
-                        <img className={imgClassName} src={section.image.src} alt={"section " + index}/>
+                        {(section.image.type  === "" ? <div/> : <img className={imgClassName} src={section.image.src} alt={"section " + index}/>)}
                     </div>
                 </>
             );
@@ -49,10 +50,10 @@ function DetailedSection(props) {
         return (
             <>
                 <div className={rowClassName}>
-                    <img className={imgClassName} src={section.image.src} alt={"section " + index}/>
+                    {(section.image.type  === "" ? <div/> : <img className={imgClassName} src={section.image.src} alt={"section " + index}/>)}
                     <div className="d-flex flex-column detailed-p">
                         <h2>{section.header}</h2>
-                        <p className="color-white detailed-desc">{section.paragraph}</p>
+                        <p className={pClassName}>{section.paragraph}</p>
                     </div>
                 </div>
             </>

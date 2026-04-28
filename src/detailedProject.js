@@ -1,5 +1,5 @@
 export class DetailedProjectSection {
-    constructor( header, image, imgType, paragraph ) {
+    constructor({ header, image = '', imgType = '', paragraph }) {
         this.header = header;
         this.image = {  
             src: image,

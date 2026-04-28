@@ -21,7 +21,7 @@ function ProjectsDetailedView(props) {
             { project.body.sections.map((section, index) => {
                 return(
                     <div key={index}>
-                        <DetailedSeparator index={index} length={project.body.sections.length}/>
+                        <DetailedSeparator index={index} length={project.body.sections.length} section={section}/>
                         <DetailedSection index={index} length={project.body.sections.length} section={section}/>
                     </div>
                 );

@@ -480,6 +480,9 @@ p {
   margin-right: auto;
 }
 
+.ml-0 {
+  margin-left: 0 !important;
+}
 .ml-5 {
   margin-left: 5px;
 }
@@ -587,6 +590,10 @@ p {
 }
 .w-maxc {
   width: max-content;
+}
+
+.maxw-delimit {
+  max-width: fit-content !important;
 }
 
 /* 

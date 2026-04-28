@@ -6,34 +6,58 @@ import OAOIDSCAN from "../../img/Workbox/IDSCAN.png";
 import KEYSTONE from "../../img/Workbox/KEYSTONE-CORE.png";
 import {DetailedProject, DetailedProjectSection } from "../../detailedProject";
 
-const name = "IMS Integration";
+const name = "Projects at IMS Integration";
 
 const description = 
-"IMS Integration, is a company that provides a suite of Industry Leading Software Solutions " +
-"tailored to meet the specific standards and requirements of Credit Unions around the US. " +
-"As a Software Developer at IMSI, I've contributed to upgrading, maintaining, and offering technical support for existing solutions, " +
-"as well as Designing, Developing, and Implementing new features and functionality. ";
+"IMS Integration, is a company that provides a suite of industry leading software solutions in the Fintech sector " +
+"tailored to meet the high demand and specific standard of Credit Unions around the US. " +
+"As a Software Developer at IMSI, I specialize in the lifecycle of enterprise software for the credit union industry. " +
+"My work sits at the intersection of maintaining high-security legacy systems and engineering the modern tools that replace them.";
 
-const extendedDesc =
-"Improvements don't stop at the user. Achievements I'm most proud of during my time at IMSI include: " +
-"Assisting in rewriting IMSI's master application, Workbox, from Struts2 to AngularJS. " +
-"utilizing python scripting to create a suite of scripts that have improved response times, " +
-"automating our Certificate renewal process for an extensive lists of over 100 clients, " +
-"and expanding IMSI's software documentation for users and developers alike. ";
+// const extendedDesc =
+// "Improvements don't stop at the user. Achievements I'm most proud of during my time at IMSI include: " +
+// "Assisting in rewriting IMSI's master application, Workbox, from Struts2 to AngularJS. " +
+// "utilizing python scripting to create a suite of scripts that have improved response times, " +
+// "automating our Certificate renewal process for an extensive lists of over 100 clients, " +
+// "and expanding IMSI's software documentation for users and developers alike. ";
 
-const p1 =
+
+const modernization = 
+"I served as a key developer in a large-scale modernization initiative, " +
+"migrating our flagship enterprise application from Struts2 to AngularJS. " +
+"My focus was on ensuring feature parity and improving the overall user experience during the transition, " +
+"While adding to and improving API endpoints and backend functionality.";
+
+const dataVisualization =
 "Credit Unions depend on IMSI's software for collecting data on their online services and handling generation of their eStatements, Taxes, and Reports. " +
-"I utilized JasperSoft and Adobe Acrobat to manage clients disclosures and documents. " +
-"This required thorough requirements gathering, troubleshooting, and communication to ensure pixel perfect accuracy. " +
-"Due to performance needs, since it was standard to process hundreds of thousands or even millions of documents, " +
-"we would have to accomplish certain goals with minimal solutions often utilizing basic MySQL functionality.";
+"This required thorough requirements gathering, troubleshooting, and communication to ensure the needs of our financial partners were met. " +
+"On the technical side of things, these reports utilized a combination of Jaspersoft and Adobe Acrobat for visualization, " +
+"as well as complex SQL queries and Java to handle data both from IMSI internal systems and third-party systems such as Corelation and Symitar.";
 
-const p2 =
+
+const security =
 "Working with Credit Unions means having the highest quality security. " +
 "With Fraud being an evergrowing problem, and experiencing exponential growth in the last 2 years, " +
-"I would handle making upgrades to our integrations with 3rd party identity verification providers. " +
+"I would handle making upgrades to our integrations with 3rd party identity verification providers such as Idology, Geolocation services, and Chexsystems. " +
 "This process was challenging and required collaboration between IMSI, our clients, and 3rd party providers. " +
 "We also had regular security training for handling highly sensitive data and Industry best practices. ";
+const idology =
+"Identity Verification & Fraud Prevention\n\n" +
+"In the FinTech sector, identity verification is the primary line of defense against fraud. " +
+"At IMS Integration, I owned the implementation of the IDology iFrame, a solution designed to balance robust security with a frictionless applicant experience. " +
+"\n\nThe Engineering Challenge\n\n" +
+"Identity scans are inherently sensitive to environmental variables like low lighting, poor camera quality, or improper document placement. " +
+"These factors often lead to low-confidence results, requiring a sophisticated strategy to determine when to accept, reject, or manually review " +
+"an attempt without alienating legitimate users. " +
+"\n\nTechnical Strategy & Implementation\n\n" +
+"I integrated the iFrame because its extensive feature set allowed our existing interceptors to hook into the workflow with minimal back-end and database overhead. " +
+"The solution’s flexibility was critical, providing the granular settings necessary to meet the diverse security requirements of our broad credit union client list. " +
+"\n\nStakeholder Collaboration\n\n" +
+'To minimize user error and improve "pass rates", I collaborated directly with stakeholders at various credit unions. ' +
+"By gathering feedback on specific friction points, I was able to refine the UI and provide clear, instructional guidance " +
+"that helped applicants successfully complete the verification process on their first attempt." 
+
+
 
 // const p3 = "Corelation Integrations";
 
@@ -57,24 +81,46 @@ export const IMSI = new Project(
     "Y"
 );
 
-const section1  = new DetailedProjectSection(
-    "What is IMS Integration?",
-    WBLANDINGPAGE,
-    "L",
-    description + extendedDesc
-);
-const section2 = new DetailedProjectSection(
-    "Data Visualization & Report Generation",
-    WBDATACHART,
-    "S",
-    p1
-);
-const section3 = new DetailedProjectSection(
-    "Safe, Secure, & Compliant",
-    OAOIDSCAN,
-    "P",
-    p2
-);
+const section0 = new DetailedProjectSection({
+    header: "IMS Integration",
+    paragraph: description
+});
+
+const section1  = new DetailedProjectSection({
+    header: "The Workbox Migration",
+    image: WBLANDINGPAGE,
+    imgType: "L",
+    paragraph: modernization
+});
+const section1a = new DetailedProjectSection({
+    header: "IDology - ID Scan integration",
+    paragraph: idology
+});
+
+const section2 = new DetailedProjectSection({
+    header: "Data Visualization & Report Generation",
+    image: WBDATACHART,
+    imgType: "S",
+    paragraph: dataVisualization
+});
+const section2a = new DetailedProjectSection({
+    header: "IDology - ID Scan integration",
+    paragraph: idology
+});
+
+const section3 = new DetailedProjectSection({
+    header: "Safe, Secure, & Compliant",
+    image: OAOIDSCAN,
+    imgType: "P",
+    paragraph: security
+});
+const section3a = new DetailedProjectSection({
+    header: "IDology - ID Scan integration",
+    paragraph: idology
+});
+
+
+
 // const section4 = new DetailedProjectSection(
 //     "Corelation Integration",
 //     KEYSTONE,
@@ -86,7 +132,9 @@ export const IMSIDetailed = new DetailedProject(
     1001,
     name,
     IMSILOGO,
+    section0,
     section1,
     section2,
     section3,
+    section3a
 );
