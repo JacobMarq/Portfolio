@@ -21,28 +21,12 @@ const description =
 // "automating our Certificate renewal process for an extensive lists of over 100 clients, " +
 // "and expanding IMSI's software documentation for users and developers alike. ";
 
-
 const modernization = 
 "I served as a key developer in a large-scale modernization initiative, " +
 "migrating our flagship enterprise application from Struts2 to AngularJS. " +
 "My focus was on ensuring feature parity and improving the overall user experience during the transition, " +
 "While adding to and improving API endpoints and backend functionality.";
-
-const dataVisualization =
-"Credit Unions depend on IMSI's software for collecting data on their online services and handling generation of their eStatements, Taxes, and Reports. " +
-"This required thorough requirements gathering, troubleshooting, and communication to ensure the needs of our financial partners were met. " +
-"On the technical side of things, these reports utilized a combination of Jaspersoft and Adobe Acrobat for visualization, " +
-"as well as complex SQL queries and Java to handle data both from IMSI internal systems and third-party systems such as Corelation and Symitar.";
-
-
-const security =
-"Working with Credit Unions means having the highest quality security. " +
-"With Fraud being an evergrowing problem, and experiencing exponential growth in the last 2 years, " +
-"I would handle making upgrades to our integrations with 3rd party identity verification providers such as Idology, Geolocation services, and Chexsystems. " +
-"This process was challenging and required collaboration between IMSI, our clients, and 3rd party providers. " +
-"We also had regular security training for handling highly sensitive data and Industry best practices. ";
-const idology =
-"Identity Verification & Fraud Prevention\n\n" +
+const workbox =
 "In the FinTech sector, identity verification is the primary line of defense against fraud. " +
 "At IMS Integration, I owned the implementation of the IDology iFrame, a solution designed to balance robust security with a frictionless applicant experience. " +
 "\n\nThe Engineering Challenge\n\n" +
@@ -55,11 +39,48 @@ const idology =
 "\n\nStakeholder Collaboration\n\n" +
 'To minimize user error and improve "pass rates", I collaborated directly with stakeholders at various credit unions. ' +
 "By gathering feedback on specific friction points, I was able to refine the UI and provide clear, instructional guidance " +
-"that helped applicants successfully complete the verification process on their first attempt." 
+"that helped applicants successfully complete the verification process on their first attempt.";
 
+const dataVisualization =
+"Credit Unions depend on IMSI's software for collecting data on their online services and handling generation of their eStatements, Taxes, and Reports. " +
+"This required thorough requirements gathering, troubleshooting, and communication to ensure the needs of our financial partners were met. " +
+"On the technical side of things, these reports utilized a combination of Jaspersoft and Adobe Acrobat for visualization, " +
+"as well as complex SQL queries and Java to handle data both from IMSI internal systems and third-party systems such as Corelation and Symitar.";
+const Wbmas =
+"In the FinTech sector, identity verification is the primary line of defense against fraud. " +
+"At IMS Integration, I owned the implementation of the IDology iFrame, a solution designed to balance robust security with a frictionless applicant experience. " +
+"\n\nThe Engineering Challenge\n\n" +
+"Identity scans are inherently sensitive to environmental variables like low lighting, poor camera quality, or improper document placement. " +
+"These factors often lead to low-confidence results, requiring a sophisticated strategy to determine when to accept, reject, or manually review " +
+"an attempt without alienating legitimate users. " +
+"\n\nTechnical Strategy & Implementation\n\n" +
+"I integrated the iFrame because its extensive feature set allowed our existing interceptors to hook into the workflow with minimal back-end and database overhead. " +
+"The solution’s flexibility was critical, providing the granular settings necessary to meet the diverse security requirements of our broad credit union client list. " +
+"\n\nStakeholder Collaboration\n\n" +
+'To minimize user error and improve "pass rates", I collaborated directly with stakeholders at various credit unions. ' +
+"By gathering feedback on specific friction points, I was able to refine the UI and provide clear, instructional guidance " +
+"that helped applicants successfully complete the verification process on their first attempt.";
 
-
-// const p3 = "Corelation Integrations";
+const security =
+"Working with Credit Unions means having the highest quality security. " +
+"With Fraud being an evergrowing problem, and experiencing exponential growth in the last 2 years, " +
+"I would handle making upgrades to our integrations with 3rd party identity verification providers such as Idology, Geolocation services, and Chexsystems. " +
+"This process was challenging and required collaboration between IMSI, our clients, and 3rd party providers. " +
+"We also had regular security training for handling highly sensitive data and Industry best practices. ";
+const idology =
+"In the FinTech sector, identity verification is the primary line of defense against fraud. " +
+"At IMS Integration, I owned the implementation of the IDology iFrame, a solution designed to balance robust security with a frictionless applicant experience. " +
+"\n\nThe Engineering Challenge\n\n" +
+"Identity scans are inherently sensitive to environmental variables like low lighting, poor camera quality, or improper document placement. " +
+"These factors often lead to low-confidence results, requiring a sophisticated strategy to determine when to accept, reject, or manually review " +
+"an attempt without alienating legitimate users. " +
+"\n\nTechnical Strategy & Implementation\n\n" +
+"I integrated the iFrame because its extensive feature set allowed our existing interceptors to hook into the workflow with minimal back-end and database overhead. " +
+"The solution’s flexibility was critical, providing the granular settings necessary to meet the diverse security requirements of our broad credit union client list. " +
+"\n\nStakeholder Collaboration\n\n" +
+'To minimize user error and improve "pass rates", I collaborated directly with stakeholders at various credit unions. ' +
+"By gathering feedback on specific friction points, I was able to refine the UI and provide clear, instructional guidance " +
+"that helped applicants successfully complete the verification process on their first attempt.";
 
 export const IMSI = new Project(
     1001,
@@ -81,60 +102,53 @@ export const IMSI = new Project(
     "Y"
 );
 
-const section0 = new DetailedProjectSection({
+const sectionWorkDescription = new DetailedProjectSection({
     header: "IMS Integration",
     paragraph: description
 });
 
-const section1  = new DetailedProjectSection({
-    header: "The Workbox Migration",
+const sectionModernization  = new DetailedProjectSection({
+    header: "Legacy Maintenance & Modernization",
     image: WBLANDINGPAGE,
     imgType: "L",
     paragraph: modernization
 });
-const section1a = new DetailedProjectSection({
-    header: "IDology - ID Scan integration",
-    paragraph: idology
+const sectionWorkboxMigration = new DetailedProjectSection({
+    header: "The Workbox Migration",
+    paragraph: workbox
 });
 
-const section2 = new DetailedProjectSection({
+const sectionDataVisualization = new DetailedProjectSection({
     header: "Data Visualization & Report Generation",
     image: WBDATACHART,
     imgType: "S",
     paragraph: dataVisualization
 });
-const section2a = new DetailedProjectSection({
-    header: "IDology - ID Scan integration",
-    paragraph: idology
+const sectionWbMAS = new DetailedProjectSection({
+    header: "Workbox & Make A Statement",
+    paragraph: Wbmas
 });
 
-const section3 = new DetailedProjectSection({
+const sectionSecurity = new DetailedProjectSection({
     header: "Safe, Secure, & Compliant",
     image: OAOIDSCAN,
     imgType: "P",
     paragraph: security
 });
-const section3a = new DetailedProjectSection({
+const sectionIDScan = new DetailedProjectSection({
     header: "IDology - ID Scan integration",
     paragraph: idology
 });
-
-
-
-// const section4 = new DetailedProjectSection(
-//     "Corelation Integration",
-//     KEYSTONE,
-//     "S",
-//     p3
-// );
 
 export const IMSIDetailed = new DetailedProject(
     1001,
     name,
     IMSILOGO,
-    section0,
-    section1,
-    section2,
-    section3,
-    section3a
+    sectionWorkDescription,
+    sectionModernization,
+    // sectionWorkboxMigration,
+    sectionDataVisualization,
+    // sectionWbMAS,
+    sectionSecurity,
+    sectionIDScan
 );

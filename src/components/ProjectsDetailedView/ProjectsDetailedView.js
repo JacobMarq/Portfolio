@@ -11,9 +11,9 @@ function ProjectsDetailedView(props) {
 
     return (
         <div className="detailed-container">
-            <div className="d-flex flex-row mt-10">
+            <div className="d-flex flex-column mt-10">
                 <button id="0" className="back-btn secondary-btn" onClick={toggleDetailedView}>
-                    Go Back
+                    Back to Projects Catalog
                 </button>
                 <h1 className='detailed-header ml-auto mr-auto'>{project.name}</h1>
             </div>
@@ -26,6 +26,9 @@ function ProjectsDetailedView(props) {
                     </div>
                 );
             })}
+            <button id="0" className="back-btn secondary-btn" onClick={toggleDetailedView}>
+                Back to Projects Catalog
+            </button>
         </div>
     );
 }

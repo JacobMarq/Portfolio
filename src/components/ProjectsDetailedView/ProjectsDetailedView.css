@@ -9,10 +9,10 @@
 .back-btn {
     font-size: 1rem !important;
     font-weight: 600;
-    width: 90px;
-    height: 40px;
+    width: max-content;
+    height: fit-content;
     margin-top: auto;
-    margin-bottom: auto;
+    margin-bottom: 10px;
     margin-left: 10px;
 }
 
