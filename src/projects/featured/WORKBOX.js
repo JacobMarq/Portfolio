@@ -5,6 +5,7 @@ import WBDATACHART from "../../img/Workbox/piechart.png";
 import OAOIDSCAN from "../../img/Workbox/IDSCAN.png";
 import KEYSTONE from "../../img/Workbox/KEYSTONE-CORE.png";
 import {DetailedProject, DetailedProjectSection } from "../../detailedProject";
+import { techAngular, techJava, techJavaScript, techMySQL, techIBMDb2 } from "../../technologies/technologies";
 
 const name = "Projects at IMS Integration";
 

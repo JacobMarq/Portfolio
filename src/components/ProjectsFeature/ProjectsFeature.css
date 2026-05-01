@@ -17,23 +17,32 @@
 
   .featured-img-desktop-wrapper {
     width: 80%;
+    max-width: 600px;
     margin-left: auto;
     margin-right: auto;
     padding: 2px;
-    border: solid 5px rgb(212, 212, 212);
-    border-bottom: solid 10px rgb(212, 212, 212);
-    border-radius: 5px;
+    /* background-color: var(--clr-black);
+    border: solid 5px var(--clr-black);
+    border-bottom: solid 10px var(--clr-black); */
+    background-color: transparent;
+    border: solid 5px transparent;
+    border-bottom: solid 10px transparent;
+    border-radius: 10px;
   }
 
   .featured-img-mobile-wrapper {
-    margin-left: 20px;
     margin-right: auto;
     width: 15%;
     height: fit-content;
     padding: 2px;
-    border: solid 5px rgb(212, 212, 212);
-    border-top: solid 20px rgb(212, 212, 212);
-    border-bottom: solid 20px rgb(212, 212, 212);
+    /* background-color: var(--clr-black);
+    border: solid 5px var(--clr-black);
+    border-top: solid 7.5px var(--clr-black);
+    border-bottom: solid 7.5px var(--clr-black); */
+    background-color: transparent;
+    border: solid 5px transparent;
+    border-top: solid 7.5px transparent;
+    border-bottom: solid 7.5px transparent;
     border-radius: 15px;
   }
 
@@ -41,27 +50,12 @@
     width: 100%;
     height: 100%;
     max-height: 300px;
+    max-width: 600px;
   }
+    .fi-desktop {
+      border-radius: 5px;
+    }
+    .fi-mobile {
+      border-radius: 20px;
+    }
 
-.project-details-btn {
-    font-size: 1rem;
-    font-weight: 600;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    text-decoration: none;
-    color: var(--clr-white);
-    border: var(--clr-primary) 3px solid;
-    background-color: transparent;
-    border-radius: 0.25em;
-    box-shadow: inset 0 0 0.3em 0 var(--clr-primary), 0 0 0.3em 0 var(--clr-primary);
-    transition: all 0.5s;
-    padding: .5em;
-  }
-  .project-details-btn:hover {
-    background-color: var(--clr-primary);
-  }
-  .project-details-btn:active {
-    background-color: var(--clr-primary);
-  }

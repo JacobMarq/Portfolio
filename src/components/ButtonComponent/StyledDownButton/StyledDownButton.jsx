@@ -8,7 +8,7 @@ const Button = () => {
   const { scrollToSection } = useScroll();
 
   return (
-    <button className='down-btn-container' onClick={() => scrollToSection('about')}>
+    <button className='down-btn-container' onClick={() => scrollToSection('work')}>
       <div className='down-btn-dashed-cir'/>
       
       <div className='down-btn-solid-cir'/>
@@ -16,6 +16,11 @@ const Button = () => {
 
       <div className='down-btn-tri-container'>
         <img src={Chevron2} className='down-btn-chevron' alt='down-btn-chevron'/>
+      </div>
+
+      <div className='down-btn-cta'>
+        <p>|</p>
+        <p>View Featured Work</p>
       </div>
     </button>
   );

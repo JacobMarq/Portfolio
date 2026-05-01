@@ -11,9 +11,12 @@
     .project-img-wrapper {
       height: 250px;
       width: 400px;
+      margin-left: 10px;
+      margin-top: 10px;
     }
     .project-column-left {
       border-right: 2px solid var(--clr-secondary);
+      padding-left: 10px;
       width: 40%;
     }
 
@@ -32,6 +35,8 @@
     .project-img-wrapper {
       height: 150px;
       width: 250px;
+      margin-left: 10px;
+      margin-top: 10px;
     }
     .project-column-left {
       border-right: 2px solid var(--clr-secondary);
@@ -51,7 +56,8 @@
     flex-direction: column;
   }
     .project-column-left {
-      border-right: 2px solid var(--clr-secondary);
+      border-right: none;
+      border-bottom: 2px solid var(--clr-secondary);
       min-width: 100%;
     }
     .project-img-wrapper {
@@ -68,17 +74,19 @@
   
   .project-img-wrapper {
     position: relative;
+    border-radius: 10px;
+    background-color: transparent;
   }
     .project-pic {
       position: absolute;
       display: flex;
       visibility: hidden;
-      background-color: var(--clr-secondary);
+      border-radius: 10px;
+      background-color: transparent;
       width: 100%;
       height: 100%;
       /* border-radius: .3em; */
       transition: all ease-in-out .5s;
-      box-shadow: 0 0 5px #000;
       z-index: 1;
       overflow: hidden;
       pointer-events: none;
@@ -109,10 +117,10 @@
     .project-link:hover, .project-link:focus {
       filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(232deg) brightness(110%) contrast(101%);
     }
-    .project-card-footer {
-      border-top: 2px solid var(--clr-secondary);
+    .project-card-header {
       margin-top: auto;
       margin-bottom: 0%;
+      border-bottom: 2px solid var(--clr-secondary);
     }
       .project-tools {
         font-size: .9em;
@@ -127,4 +135,27 @@
   cursor: pointer;
   background: var(--clr-secondary);
 }
-  
+
+.project-details-btn {
+    font-size: 1rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--clr-white);
+    border: var(--clr-new-pop) 3px solid;
+    background-color: var(--clr-new-pop);
+    border-radius: 0.25em;
+    transition: all 0.5s;
+    padding: .5em;
+  }
+  .project-details-btn:hover,
+  .project-details-btn:focus {
+    background-color: var(--clr-new-pop-bright);
+    box-shadow: 0px 0px 5px 2.5px var(--clr-new-pop) inset, 0px 0px 5px 1px var(--clr-new-pop);
+  }
+  .project-details-btn:active {
+    box-shadow: 0px 0px 4px .5px var(--clr-new-text);
+  }

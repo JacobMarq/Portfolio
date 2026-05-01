@@ -2,7 +2,7 @@
 <--------------- projects ---------------> 
 */
 @media only screen and (min-width: 1400px){
-  #projects {
+  #work {
     scroll-margin-top: -5.5vw;
     padding: 10% 0;
   }
@@ -42,7 +42,7 @@
 }
 
 @media only screen and (min-width: 800px) and (max-width: 1400px){
-  #projects {
+  #work {
     scroll-margin-top: 2vw;
     padding: 10% 0;
   }
@@ -82,7 +82,7 @@
 }
 
 @media only screen and (max-width: 800px){
-  #projects {
+  #work {
     scroll-margin-top: -3vh;
     padding: 20% 0 ;
   }
@@ -126,7 +126,7 @@
 }
 
 @media only screen and (max-width: 500px){
-  #projects {
+  #work {
     scroll-margin-top: 3.7vh;
     padding: 20% 0 ;
   }

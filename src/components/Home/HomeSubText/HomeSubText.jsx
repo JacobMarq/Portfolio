@@ -1,18 +1,18 @@
 import './HomeSubText.css';
 import React from 'react';
-import TypingAnim from '../TextComponents/TypingAnim/TypingAnim.jsx';
+import TypingAnim from '../../TextComponents/TypingAnim/TypingAnim.jsx';
 
-class HomeSubText extends React.Component {
-  render() {
-    return (
-        <TypingAnim componentType='span' 
-                    classNames='home-text-muted default-cursor' 
-                    textPrefixValue='//' 
-                    textSuffixValue='' 
-                    textValue='WEB-DEVELOPMENT.'
-        />
-      );
-  }
+const HomeSubText = () => {
+  return (
+    <TypingAnim componentType='span' 
+        classNames='home-text-muted default-cursor' 
+        textPrefixValue='//' 
+        textSuffixValue='' 
+        // textValues={['WEB-DEVELOPMENT.','GAME-DEVELOPMENT.']}
+        textValues={['FINTECH-SYSTEMS.','API-ARCHITECTURE.','WORKFLOW-AUTOMATION.','SCALABLE-APPLICATIONS.']}
+        animationDuration={'0.1'}
+    />
+  );
 }
 
 export default HomeSubText;

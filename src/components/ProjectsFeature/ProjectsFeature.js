@@ -13,11 +13,11 @@ function ProjectsFeature(props) {
 
                 <div className="d-flex flex-row">
                     <div className="featured-img-desktop-wrapper">
-                        <img className="featured-img" src={project.images[0].url} alt='featured project desktop view'/>
+                        <img className="featured-img fi-desktop" src={project.images[0].url} alt='featured project desktop view'/>
                     </div>
                     { project.featuredMobileImg ?
                     <div className="featured-img-mobile-wrapper">
-                        <img className="featured-img" src={project.featuredMobileImg} alt='featured project mobile view'/>
+                        <img className="featured-img fi-mobile" src={project.featuredMobileImg} alt='featured project mobile view'/>
                     </div>:
                     <></>}
                 </div>

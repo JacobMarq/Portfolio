@@ -1,0 +1,28 @@
+.sliderContainer {
+  overflow: hidden;
+  padding: 1rem 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  width: 100%;
+  display: flex;
+}
+
+.track {
+  display: flex;
+  width: max-content;
+  animation: scroll 25s linear infinite;
+}
+
+/* Pause when the user wants to read a specific logo */
+.track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}

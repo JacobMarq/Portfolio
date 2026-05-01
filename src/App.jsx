@@ -10,7 +10,7 @@ import Navbar from './components/Navbar/Navbar';
 import { ScrollProvider } from './context/ScrollContext';
 
 const App = () => {
-  const sectionIds = ["home", "about", "projects", "contact"];
+  const sectionIds = ["home", "work", "about", "contact"];
 
   return (
     <div className='App'>
@@ -21,11 +21,11 @@ const App = () => {
           <Switch>
             <Route exact path="/">
               <Home />
-              <About />
               <ProjectsContainer />
+              <About />
               <Contact />
             </Route>
-            <Route path="/projects">
+            <Route path="/work">
               <ProjectsContainer />
             </Route>
             <Route path="/about">

@@ -7,7 +7,7 @@ const Contact = () => {
         <div id='contact' className='container pt-20p pb-10p mr-5p ml-5p'>
             <div className='contact-content'>
                 <div className='contact-text-container'>
-                    <h1 className="section-title default-cursor mb-0 mt-5p">
+                    <h1 className="section-title default-cursor mb-0 mt-0">
                         Contact Me
                     </h1>
 

@@ -2,7 +2,7 @@
 {
   .down-btn-container {
     margin-top: auto;
-    margin-bottom: 15vh;
+    margin-bottom: 7.5vh;
   }
 }
 
@@ -10,15 +10,15 @@
 {
   .down-btn-container {
     margin-top: auto;
-    margin-bottom: 15vh;
+    margin-bottom: 7.5vh;
   }
 }
 
 @media only screen and (min-width: 800px) and (max-width: 1500px)
 {
   .down-btn-container {
-    margin-top: 5vh;
-    margin-bottom: auto;
+    margin-top: auto;
+    margin-bottom: 7.5vh;
   }
 }
 
@@ -37,12 +37,13 @@
     user-select: auto;
     pointer-events: all;
     z-index: 100;
-    width: 24vh;
-    height: 24vh;
+    width: 200px;
+    height: 300px;
     margin-left: auto;
     margin-right: auto;
     border: none;
     background-color: transparent;
+    bottom: 0;
 }
 .down-btn-container:hover,
 .down-btn-container:focus {
@@ -132,18 +133,52 @@
 }
 
 .down-btn-chevron {
-  user-select: none;
-  pointer-events: none;
-  position: absolute;
-  z-index: 1;
-  scale: 100%;
+    user-select: none;
+    pointer-events: none;
+    position: absolute;
+    z-index: 1;
 }
 .down-btn-container:hover .down-btn-tri-container .down-btn-chevron,
 .down-btn-container:focus .down-btn-tri-container .down-btn-chevron {
-    scale: 95%;
     transition: all .1s ease-in-out;
 }
 
+.down-btn-cta {
+    position: absolute;
+    font-size: 2rem;
+    width: 100%;
+    bottom: 0;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    z-index: 998;
+}
+.down-btn-cta p:first-child {
+    font-size: 1em;
+    margin-bottom: 5%;
+}
+.down-btn-cta p {
+    margin-top: 5px;
+    margin-bottom: 10%;
+    margin-right: 12.5px;
+    font-size: .6em;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--clr-new-text);
+    text-shadow: 0 0 5px var(--clr-background);
+    filter: drop-shadow(0 0 2px var(--clr-background)) 
+        drop-shadow(0 0 3px var(--clr-background))
+        drop-shadow(0 0 4px var(--clr-background))
+        drop-shadow(0 0 5px var(--clr-background))
+        drop-shadow(0 0 6px var(--clr-background));
+    transition: all .2s ease-in-out;
+}
+
+.down-btn-container:hover .down-btn-cta p,
+.down-btn-container:focus .down-btn-cta p {
+    letter-spacing: 3%;
+}
 
 @keyframes slow-rotate-dashed-cir {
     0% {

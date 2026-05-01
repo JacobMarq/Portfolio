@@ -19,7 +19,7 @@ const About = () => {
           animateIn='animate__fadeInRight'
           animateOnce={true}
         >
-          <h1 className="section-title default-cursor mb-0 mt-5p">
+          <h1 className="section-title default-cursor mb-0 mt-0">
             Hi, my name is Jacob!
           </h1>
           <br/>

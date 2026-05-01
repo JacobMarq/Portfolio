@@ -11,7 +11,7 @@ const description =
 "\n\nCustom icons made with Adobe Illustrator";
 
 const SGCW = new Project(
-    4,
+    3,
     "Public",
     "sgcw",
     "Stained-Glass-CW",

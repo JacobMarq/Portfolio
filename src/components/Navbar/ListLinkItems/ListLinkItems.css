@@ -20,9 +20,10 @@
 
 .nav-link {
   margin: 0 1vw 0 1vw;
-  padding: 4px;
+  padding: 5px;
+  padding-bottom: 7px;
   border: solid 2px transparent;
-  font-size: calc(15px + 1.4vmin);
+  font-size: calc(15px + 1.2vmin);
   font-weight: 300;
   text-decoration: none;
   color: var(--clr-white);
@@ -64,10 +65,10 @@
 */
 
 .nav-link.active {
-  color: var(--clr-secondary);
+  color: var(--clr-new-pop);
 }
 .nav-link.active::after{
-  background-color: var(--clr-secondary);
+  background-color: var(--clr-new-pop);
 }
 
 /* =============================================

@@ -1,13 +1,53 @@
+@media (min-width: 850px) {
+    .detailed-mobile-img {
+        margin-left: 2vw;
+        margin-right: 2vw;
+    }
+    .detailed-portrait-img {
+        margin-left: 2vw;
+        margin-right: 2vw;
+    }
+    .detailed-landscape-img {
+        margin-left: 2vw;
+        margin-right: 2vw;
+    }
+    .detailed-square-img {
+        margin-left: 2vw;
+        margin-right: 2vw;
+    }
+    .detailed-desc {
+        max-width: 500px;
+    }
+}
+@media (max-width: 849px) {
+    .detailed-mobile-img {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .detailed-portrait-img {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .detailed-landscape-img {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .detailed-square-img {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .detailed-desc {
+        max-width: none;
+    }
+}
+
 .detailed-desc {
     white-space: pre-wrap;
-    max-width: 500px;
     padding-bottom: 30px;
     /* border-bottom: solid 2px var(--clr-tertiary); */
 }
 
 .detailed-p {
-    margin-left: auto;
-    margin-right: auto;
     margin-top: auto;
     margin-bottom: auto;
 }
@@ -15,10 +55,6 @@
 .detailed-mobile-img {
     margin-top: 30px;
     margin-bottom: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 2%;
-    padding-right: 2%;
     width: 150px;
     height: 300px;
     border-radius: 15px;
@@ -27,32 +63,22 @@
 .detailed-portrait-img {
     margin-top: 30px;
     margin-bottom: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 2%;
-    padding-right: 2%;
     width: 300px;
     height: 425px;
+    border-radius: 15px;
 }
 
 .detailed-landscape-img {
     margin-top: 30px;
     margin-bottom: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 2%;
-    padding-right: 2%;
     width: 400px;
     height: 250px;
+    border-radius: 15px;
 }
 
 .detailed-square-img {
     margin-top: 30px;
     margin-bottom: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 2%;
-    padding-right: 2%;
     width: 300px;
     height: 300px;
     border-radius: 15px;

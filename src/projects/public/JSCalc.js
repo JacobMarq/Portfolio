@@ -7,7 +7,7 @@ const description =
 "that allows keyboard inputs.";
 
 const JSCALC = new Project(
-    3,
+    4,
     "Public",
     "jscalc",
     "JavaScript Calculator",

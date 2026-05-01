@@ -110,6 +110,8 @@ h3 {
   --clr-new-pop: #bd2323;
   --clr-new-pop-bright: #D72323;
   --clr-new-text: #e9e9e9;
+  --clr-new-text-muted: #afafafaf;
+  --clr-black: #202020;
 }
 
 .svg-fill {
@@ -265,7 +267,7 @@ h3 {
   }
 
   p {
-    font-size: 1.35vw;
+    font-size: 1rem;
   }
 }
 @media only screen and (max-width: 800px){
@@ -286,7 +288,7 @@ h3 {
   }
 
   p {
-    font-size: 1.35vh;
+    font-size: 1rem;
   }
 }
 
@@ -308,7 +310,7 @@ h3 {
   }
 
   p {
-    font-size: 1.35vh;
+    font-size: 1rem;
   }
 }
 

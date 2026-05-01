@@ -39,6 +39,8 @@
     justify-content: center;
     text-align: center;
     text-decoration: none;
+    padding: 5px;
+    padding-bottom: 7px;
     font-size: 1.5rem;
     font-weight: 500;
     margin: auto;
@@ -57,7 +59,7 @@
 .dropdown-menu li a.active:hover,
 .dropdown-menu li a.active:focus {
     transition: 0s;
-    color: var(--clr-secondary);
+    color: var(--clr-new-pop);
 }
     .dropdown-menu li a::after{
         content: "";
@@ -79,5 +81,5 @@
     }
     .dropdown-menu li a.active:hover::after,
     .dropdown-menu li a.active:focus::after{
-        background-color: var(--clr-secondary);
+        background-color: var(--clr-new-pop);
     }

@@ -39,6 +39,7 @@ button > * {
 
 .scroll-shadow {
     box-shadow: 0px 2px 5px inset rgba(0, 0, 0, 0.356);
+    background-color: rgba(0, 0, 0, 0.26);
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
 }
@@ -61,7 +62,7 @@ button > * {
     }
         .horizontal-list li button {
             color: var(--clr-white);
-            background-color: var(--clr-background);
+            background-color: transparent;
             border: 2.5px solid transparent;
             border-radius: 5px;
             padding: 5px;

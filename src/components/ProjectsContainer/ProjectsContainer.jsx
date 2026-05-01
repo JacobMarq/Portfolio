@@ -186,11 +186,11 @@ class ProjectsContainer extends React.Component {
 
     render() {
         if (this.state.detailedView) {
-            return <div id="projects" className='container'><ProjectsDetailedView project={this.getDetailedView()} toggleDetailedView={this.toggleDetailedView}/></div>
+            return <div id="work" className='container'><ProjectsDetailedView project={this.getDetailedView()} toggleDetailedView={this.toggleDetailedView}/></div>
         }
 
         return (
-            <div id="projects" className='container'>
+            <div id="work" className='container'>
                 <div className='projects-content'>
                     <h1 className="section-title default-cursor mb-0 mt-5p">
                         Project Catalog
@@ -206,7 +206,7 @@ class ProjectsContainer extends React.Component {
                         animateIn='animate__fadeInDown'
                         initiallyVisible={false}
                         animateOnce={true}>
-                        <h2 className='ml-10 featured-header'>Featured Project(s)</h2>
+                        <h2 className='ml-10 featured-header'>Featured Project</h2>
                         {this.state.featuredProjects.map((featuredProject, index) => {
                             return <ProjectsFeature key={index} project={featuredProject} toggleDetailedView={this.toggleDetailedView}/>;
                         })}

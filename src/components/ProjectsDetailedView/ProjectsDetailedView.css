@@ -1,3 +1,12 @@
+.project-banner-img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    max-width: 900px;
+    max-height: 500px;
+    border-radius: 10px;
+}
+
 .detailed-container {
     display: flex;
     flex-direction: column;
@@ -22,6 +31,8 @@
     }
     .detailed-row {
         flex-direction: row;
+        align-content: space-between;
+        justify-content: space-between;
     }
 }
 @media (max-width: 849px) {
@@ -30,6 +41,7 @@
     }
     .detailed-row {
         flex-direction: column;
+        align-content: space-between;
     }
 }
 

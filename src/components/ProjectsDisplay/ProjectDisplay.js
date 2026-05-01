@@ -75,19 +75,7 @@ const ProjectDisplay = props => {
 
                 <div className="project-column-right">
                     <div className="d-flex flex-column project-context">
-                        
-                        <Scrollbars
-                            style={{ height: 250 }}
-                            hideTracksWhenNotNeeded={true}
-                            renderThumbVertical={props => <div {...props} className='thumb'/>}
-                            autoHideTimeout={0}
-                            autoHideDuration={25}>
-                            <p className="mt-10 h-75 project-desc">
-                                {project.description}
-                            </p>
-                        </Scrollbars>
-                        
-                        <div className="d-flex flex-row flex-jc-space-between mt-auto project-card-footer"> 
+                        <div className="d-flex flex-row flex-jc-space-between mt-auto project-card-header"> 
                             
                             <Scrollbars
                                 style={{height: 75}}
@@ -102,6 +90,18 @@ const ProjectDisplay = props => {
                             </Scrollbars>
 
                         </div>
+
+                        <Scrollbars
+                            style={{ height: 250 }}
+                            hideTracksWhenNotNeeded={true}
+                            renderThumbVertical={props => <div {...props} className='thumb'/>}
+                            autoHideTimeout={0}
+                            autoHideDuration={25}>
+                            <p className="mt-10 h-75 project-desc">
+                                {project.description}
+                            </p>
+                        </Scrollbars>
+                        
                     </div>
                 </div>
             </div>

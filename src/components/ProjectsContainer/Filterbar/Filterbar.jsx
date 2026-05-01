@@ -1,7 +1,7 @@
 import './Filterbar.css';
 import React, { useRef, useState } from "react";
 // import { Scrollbars } from 'react-custom-scrollbars-2';
-import { pgLanguagesList } from '../../../pglanguages';
+import { technologiesList } from '../../../technologies/technologies';
 import FilterButton from './FilterButton/FilterButton';
 
 const Filterbar = props => {
@@ -51,7 +51,7 @@ const Filterbar = props => {
                 style={{ overflowX: "auto", whiteSpace: "nowrap", width: "100%", cursor: "grab" }}
             >
                 <ul className='horizontal-list'>
-                    {pgLanguagesList.map((pgLanguage, index) => {
+                    {technologiesList.map((pgLanguage, index) => {
                         return <li key={index}><FilterButton pgLanguage={pgLanguage} buttonClass={props.filterValues.includes(pgLanguage.identifier)?"pglanguage active":"pglanguage"} click={props.click}/></li>;
                     })}
                 </ul>

@@ -17,7 +17,7 @@ function ProjectsDetailedView(props) {
                 </button>
                 <h1 className='detailed-header ml-auto mr-auto'>{project.name}</h1>
             </div>
-            <img className='mt-5p mb-25' src={project.mainImg} alt='main project banner'/>
+            <img className='mt-5p mb-25 project-banner-img' src={project.mainImg} alt='main project banner'/>
             { project.body.sections.map((section, index) => {
                 return(
                     <div key={index}>
