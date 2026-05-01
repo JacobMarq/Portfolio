@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.9dd3c035.css",
-    "main.js": "/Portfolio/static/js/main.24065a7f.js",
+    "main.css": "/Portfolio/static/css/main.2aa6ad60.css",
+    "main.js": "/Portfolio/static/js/main.0913bc86.js",
     "static/js/453.c69f1bde.chunk.js": "/Portfolio/static/js/453.c69f1bde.chunk.js",
     "static/media/Wireframe_Dove_Blend_3.png": "/Portfolio/static/media/Wireframe_Dove_Blend_3.9638ee27e016ed05873d.png",
     "static/media/article-show.png": "/Portfolio/static/media/article-show.c785ea41228edd8d9405.png",
@@ -42,23 +42,29 @@
     "static/media/StainedGlassCW4.png": "/Portfolio/static/media/StainedGlassCW4.6a084f467abc61f33574.png",
     "static/media/DonationPaymentCard.png": "/Portfolio/static/media/DonationPaymentCard.a004ee43860f4b581447.png",
     "static/media/IMSI-Logo.png": "/Portfolio/static/media/IMSI-Logo.30d166e9ae987e011ad1.png",
+    "static/media/netlify.png": "/Portfolio/static/media/netlify.43d3dd945345e1ace336.png",
     "static/media/DonationMain.png": "/Portfolio/static/media/DonationMain.1b8ef12decb89ee963a6.png",
     "static/media/python.png": "/Portfolio/static/media/python.229582141a0fe0ce381f.png",
     "static/media/piechart.png": "/Portfolio/static/media/piechart.f8a34b0a98223c26628c.png",
     "static/media/RealTimeChatMobile.png": "/Portfolio/static/media/RealTimeChatMobile.a20b95837aab08ab70be.png",
     "static/media/TitleImage.png": "/Portfolio/static/media/TitleImage.f8d2683b4f3d9ff2ba21.png",
     "static/media/search.png": "/Portfolio/static/media/search.d9f879421c09691bd71a.png",
+    "static/media/laravel.png": "/Portfolio/static/media/laravel.4eed53289dc40de6af26.png",
+    "static/media/java.png": "/Portfolio/static/media/java.17dec6401dfddb63cda2.png",
+    "static/media/expo.png": "/Portfolio/static/media/expo.1fa1f86b0d3c4f410e84.png",
     "static/media/start.png": "/Portfolio/static/media/start.f057a1a496ea128435d7.png",
+    "static/media/php.png": "/Portfolio/static/media/php.c6fb7f531301aeb75a6c.png",
+    "static/media/mysql.png": "/Portfolio/static/media/mysql.0850bf770e4db189aed3.png",
     "static/media/globe.svg": "/Portfolio/static/media/globe.5ef68a8ac1df88d06fdd9edd134bed43.svg",
     "static/media/down-chevron-svgrepo-com (1).svg": "/Portfolio/static/media/down-chevron-svgrepo-com (1).77a025f01e248936131e4b58339fc08f.svg",
     "index.html": "/Portfolio/index.html",
     "static/media/down-chevron-svgrepo-com.svg": "/Portfolio/static/media/down-chevron-svgrepo-com.8b440f1acbd2ccaabe7ad6e40fe95166.svg",
-    "main.9dd3c035.css.map": "/Portfolio/static/css/main.9dd3c035.css.map",
-    "main.24065a7f.js.map": "/Portfolio/static/js/main.24065a7f.js.map",
+    "main.2aa6ad60.css.map": "/Portfolio/static/css/main.2aa6ad60.css.map",
+    "main.0913bc86.js.map": "/Portfolio/static/js/main.0913bc86.js.map",
     "453.c69f1bde.chunk.js.map": "/Portfolio/static/js/453.c69f1bde.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9dd3c035.css",
-    "static/js/main.24065a7f.js"
+    "static/css/main.2aa6ad60.css",
+    "static/js/main.0913bc86.js"
   ]
 }
