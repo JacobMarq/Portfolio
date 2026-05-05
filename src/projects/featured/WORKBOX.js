@@ -163,7 +163,7 @@ export const IMSIDetailed = new DetailedProject(
     sectionWorkDescription,
     sectionModernization,
     sectionWorkboxSecureMessaging,
-    sectionSecureMessagingDiagram,
+    // sectionSecureMessagingDiagram,
     sectionDataVisualization,
     // sectionWbMAS,
     sectionSecurity,
