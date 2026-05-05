@@ -34,6 +34,7 @@ const toolsRaw = [
     { identifier: "Netlify", image: NetlifyPNG },
     { identifier: "PHP", image: PhpPNG },
     { identifier: "TypeScript", image: TypeScriptPNG },
+    { identifier: "React Native", image: ReactjsPNG },
 ];
 
 // Export Compiled List
@@ -59,4 +60,5 @@ export const [
     techNetlify,
     techPHP,
     techTypeScript,
+    techReactNative,
 ] = technologiesList;

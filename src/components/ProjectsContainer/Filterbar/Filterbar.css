@@ -1,7 +1,8 @@
 @media only screen and (min-width: 1500px) {
     .table {
-        margin-left: 15%;
-        margin-right: 15%;
+        margin: 10% 0;
+        /* margin-left: 15%;
+        margin-right: 15%; */
     }
     .horizontal-list {
         justify-content: center;
@@ -9,8 +10,9 @@
 }
 @media only screen and (min-width: 800px) and (max-width: 1500px){
     .table {
-        margin-left: 10%;
-        margin-right: 10%;
+        margin: 10% 0;
+        /* margin-left: 10%;
+        margin-right: 10%; */
     }
     .horizontal-list {
         justify-content: center;
@@ -18,8 +20,9 @@
 }
 @media only screen and (max-width: 800px){
     .table {
-        margin-left: 2.5%;
-        margin-right: 2.5%;
+        margin: 10% 0;
+        /* margin-left: 2.5%;
+        margin-right: 2.5%; */
     }
     .horizontal-list {
         justify-content: left;
@@ -77,16 +80,16 @@ button > * {
             margin: 0 10px 0 0;
         }
         .horizontal-list li button:hover {
-            border: 2.5px solid var(--clr-tertiary-light);
+            border: 2.5px solid var(--clr-new-secondary);
         }
         .horizontal-list li button:active{
-            background-color: var(--clr-new-text);
+            background-color: var(--clr-tertiary-light);
         }
         .horizontal-list li button.active {
-            background-color: var(--clr-secondary);
+            background-color: var(--clr-new-secondary);
         }
         .horizontal-list li button.active:hover {
-            background-color: var(--clr-secondary);
+            background-color: var(--clr-new-secondary);
             border: 2.5px solid var(--clr-new-text);
         }
         .horizontal-list li button.active:active{

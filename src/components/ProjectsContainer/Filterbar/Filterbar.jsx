@@ -33,14 +33,6 @@ const Filterbar = props => {
 
     return (
         <div className='table'>
-            {/*<Scrollbars
-                className='scroll-shadow'
-                ref={scrollRef}
-                onWheel={handleWheel}
-                style={{height: 130}}
-                renderTrackHorizontal={props => <div {...props} className="track-horizontal"/>}
-                renderThumbHorizontal={props => <div {...props} className="thumb-horizontal"/>}
-                thumbSize={100}>*/}
             <div className='scroll-shadow'
                 ref={divRef}
                 onMouseDown={handleMouseDown}
@@ -56,7 +48,6 @@ const Filterbar = props => {
                     })}
                 </ul>
             </div>
-            {/*</Scrollbars>*/}
         </div>
     );
 };

@@ -17,6 +17,7 @@ const JSCALC = new Project(
     "https://jacobmarq.github.io/Calculator/",
     ["JavaScript", "HTML", "CSS"],
     "",
+    "N",
     "Y"
 );
 

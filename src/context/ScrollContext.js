@@ -5,13 +5,14 @@ const ScrollContext = createContext();
 
 export const ScrollProvider = ({ children, sectionIds }) => {
   const [activeId, setActiveId] = useState("");
-  const { scrollToSection } = useScrollSpy(sectionIds, 0.5, setActiveId);
+  const { scrollToSection, refreshObserver } = useScrollSpy(sectionIds, setActiveId);
 
   const memoizedValue = useMemo(() => ({
     sectionIds,
     activeId,
-    scrollToSection
-  }), [sectionIds, activeId, scrollToSection]);
+    scrollToSection,
+    refreshObserver
+  }), [sectionIds, activeId, scrollToSection, refreshObserver]);
 
   return (
     <ScrollContext.Provider value={memoizedValue}>

@@ -28,6 +28,7 @@ const BLOG = new Project(
     "https://theblogspot.onrender.com/",
     ["PostgreSQL", "Render", "Heroku", "HTML", "JavaScript", "CSS", "Ruby", "Rails"],
     "",
+    "N",
     "N"
 );
 

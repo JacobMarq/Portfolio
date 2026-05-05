@@ -16,6 +16,7 @@ const RPS = new Project(
     "https://jacobmarq.github.io/Rock-Paper-Scissors/",
     ["HTML", "CSS", "JavaScript"],
     "",
+    "N",
     "Y"
 );
 

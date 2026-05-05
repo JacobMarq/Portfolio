@@ -13,7 +13,7 @@
   font-size: calc(7.5px + 1.25vmin);
   font-weight: 600;
   line-height: 1.25em;
-  color: var(--clr-new-text);
+  color: var(--clr-new-text-muted);
 }
 
 .sticky-nav {
@@ -30,7 +30,7 @@
   align-items: center;
   list-style: none;
   background-color: transparent;
-  height: 10vh;
+  height: 9vh;
   padding: 0 5%;
   z-index: 1;
   margin-top: 0;

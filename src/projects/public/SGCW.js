@@ -24,6 +24,7 @@ const SGCW = new Project(
     "https://jacobmarq.github.io/stained-glass-cw/",
     ["React", "HTML", "CSS", "JavaScript", "Ai"],
     "",
+    "N",
     "Y"
 );
 

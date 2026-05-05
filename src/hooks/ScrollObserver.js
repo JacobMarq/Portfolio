@@ -1,8 +1,9 @@
 import { useEffect, useRef, useCallback } from 'react';
 
-export function useScrollSpy(ids, threshold = 0.5, onSectionChange) {
+export function useScrollSpy(ids, onSectionChange) {
   const isManualScrolling = useRef(false);
   const currentActiveId = useRef("");
+  const observerRef = useRef(null);
 
   // Wrap this in useCallback so it's stable if passed to memoized components
   const scrollToSection = useCallback((id) => {
@@ -11,7 +12,7 @@ export function useScrollSpy(ids, threshold = 0.5, onSectionChange) {
 
     isManualScrolling.current = true;
     currentActiveId.current = id;
-    
+
     // Update URL immediately for the target
     if (id === "home") {
       window.history.replaceState(null, "", "");
@@ -21,31 +22,44 @@ export function useScrollSpy(ids, threshold = 0.5, onSectionChange) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
 
-    if (onSectionChange) {
-      onSectionChange(id);
-    }
+    if (onSectionChange) onSectionChange(id);
 
     // Unlock after scroll finishes
-    const handleScrollEnd = () => {
-      isManualScrolling.current = false;
-      window.removeEventListener('scrollend', handleScrollEnd);
+    let scrollTimeout;
+
+    const handleScroll = () => {
+      clearTimeout(scrollTimeout);
+      scrollTimeout = setTimeout(() => {
+        isManualScrolling.current = false;
+      }, 150);
     };
-    window.addEventListener('scrollend', handleScrollEnd);
-    
-    // Fallback for older browsers (Safari < 17.4)
-    setTimeout(() => { isManualScrolling.current = false; }, 1000);
+
+    window.addEventListener('scroll', handleScroll);
+
+    // fallback unlock
+    setTimeout(() => {
+      isManualScrolling.current = false;
+    }, 500);
   }, [onSectionChange]);
 
-  useEffect(() => {
+
+  // NEW CODENOEEWENBAOIFNBW
+
+  const createObserver = useCallback(() => {
+    if (observerRef.current) {
+      observerRef.current.disconnect();
+    }
+
     const observer = new IntersectionObserver(
       (entries) => {
         if (isManualScrolling.current) return;
 
-        const visibleSection = entries.find((entry) => entry.isIntersecting);
+        const visibleSection = entries
+          .filter(entry => entry.isIntersecting)
+          .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
 
         if (visibleSection) {
           const newId = visibleSection.target.id;
-
           if (newId !== currentActiveId.current) {
             currentActiveId.current = newId;
             if (newId === 'home') {
@@ -53,23 +67,37 @@ export function useScrollSpy(ids, threshold = 0.5, onSectionChange) {
             } else {
               window.history.replaceState(null, "", `#${newId}`);
             }
-
             if (onSectionChange) {
               onSectionChange(newId);
             }
           }
         }
       },
-      { threshold }
+      {
+        root: null,
+        threshold: [0, 0.25, 0.5, 0.75, 1],
+        rootMargin: "-30% 0px -40% 0px"
+      }
     );
 
     ids.forEach((id) => {
-      const element = document.getElementById(id);
-      if (element) observer.observe(element);
+      const el = document.getElementById(id);
+      if (el) observer.observe(el);
     });
 
-    return () => observer.disconnect();
-  }, [ids, threshold, onSectionChange]);
+    observerRef.current = observer;
+  }, [ids, onSectionChange]);
 
-  return { scrollToSection };
+  // initialize
+  useEffect(() => {
+    createObserver();
+    return () => observerRef.current?.disconnect();
+  }, []);
+
+  // expose refresh (for dynamic layout)
+  const refreshObserver = useCallback(() => {
+    createObserver();
+  }, [createObserver]);
+
+  return { scrollToSection, refreshObserver };
 }

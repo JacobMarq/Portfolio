@@ -15,6 +15,7 @@ const CCFRAUD = new Project(
     CCFraudFile,
     ["Python"],
     "",
+    "N",
     "Y"
 );
 

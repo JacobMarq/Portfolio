@@ -1,24 +1,24 @@
 @media only screen and (min-width: 2000px)
 {
   .down-btn-container {
-    margin-top: auto;
-    margin-bottom: 7.5vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
   }
 }
 
 @media only screen and (min-width: 1500px) and (max-width: 2000px)
 {
   .down-btn-container {
-    margin-top: auto;
-    margin-bottom: 7.5vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
   }
 }
 
 @media only screen and (min-width: 800px) and (max-width: 1500px)
 {
   .down-btn-container {
-    margin-top: auto;
-    margin-bottom: 7.5vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
   }
 }
 
@@ -154,12 +154,12 @@
     z-index: 998;
 }
 .down-btn-cta p:first-child {
-    font-size: 1em;
+    font-size: .8em;
     margin-bottom: 5%;
 }
 .down-btn-cta p {
     margin-top: 5px;
-    margin-bottom: 10%;
+    margin-bottom: 25%;
     margin-right: 12.5px;
     font-size: .6em;
     align-items: center;
@@ -175,8 +175,8 @@
     transition: all .2s ease-in-out;
 }
 
-.down-btn-container:hover .down-btn-cta p,
-.down-btn-container:focus .down-btn-cta p {
+.down-btn-container:hover .down-btn-cta p:last-child,
+.down-btn-container:focus .down-btn-cta p:last-child {
     letter-spacing: 3%;
 }
 

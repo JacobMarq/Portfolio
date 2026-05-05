@@ -8,16 +8,9 @@
   flex-direction: row;
   overflow: hidden;
   }
-    .project-img-wrapper {
-      height: 250px;
-      width: 400px;
-      margin-left: 10px;
-      margin-top: 10px;
-    }
     .project-column-left {
-      border-right: 2px solid var(--clr-secondary);
-      padding-left: 10px;
-      width: 40%;
+      /* border-right: 2px solid var(--clr-secondary); */
+      width: 200px;
     }
 
     .project-column-right {
@@ -32,15 +25,9 @@
     justify-content: space-between;
     flex-direction: row;
   }
-    .project-img-wrapper {
-      height: 150px;
-      width: 250px;
-      margin-left: 10px;
-      margin-top: 10px;
-    }
     .project-column-left {
-      border-right: 2px solid var(--clr-secondary);
-      width: 40%;
+      /* border-right: 2px solid var(--clr-secondary); */
+      width: 200px;
     }
   
     .project-column-right {
@@ -56,34 +43,35 @@
     flex-direction: column;
   }
     .project-column-left {
-      border-right: none;
-      border-bottom: 2px solid var(--clr-secondary);
+      /* border-right: none; */
+      /* border-bottom: 2px solid var(--clr-secondary); */
       min-width: 100%;
     }
-    .project-img-wrapper {
-      height: 60vw;
-      width: 100%;
-    }
-  
     .project-column-right {
-      margin-left: 0;
-      margin-right: 0;
       width: 100%;
     }
 }
   
   .project-img-wrapper {
     position: relative;
+    overflow: hidden;
+    width: 160px;
+    height: 160px;
+    margin: 15px 10px;
     border-radius: 10px;
     background-color: transparent;
+    /* box-shadow: 0px 0px 0px 1px #ffffffde, 0px 5px 10px 0 #ffffffde; */
+    box-shadow: 0px 0px 0px 1px #000000de, 0px 5px 10px 0 #000000de;
   }
+  
     .project-pic {
       position: absolute;
       display: flex;
       visibility: hidden;
+      right: -30%;
       border-radius: 10px;
       background-color: transparent;
-      width: 100%;
+      aspect-ratio: 5/3;
       height: 100%;
       /* border-radius: .3em; */
       transition: all ease-in-out .5s;
@@ -96,6 +84,9 @@
     }
 
   .project-column-right {
+    width: 25vw;
+    max-width: 300px;
+    margin-right: 10px;
     transition: all ease-in-out .5s;
   }
     .project-context {
@@ -104,9 +95,6 @@
       border-radius: .3em;
       transition: all ease-in-out .5s;
       z-index: 0;
-    }
-    .project-desc {
-      white-space: pre-wrap;
     }
     .project-link {
       filter: brightness(0) saturate(100%) invert(62%) sepia(24%) saturate(331%) hue-rotate(176deg) brightness(89%) contrast(87%);
@@ -120,7 +108,7 @@
     .project-card-header {
       margin-top: auto;
       margin-bottom: 0%;
-      border-bottom: 2px solid var(--clr-secondary);
+      /* border-bottom: 2px solid var(--clr-secondary); */
     }
       .project-tools {
         font-size: .9em;
@@ -136,26 +124,39 @@
   background: var(--clr-secondary);
 }
 
+.project-name {
+  margin-left: 0;
+  margin-bottom: 0;
+  font-size: .9rem;
+  transform: scaleY(1.10);
+}
+
+.project-desc {
+  font-size: .8rem;
+  white-space: pre-wrap;
+}
+
 .project-details-btn {
-    font-size: 1rem;
-    font-weight: 600;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    text-decoration: none;
-    color: var(--clr-white);
-    border: var(--clr-new-pop) 3px solid;
-    background-color: var(--clr-new-pop);
-    border-radius: 0.25em;
-    transition: all 0.5s;
-    padding: .5em;
-  }
+  font-size: 1rem;
+  font-weight: 500;
+  width: max-content;
+  transform: scaleX(1.05);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--clr-new-pop);
+  border: none;
+  background-color: transparent;
+  /* border-radius: 0.25em; */
+  transition: all 0.5s;
+  /* padding: .5em; */
+}
   .project-details-btn:hover,
   .project-details-btn:focus {
-    background-color: var(--clr-new-pop-bright);
-    box-shadow: 0px 0px 5px 2.5px var(--clr-new-pop) inset, 0px 0px 5px 1px var(--clr-new-pop);
+    color: var(--clr-new-pop-bright);
   }
   .project-details-btn:active {
-    box-shadow: 0px 0px 4px .5px var(--clr-new-text);
+    color: var(--clr-new-text);
   }

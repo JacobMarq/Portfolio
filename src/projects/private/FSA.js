@@ -26,6 +26,7 @@ const FSA = new Project(
     "https://students-assessments.netlify.app/",
     ["Netlify", "React", "HTML", "CSS"],
     "",
+    "N",
     "Y"
 );
 

@@ -19,6 +19,7 @@ const IRISDTC = new Project(
     IrisDTCFile,
     ["Python"],
     "",
+    "N",
     "Y"
 );
 

@@ -5,8 +5,10 @@ import { Route, Switch } from "react-router-dom";
 import Contact from './components/Contact/Contact';
 import About from './components/About/About';
 import ProjectsContainer from './components/ProjectsContainer/ProjectsContainer';
+import { Projects } from './projects';
 import Home from './components/Home/Home';
 import Navbar from './components/Navbar/Navbar';
+import Filterbar from './components/ProjectsContainer/Filterbar/Filterbar';
 import { ScrollProvider } from './context/ScrollContext';
 
 const App = () => {
@@ -21,8 +23,11 @@ const App = () => {
           <Switch>
             <Route exact path="/">
               <Home />
+              <Filterbar filterValues={[]} click={() => {}}/>
               <ProjectsContainer />
+              <Filterbar filterValues={[]} click={() => {}}/>
               <About />
+              <Filterbar filterValues={[]} click={() => {}}/>
               <Contact />
             </Route>
             <Route path="/work">

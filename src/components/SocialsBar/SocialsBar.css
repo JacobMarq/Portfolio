@@ -58,10 +58,10 @@
     .logo-symbol-list li a:hover,
     .logo-symbol-list li a:focus {
         /* filter: brightness(0) saturate(100%) invert(78%) sepia(0%) saturate(7467%) hue-rotate(22deg) brightness(121%) contrast(83%); */
-        filter: brightness(0) saturate(100%) invert(95%) sepia(95%) saturate(0%) hue-rotate(139deg) brightness(106%) contrast(106%);
+        filter: brightness(0) saturate(100%) invert(85%) sepia(0%) saturate(1442%) hue-rotate(146deg) brightness(120%) contrast(102%);
     }
     .logo-symbol-list li a:active {
-        filter: brightness(0) saturate(100%) invert(85%) sepia(0%) saturate(1442%) hue-rotate(146deg) brightness(92%) contrast(102%);
+        filter: brightness(0) saturate(100%) invert(95%) sepia(95%) saturate(0%) hue-rotate(139deg) brightness(90%) contrast(106%);
     }
 .logo-symbol-list li a svg {
     margin: auto;

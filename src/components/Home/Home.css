@@ -74,7 +74,7 @@
     left: 16vw;
   }
   .wf-ls {
-    bottom: -15vw;
+    bottom: -10vw;
     left: -25vw;
     width: 150vw;
   }
@@ -99,9 +99,9 @@
     right: -50vh;
   }
   .wf-ls {
-    bottom: -25vw;
-    left: -50vw;
-    width: 200vw;
+    bottom: -17.5vw;
+    left: -40vw;
+    width: 175vw;
   }
   .home-hook {
     font-size: 12vw;
@@ -124,9 +124,9 @@
     right: -40vh;
   }
   .wf-ls {
-    bottom: -25vw;
-    left: -50vw;
-    width: 200vw;
+    bottom: -17.5vw;
+    left: -40vw;
+    width: 175vw;
   }
   .home-hook {
     font-size: 7vw;
@@ -138,8 +138,9 @@
 
 @media only screen and (min-width: 800px) and (max-width: 1500px)
 {
-  .App-header {
+  .app-header {
     min-height: calc(100vh - 96px);
+    margin-bottom: 15%;
   }
   .home-hook {
     font-size: 10vw;
@@ -149,17 +150,13 @@
   .home-text-muted {
     font-size: calc(17px + 4vmin);
   }
-  .home-text-wrapper {
-    margin-bottom: 10vh;
-  }
 }
 
 @media only screen and (max-width: 800px)
 {
-  .App-header {
+  .app-header {
     min-height: calc(90vh - 96px);
-    background-size: cover !important;
-    background-position: bottom !important;
+    margin-bottom: 5%;
   }
   .home-hook {
     font-size: 10vw;
@@ -183,8 +180,8 @@
   }
   .wf-ls {
     bottom: 5vh;
-    left: -50vw;
-    width: 200vw;
+    left: -40vw;
+    width: 175vw;
   }
 }
 
@@ -242,7 +239,7 @@
   margin-bottom: 7.5px;
   margin-right: auto;
   font-size: 1.3rem;
-  color: var(--clr-secondary);
+  color: var(--clr-new-text-muted);
 }
 
 /* BIRD */
@@ -263,7 +260,7 @@
   position: absolute;
   z-index: 1;
   height: 100%;
-  opacity: 70%;
+  opacity: 65%;
   /* animation: birdShiftLeftRight 4s ease-in-out infinite; 2s duration, infinite looping */
 }
 .wf-ls
@@ -273,7 +270,7 @@
   pointer-events: none;
   position: absolute;
   z-index: 1;
-  opacity: 60%;
+  opacity: 70%;
 }
 
 

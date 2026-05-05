@@ -24,29 +24,24 @@ const About = () => {
           </h1>
           <br/>
           <div className='about-desc'>
-            <p className='default-cursor unselectable'>
-              My name is <span>Jacob Marquez</span>, a Software Developer at <span>IMS Integration </span>
-              with <span>4+ years of professional full-stack experience </span>
-              and a <span>B.S. in Computer Science (Summa Cum Laude)</span>. 
-              I specialize in building <span>elegant, secure, and efficient applications </span>
-              by solving high-stakes technical debt and operational bottlenecks.
+            <p className='default-cursor'>
+              Software Developer at <span>IMS Integration</span> with 4+ years of experience building scalable systems in the fintech space. I work at the intersection of high-security legacy platforms and engineering the modern solutions that replace them.
               <br/>
               <br/>
-              I thrive on finding the right tool for the job, 
-              whether it’s <span>modernizing enterprise financial systems </span>
-              from legacy frameworks to <span>AngularJS</span>, 
-              or building responsive front-ends in <span>React and React Native</span>.  
-              My work is grounded in a deep understanding of <span>software design patterns </span>
-              and a commitment to meaningful impact.
+               My work includes modernizing legacy systems and architectures, developing APIs and workflow automation tools, and building data reporting systems that support high-volume financial operations. I focus on reducing technical debt while improving system performance and user experience.
               <br/>
               <br/>
-              Core Stack: Java, TypeScript, Python, Ruby, SQL, React, and Ruby on Rails.
+              I’ve collaborated directly with stakeholders across <span>100+ credit unions</span>, contributing to systems that process <span>millions of documents annually</span>.
+              <br/>
+              <br/>
             </p>
+            <p className='core-stack-header'>Core Stack:</p>
+            <p className='core-stack-list'>Java • TypeScript • Python • SQL • React • Angular</p>
+            <br/>
+            <button onClick={viewResume} className="unselectable primary-btn mr-auto" label='Resume'>
+              View Resume
+            </button>
           </div>
-          <br/>
-          <button onClick={viewResume} className="unselectable view-resume-btn center p-15" label='Resume'>
-            View Resume/CV
-          </button>
         </AnimationOnScroll>
 
         <div className='about-image-container'>
