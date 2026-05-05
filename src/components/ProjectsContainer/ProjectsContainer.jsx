@@ -228,7 +228,6 @@ class ProjectsContainer extends React.Component {
                                     if(!project) {
                                         return <p className='ml-10'>no projects to load...</p>;
                                     }
-                                    console.log(project)
                                     return(
                                         <ProjectDisplay key={project.id} project={project} toggleDetailedView={this.toggleDetailedView} updateFeaturedProject={this.updateFeaturedProject}/>
                                     );
