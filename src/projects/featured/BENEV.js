@@ -13,6 +13,10 @@ import { techExpo, techPHP, techLaravel, techTypeScript, techReact, techMySQL, t
 
 const name = "BENEVV Web & Mobile";
 
+const appType = "Social Platform";
+
+const descriptionShort = "Owned by Smarttwigs, built to support community and corporate events, programs, and social campaigns.";
+
 const description = 
 "Owned by SmartTwigs, BENEVV is a social platform meant for sharing and " +
 "supporting community/organization campaigns, programs, " +
@@ -49,9 +53,11 @@ const p3 =
 
 export const BENEV = new Project(
     1000,
-    "",
+    "Featured",
     "benevv",
     name,
+    appType,
+    descriptionShort,
     description,
     [   {id: "one", url: BENEVVHOME},
         {id: "two", url: DONATIONMAIN},

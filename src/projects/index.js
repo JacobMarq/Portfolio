@@ -9,5 +9,5 @@ import { IMSI, IMSIDetailed } from "./featured/WORKBOX";
 import CCFRAUD from "./school/CCFraudDetection";
 import IRISDTC from "./school/IrisDecisionTreeClassifier";
 
-export const Projects = [IMSI, BENEV, FSA, BLOG, BPAPI, SGCW, JSCALC, RPS, CCFRAUD, IRISDTC];
+export const Projects = [IMSI, BENEV, SGCW, FSA, BLOG, BPAPI, JSCALC, RPS, CCFRAUD, IRISDTC];
 export const CaseStudies = [IMSIDetailed, BenevDetailed];

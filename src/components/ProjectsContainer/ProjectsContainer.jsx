@@ -60,9 +60,12 @@ class ProjectsContainer extends React.Component {
     }
 
     filterProjects(filterValues, ...exclusions) {
-        // show all projects if there are 
-        // no active filters
-        let projects = this.state.projects.filter((project) => !exclusions.includes(project));
+        let projects;
+        if (exclusions) {
+            projects = this.state.projects.filter((project) => !exclusions.includes(project));
+        } else {
+            projects = this.state.projects.filter((project) => project != this.state.featuredProject);
+        }
         if(filterValues.length === 0) {
             return projects;
         }
@@ -183,7 +186,6 @@ class ProjectsContainer extends React.Component {
         const featureProject = this.state.projects.find((project) => project.id === parseInt(e.target.id));
         if (featureProject) {
             this.setState(prevState => ({
-                projects: projects.filter((project) => project.id != featureProject.id),
                 filteredProjects: this.filterProjects(prevState.filterValues, featureProject),
                 featuredProject: featureProject,
             }));
@@ -201,21 +203,23 @@ class ProjectsContainer extends React.Component {
                         {/* {this.state.featuredProjects.map((featuredProject, index) => {
                             return <ProjectShowcase key={index} project={featuredProject} toggleDetailedView={this.toggleDetailedView}/>;
                         })} */}
-                        <ProjectShowcase project={this.state.featuredProject} toggleDetailedView={this.toggleDetailedView}/>;
+                        <ProjectShowcase project={this.state.featuredProject} toggleDetailedView={this.toggleDetailedView}/>
                         <div className='d-flex flex-column ml-auto mr-auto other-projects-container'>
                             <div className='d-flex align-items-center flex-jc-space-between w-100 mb-10 other-projects-header'>
                                 <div className='d-flex flex-column w-fitc mr-auto other-project-text-wrapper'>
                                     <p className="project-catalog-eyebrow mb-0 mt-0"><span>// PROJECT CATALOG </span></p>
                                     <h2 className="project-catalog-h2 mb-0 mt-0">More Work</h2>
                                 </div>
+                                <p className='color-white ml-10 mb-25'>Hover over project images to preview slideshow. (tap if on mobile)</p>
+                                {/* TODO: setup categorizations and filtering accordingly
                                 <div className='d-flex flex-row flex-jc-right ml-auto other-project-tabs-wrapper'>
                                     <button className='other-project-tab-btn'>All Projects</button>
                                     <button className='other-project-tab-btn'>Web Development</button>
                                     <button className='other-project-tab-btn'>Enterprise Systems</button>
                                     <button className='other-project-tab-btn'>Tools & Utilies</button>
-                                </div>
+                                </div> 
+                                */}
                             </div>
-
                             {/* <ProjectsListLengthSelect numToDisplayOptions={numToDisplayOptions} handleSelectChange={this.handleSelectChange}/>
                             <PaginationControls handlePageTraversal={this.handlePageTraversal} currentPage={this.state.currentPage} totalPages={this.getTotalPages()}/>
                             <p className='color-white ml-10 mb-25'>Hover over project images to preview slideshow. (tap if on mobile)</p> */}
@@ -236,9 +240,9 @@ class ProjectsContainer extends React.Component {
                     }
                     {/* <h1 className="section-title default-cursor mb-0 mt-5p">
                         Project Catalog
-                    </h1> */}
+                    </h1>
 
-                    {/* <div className='projects-image-container'>
+                    <div className='projects-image-container'>
                         <button className='projects-image'><h2 className='catalog-title'>Work Experience</h2><img src={WireframeDove} className="" alt='work-experience-image'/></button>
                         <button className='projects-image'><h2 className='catalog-title'>Web-Dev Projects</h2><img src={WireframeDove} className="" alt='web-dev-projects-image'/></button>
                         <button className='projects-image'><h2 className='catalog-title'>Other Projects</h2><img src={WireframeDove} className="" alt='other-projects-image'/></button>

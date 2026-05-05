@@ -6,7 +6,7 @@ function ProjectTechnologyBar(props) {
 
     return (
         <Scrollbars
-            className='mt-5 mb-5'
+            className={displayLogo?'mt-25 mb-20':'mt-5 mb-5'}
             style={displayLogo?{height: 60}:{height: 40}}
             renderTrackHorizontal={props => <div {...props} className="track-horizontal"/>}
             renderThumbHorizontal={props => <div {...props} className="thumb"/>}

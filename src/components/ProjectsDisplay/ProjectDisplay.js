@@ -80,15 +80,16 @@ const ProjectDisplay = props => {
                 <div className="project-column-right">
                     <div className="d-flex flex-column project-context">
                         <h3 className="project-name ml-10">{project.name}</h3>
-                        
+                        <p className="mt-0 mb-0 project-desc-app-type">{project.appType}</p>
+                        <br/>
                         <Scrollbars
-                            style={{ height: 50 }}
+                            style={{ height: 55 }}
                             hideTracksWhenNotNeeded={true}
                             renderThumbVertical={props => <div {...props} className='thumb'/>}
                             autoHideTimeout={0}
                             autoHideDuration={25}>
-                            <p className="mt-0 mb-0 project-desc">
-                                {project.description}
+                            <p className="mt-0 mb-0 project-desc-short">
+                                {project.descriptionShortened}
                             </p>
                         </Scrollbars>
 

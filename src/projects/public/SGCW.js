@@ -3,7 +3,11 @@ import PicOne from '../../img/SGCW/StainedGlassCW1.png';
 import PicTwo from '../../img/SGCW/StainedGlassCW2.png';
 import PicThree from '../../img/SGCW/StainedGlassCW3.png';
 import PicFour from '../../img/SGCW/StainedGlassCW4.png';
+import { techJavaScript, techHTML, techCSS, techReact, techAdobeIllustrator } from "../../technologies/technologies";
 
+const name = "Stained Glass Curiel Windows";
+const appType = "Lead Generation Website";
+const descriptionShort = "Small client work to assist a local stained glass company expand their outreach.";
 const description = 
 "A prototype for a client's business site " +
 "made with focused calls-to-action to meet " +
@@ -14,15 +18,19 @@ const SGCW = new Project(
     3,
     "Public",
     "sgcw",
-    "Stained-Glass-CW",
+    name,
+    appType,
+    descriptionShort,
     description,
     [   {id: "one", url: PicOne}, 
         {id: "two", url: PicTwo}, 
         {id: "three", url: PicThree}, 
         {id: "four", url: PicFour}],
-    "https://github.com/JacobMarq/stained-glass-cw",
-    "https://jacobmarq.github.io/stained-glass-cw/",
-    ["React", "HTML", "CSS", "JavaScript", "Ai"],
+    "",
+    "",
+    // "https://github.com/JacobMarq/stained-glass-cw",
+    // "https://jacobmarq.github.io/stained-glass-cw/",
+    [techReact, techAdobeIllustrator, techJavaScript, techHTML, techCSS],
     "",
     "N",
     "Y"

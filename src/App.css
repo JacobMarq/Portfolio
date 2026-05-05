@@ -205,14 +205,14 @@ h3 {
 .secondary-btn.disabled {
   cursor: default;
   background-color: transparent;
-  border: var(--clr-new-secondary) 3px solid;
-  color: var(--clr-new-secondary);
+  border: var(--clr-new-background) 2px solid;
+  color: var(--clr-new-background);
 }
 .secondary-btn.disabled:hover,
 .secondary-btn.disabled:focus {
   background-color: transparent;
-  border: var(--clr-new-secondary) 3px solid;
-  color: var(--clr-new-secondary);
+  border: var(--clr-new-background) 2px solid;
+  color: var(--clr-new-background);
 }
 
 .tertiary-btn {
@@ -433,6 +433,12 @@ p {
 .mt-25 {
   margin-top: 25px;
 }
+.mt-20 {
+  margin-top: 20px;
+}
+.mt-15 {
+  margin-top: 15px;
+}
 .mt-10 {
   margin-top: 10px;
 }
@@ -460,6 +466,9 @@ p {
 
 .mb-25 {
   margin-bottom: 25px;
+}
+.mb-20 {
+  margin-bottom: 20px;
 }
 .mb-15 {
   margin-bottom: 15px;

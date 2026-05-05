@@ -5,9 +5,13 @@ import WBDATACHART from "../../img/Workbox/piechart.png";
 import OAOIDSCAN from "../../img/Workbox/IDSCAN.png";
 import KEYSTONE from "../../img/Workbox/KEYSTONE-CORE.png";
 import { DetailedProject, DetailedProjectSection } from "../../detailedProject";
-import { techAngular, techJava, techMySQL, techIBMDb2, techTypeScript } from "../../technologies/technologies";
+import { techAngular, techJava, techMySQL, techIBMDb2, techTypeScript, techPython } from "../../technologies/technologies";
 
 const name = "IMS Integration Platform";
+
+const appType = "Enterprise Fintech Platform";
+
+const descriptionShort = "Powers account management, application processing, and document workflows across 100+ credit union."
 
 const description = 
 "Enterprise fintech platform powering account management, application processing, and document workflows across 100+ credit unions.\n\n" +
@@ -93,6 +97,8 @@ export const IMSI = new Project(
     "Featured",
     "imsi",
     name,
+    appType,
+    descriptionShort,
     description,
     [   
         {id: "one", url: WBLANDINGPAGE},
@@ -102,7 +108,7 @@ export const IMSI = new Project(
     ],    
     "",
     "https://web.imsintegration.com",
-    [techJava, techTypeScript, techMySQL, techAngular, techIBMDb2],
+    [techJava, techTypeScript, techMySQL, techPython, techAngular, techIBMDb2],
     "",
     "Y",
     "Y"

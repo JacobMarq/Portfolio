@@ -16,6 +16,7 @@ import MysqlPNG from '../img/Icons/mysql.png';
 import NetlifyPNG from '../img/Icons/netlify.png';
 import PhpPNG from '../img/Icons/php.png';
 import TypeScriptPNG from '../img/Icons/typescript.png';
+import AdobeIllustratorPNG from '../img/Icons/adobeIllustrator.png' 
 
 const toolsRaw = [
     // { identifier: "Rails", image: RailsPNG },
@@ -35,6 +36,7 @@ const toolsRaw = [
     { identifier: "PHP", image: PhpPNG },
     { identifier: "TypeScript", image: TypeScriptPNG },
     { identifier: "React Native", image: ReactjsPNG },
+    { identifier: "Adobe Illustrator", image: AdobeIllustratorPNG },
 ];
 
 // Export Compiled List
@@ -61,4 +63,5 @@ export const [
     techPHP,
     techTypeScript,
     techReactNative,
+    techAdobeIllustrator,
 ] = technologiesList;

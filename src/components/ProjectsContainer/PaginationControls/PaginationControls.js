@@ -5,7 +5,7 @@ function PaginationControls(props) {
 
     return (
         <>
-            <div className='pagination-console mb-5'>
+            <div className='pagination-console mt-25 mb-5'>
                 <button className={"pagination-btn secondary-btn" + (currentPage === 1? " disabled": "")} value="first" onClick={handlePageTraversal}>First</button>
                 <button className={"pagination-btn secondary-btn" + (currentPage === 1? " disabled": "")} value="back" onClick={handlePageTraversal}>Back</button>
                 <button className={"pagination-btn secondary-btn" + (currentPage === totalPages? " disabled": "")} value="next" onClick={handlePageTraversal}>Next</button>

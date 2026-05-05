@@ -1,9 +1,11 @@
 class Project {
-    constructor( id, type, reference, name, description, images, github, link, technologies, featuredMobileImg, featured, active ) {
+    constructor( id, type, reference, name, appType, descriptionShortened, description, images, github, link, technologies, featuredMobileImg, featured, active ) {
         this.id = id;
         this.type = type;
         this.reference = reference;
         this.name = name;
+        this.appType = appType;
+        this.descriptionShortened = descriptionShortened;
         this.description = description;
         this.images = images;
         this.github = github;
