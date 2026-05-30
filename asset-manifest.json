@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.3f12da64.css",
-    "main.js": "/Portfolio/static/js/main.e6002909.js",
+    "main.css": "/Portfolio/static/css/main.e7ee7a41.css",
+    "main.js": "/Portfolio/static/js/main.30389732.js",
     "static/js/453.c69f1bde.chunk.js": "/Portfolio/static/js/453.c69f1bde.chunk.js",
     "static/media/Wireframe_Dove_Blend_3.png": "/Portfolio/static/media/Wireframe_Dove_Blend_3.9638ee27e016ed05873d.png",
     "static/media/article-show.png": "/Portfolio/static/media/article-show.c785ea41228edd8d9405.png",
@@ -15,6 +15,7 @@
     "static/media/StainedGlassCW2.png": "/Portfolio/static/media/StainedGlassCW2.ee30081eece2879f7bb3.png",
     "static/media/BENEVVMOBILE.png": "/Portfolio/static/media/BENEVVMOBILE.216e4245cf66520de36e.png",
     "static/media/responsive.png": "/Portfolio/static/media/responsive.5260118d520400ce40da.png",
+    "static/media/Jacob_Marquez_Resume.pdf": "/Portfolio/static/media/Jacob_Marquez_Resume.0454689911993dd29244.pdf",
     "static/media/Round.png": "/Portfolio/static/media/Round.17bc8e01ed67fb5b100f.png",
     "static/media/lose.png": "/Portfolio/static/media/lose.5ac1fd4ee706248489f7.png",
     "static/media/KEYSTONE-CORE.png": "/Portfolio/static/media/KEYSTONE-CORE.d4f71d99ffbd006cea57.png",
@@ -23,7 +24,6 @@
     "static/media/Beauty.ttf": "/Portfolio/static/media/Beauty.17efd45acf38dcea2253.ttf",
     "static/media/Lemon.ttf": "/Portfolio/static/media/Lemon.2bf6b5276aabe7e19e82.ttf",
     "static/media/analytics.png": "/Portfolio/static/media/analytics.698018c8c223ed66aed5.png",
-    "static/media/JacobMarquez.pdf": "/Portfolio/static/media/JacobMarquez.aa15e9348498b185b7e4.pdf",
     "static/media/IDSCAN.png": "/Portfolio/static/media/IDSCAN.c394d8e2d835938b6ae0.png",
     "static/media/BenevvPayments.png": "/Portfolio/static/media/BenevvPayments.fc143e74bf2e61064ce7.png",
     "static/media/WB-Landing-Page.png": "/Portfolio/static/media/WB-Landing-Page.9e3dac53417899d50acb.png",
@@ -59,12 +59,12 @@
     "static/media/down-chevron-svgrepo-com (1).svg": "/Portfolio/static/media/down-chevron-svgrepo-com (1).77a025f01e248936131e4b58339fc08f.svg",
     "index.html": "/Portfolio/index.html",
     "static/media/down-chevron-svgrepo-com.svg": "/Portfolio/static/media/down-chevron-svgrepo-com.8b440f1acbd2ccaabe7ad6e40fe95166.svg",
-    "main.3f12da64.css.map": "/Portfolio/static/css/main.3f12da64.css.map",
-    "main.e6002909.js.map": "/Portfolio/static/js/main.e6002909.js.map",
+    "main.e7ee7a41.css.map": "/Portfolio/static/css/main.e7ee7a41.css.map",
+    "main.30389732.js.map": "/Portfolio/static/js/main.30389732.js.map",
     "453.c69f1bde.chunk.js.map": "/Portfolio/static/js/453.c69f1bde.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3f12da64.css",
-    "static/js/main.e6002909.js"
+    "static/css/main.e7ee7a41.css",
+    "static/js/main.30389732.js"
   ]
 }
