@@ -108,7 +108,7 @@ export const IMSI = new Project(
     ],    
     "",
     "https://web.imsintegration.com",
-    [techJava, techTypeScript, techMySQL, techPython, techAngular, techIBMDb2],
+    [techJava, techAngular, techTypeScript, techMySQL, techPython, techIBMDb2],
     "",
     "Y",
     "Y"

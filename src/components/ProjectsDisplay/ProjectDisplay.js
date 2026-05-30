@@ -51,54 +51,22 @@ const ProjectDisplay = props => {
                             </div>
                         )}
                     </div>
-                    
-                    <div className="d-flex flex-row mt-5p">  
-                        {/* { (project.link || project.github) ? <>
-                            <a target={project.link === "" ? "_self" : "_blank"}
-                                rel='noreferrer'
-                                href={project.link === "" ? "/" : project.link}
-                                className="ml-10 mb-5 project-link"
-                                style={{background: `url(${project.link === "" ? "" : project.type === "School" ? ViewFileIcon : GlobeIcon}) no-repeat`, backgroundSize: '100% 100%'}}>
-                                view app
-                            </a>
-                            
-                            <a target={project.github === "" ? "_self" : "_blank"}
-                                rel='noreferrer'
-                                href={project.github === "" ? "/" : project.github}
-                                className="ml-10 mb-5 project-link"
-                                style={{background: `url(${project.github === "" ? "" : GitHubLogo}) no-repeat`, backgroundSize: '100% 100%'}}>
-                                view repo
-                            </a>
-                        </>
-                        :
-                        <button id={project.id} onClick={toggleDetailedView} className="mb-10 project-details-btn">
-                            View project details
-                        </button> } */}
-                    </div>
                 </div>
 
                 <div className="project-column-right">
                     <div className="d-flex flex-column project-context">
                         <h3 className="project-name ml-10">{project.name}</h3>
-                        <p className="mt-0 mb-0 project-desc-app-type">{project.appType}</p>
-                        <br/>
-                        <Scrollbars
-                            style={{ height: 55 }}
-                            hideTracksWhenNotNeeded={true}
-                            renderThumbVertical={props => <div {...props} className='thumb'/>}
-                            autoHideTimeout={0}
-                            autoHideDuration={25}>
-                            <p className="mt-0 mb-0 project-desc-short">
-                                {project.descriptionShortened}
-                            </p>
-                        </Scrollbars>
+                        <p className="mt-0 mb-10 project-desc-app-type">{project.appType}</p>
+                        <p className="mt-0 mb-0 project-desc-short">
+                            {project.descriptionShortened}
+                        </p>
 
                         <div className="d-flex flex-row flex-jc-space-between mt-auto project-card-header"> 
                             <ProjectTechnologyBar displayLogo={false} projectName={project.name} technologies={project.technologies}/>
                         </div>
                         
                         <button id={project.id} onClick={handleProjectFeatureButton} className="mb-10 project-details-btn">
-                            View Project ➜
+                            View Project ➝
                         </button>
                     </div>
                 </div>

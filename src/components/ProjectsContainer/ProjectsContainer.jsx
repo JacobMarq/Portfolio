@@ -205,12 +205,12 @@ class ProjectsContainer extends React.Component {
                         })} */}
                         <ProjectShowcase project={this.state.featuredProject} toggleDetailedView={this.toggleDetailedView}/>
                         <div className='d-flex flex-column ml-auto mr-auto other-projects-container'>
-                            <div className='d-flex align-items-center flex-jc-space-between w-100 mb-10 other-projects-header'>
+                            <div className='d-flex align-items-center flex-jc-space-between w-100 mb-5 other-projects-header'>
                                 <div className='d-flex flex-column w-fitc mr-auto other-project-text-wrapper'>
                                     <p className="project-catalog-eyebrow mb-0 mt-0"><span>// PROJECT CATALOG </span></p>
                                     <h2 className="project-catalog-h2 mb-0 mt-0">More Work</h2>
                                 </div>
-                                <p className='color-white ml-10 mb-25'>Hover over project images to preview slideshow. (tap if on mobile)</p>
+                                <p className='ml-auto mb-auto'>Hover over project images to preview slideshow. (tap if on mobile)</p>
                                 {/* TODO: setup categorizations and filtering accordingly
                                 <div className='d-flex flex-row flex-jc-right ml-auto other-project-tabs-wrapper'>
                                     <button className='other-project-tab-btn'>All Projects</button>
@@ -223,7 +223,8 @@ class ProjectsContainer extends React.Component {
                             {/* <ProjectsListLengthSelect numToDisplayOptions={numToDisplayOptions} handleSelectChange={this.handleSelectChange}/>
                             <PaginationControls handlePageTraversal={this.handlePageTraversal} currentPage={this.state.currentPage} totalPages={this.getTotalPages()}/>
                             <p className='color-white ml-10 mb-25'>Hover over project images to preview slideshow. (tap if on mobile)</p> */}
-                            <div className='ml-auto mr-auto other-projects-list'>
+                            <div className='other-projects-list-wrapper'>
+                            <div className='ml-auto mr-auto mb-10 other-projects-list'>
                                 {this.state.filteredProjects.slice(this.determineStart(), this.determineEnd()).map(project => {
                                     if(!project) {
                                         return <p className='ml-10'>no projects to load...</p>;
@@ -232,6 +233,7 @@ class ProjectsContainer extends React.Component {
                                         <ProjectDisplay key={project.id} project={project} toggleDetailedView={this.toggleDetailedView} updateFeaturedProject={this.updateFeaturedProject}/>
                                     );
                                 })}
+                            </div>
                             </div>
                             <PaginationControls handlePageTraversal={this.handlePageTraversal} currentPage={this.state.currentPage} totalPages={this.getTotalPages()}/> 
                         </div>

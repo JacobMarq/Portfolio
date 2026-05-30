@@ -1,7 +1,7 @@
 import React from 'react';
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 import './About.css';
-import Pdf from '../../documents/JacobMarquez.pdf';
+import Pdf from '../../documents/Jacob_Marquez_Resume.pdf';
 import StyledDownButton from '../ButtonComponent/StyledDownButton/StyledDownButton.jsx';
 import AboutImg from '../../img/About-Img/Non-Selfie-Sq.JPG'
 import SocialsBar from '../SocialsBar/SocialsBar.jsx';
@@ -25,19 +25,18 @@ const About = () => {
           <br/>
           <div className='about-desc'>
             <p className='default-cursor'>
-              Software Developer at <span>IMS Integration</span> with 4+ years of experience building scalable systems in the fintech space. I work at the intersection of high-security legacy platforms and engineering the modern solutions that replace them.
+              Software Developer with 4+ years of experience building and maintaining enterprise software. At <span>IMS Integration</span>, I worked on onboarding systems, document-processing workflows, reporting platforms, and applications integrated with Corelation CORE environments used by credit unions across the United States.
               <br/>
               <br/>
-               My work includes modernizing legacy systems and architectures, developing APIs and workflow automation tools, and building data reporting systems that support high-volume financial operations. I focus on reducing technical debt while improving system performance and user experience.
+              My work has included modernizing legacy applications, developing APIs and automation tools, and supporting production systems that process <span>millions of documents annually</span>.
               <br/>
               <br/>
-              I’ve collaborated directly with stakeholders across <span>100+ credit unions</span>, contributing to systems that process <span>millions of documents annually</span>.
+              I’ve collaborated directly with stakeholders from <span>100+ credit unions</span> to improve operational workflows, reduce manual processes, and support day-to-day business operations.
               <br/>
               <br/>
             </p>
-            <p className='core-stack-header'>Core Stack:</p>
-            <p className='core-stack-list'>Java • TypeScript • Python • SQL • React • Angular</p>
-            <br/>
+            <p className='core-stack-header mb-0'>Core Stack</p>
+            <p className='core-stack-list mt-0'>Java • Angular • TypeScript • SQL</p>
             <button onClick={viewResume} className="unselectable primary-btn mr-auto" label='Resume'>
               View Resume
             </button>

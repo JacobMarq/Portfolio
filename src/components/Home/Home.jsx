@@ -18,7 +18,7 @@ const Home = () => {
             FROM CONCEPT <br/> TO REALITY
           </h1>
           <HomeSubText/>
-          <p className='home-stack-text'>Java • TypeScript • MySQL</p>
+          <p className='home-stack-text'>Java • Angular • TypeScript • MySQL</p>
           <button className='ml-0 mr-auto mt-10 primary-btn home-cta' onClick={() => scrollToSection('work')}>View Featured Work</button>
         </div>
 

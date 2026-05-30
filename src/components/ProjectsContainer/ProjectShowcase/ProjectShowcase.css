@@ -1,14 +1,32 @@
-@media only screen and (min-width: 1000px){
+@media only screen and (min-width: 1500px){
   .featured-container {
     flex-direction: row;
   }
   .featured-text-wrapper {
     margin-top: 0;
     margin-left: 0;
-    max-width: 32.5%;
+    max-width: 40%;
     padding-right: 5%;
   }
   .featured-img-desktop-wrapper {
+    margin-left: auto;
+    margin-right: 0;
+    height: 22vw;
+  }
+}
+@media only screen and (max-width: 1500px) and (min-width: 1000px){
+  .featured-container {
+    flex-direction: column-reverse;
+  }
+  .featured-text-wrapper {
+    margin-top: 2.5%;
+    margin-left: 0;
+    max-width: 80%;
+    padding-right: auto;
+  }
+  .featured-img-desktop-wrapper {
+    margin-left: 0;
+    margin-right: auto;
     height: 25vw;
   }
 }
@@ -23,6 +41,8 @@
     padding-right: 0;
   }
   .featured-img-desktop-wrapper {
+    margin-left: auto;
+    margin-right: auto;
     height: 35vw;
   }
 }
@@ -35,7 +55,7 @@
   border-bottom: solid 2px var(--clr-secondary);
 }
 .featured-project-eyebrow {
-  font-size: 1.25em;
+  font-size: 1em;
 }
 .featured-img-desktop-wrapper {
   background-color: transparent;
@@ -55,7 +75,7 @@
 }
 .featured-img {
   height: 100%;
-  aspect-ratio: 1920/930;
+  aspect-ratio: 1920/980;
 }
   .fi-desktop {
     border-radius: 15px;
@@ -80,7 +100,7 @@
   border: 2px solid var(--clr-card-border);
   border-radius: 7.5px;
   padding: .25rem .5rem;
-  margin: 5px;
+  margin: 2.5px 7.5px 2.5px 0;
 }
 .card-inner {
   position: relative;
@@ -106,18 +126,24 @@
 
   border: 2px solid var(--clr-card-border);
 }
-/* .card-inner:hover {
-  background:
-    linear-gradient(
-      145deg,
-      rgba(255, 255, 255, 0.07),
-      rgba(0, 0, 0, 0.3)
-    ),
-    #0F1A24;
 
-  transform: translateY(-2px);
-} */
-
+#technologySliderButton {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  color: var(--clr-new-text-muted);
+  font-size: 1.5rem;
+  height: min-content;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+  #technologySliderButton:hover {
+    color: var(--clr-new-text);
+  }
+  #technologySliderButton:active {
+    color: var(--clr-white);
+  }
 
 .flow-diagram {
   display: flex;

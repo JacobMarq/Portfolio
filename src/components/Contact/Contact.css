@@ -13,7 +13,7 @@
 
   #contact {
     scroll-margin-top: 5vh;
-    padding: 10% 0;
+    padding: 10%;
   }
 
   .contact-content {
@@ -61,7 +61,6 @@
   }
 
   .contact-text-container {
-    width: 100%;
     margin-top: 2.5vh;
     margin-left: auto;
     margin-right: auto;
@@ -88,6 +87,7 @@
 .contact-text-container {
   display: flex;
   flex-direction: column;
+  padding: 25px;
 }
 
 .contact-image-container {

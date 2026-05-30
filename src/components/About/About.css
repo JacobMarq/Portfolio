@@ -17,8 +17,8 @@
   }
     .about-desc {
       width: 90%;
-      padding: 0 0 0 20px;
-      border-left: 2px solid var(--clr-secondary);
+      /* padding: 0 0 0 20px; */
+      /* border-left: 2px solid var(--clr-secondary); */
     }
 
   .about-text-container {
@@ -184,12 +184,12 @@
 .core-stack-header {
   font-size: .9em;
   opacity: 60%;
-  margin: 5px;
+  /* margin: 5px; */
 }
 .core-stack-list {
   font-size: .9em;
   opacity: 60%;
-  margin: 5px;
+  /* margin: 5px; */
 }
 
 /* .view-resume-btn {

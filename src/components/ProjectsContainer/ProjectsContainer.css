@@ -180,6 +180,10 @@
   .other-project-tab-btn {
     white-space: nowrap;
   }
+  .other-projects-list {
+    display: grid;
+    grid-auto-flow: column;
+  }
 }
 @media only screen and (max-width: 1000px){
   .other-projects-container {
@@ -194,11 +198,14 @@
   .other-project-tab-btn {
     white-space: normal;
   }
+  .other-projects-list {
+    display: grid;
+    grid-auto-flow: row;
+  }
 }
 
-.other-projects-list {
-  display: grid;
-  grid-auto-flow: column;
+.other-projects-list-wrapper {
+  display: flex;
 }
 
 .other-projects-container {
@@ -212,10 +219,10 @@
   box-sizing: border-box;
 }
 .project-catalog-eyebrow {
-  font-size: 1em;
+  font-size: .75em;
 }
 .project-catalog-h2 {
-  font-size: 1.75em;
+  font-size: 1.25em;
   color: var(--clr-new-text);
 }
 

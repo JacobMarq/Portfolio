@@ -4,48 +4,50 @@
 @media only screen and (min-width: 1500px) {
   .project-container {
   display: flex;
+  height: 100%;
   justify-content: space-between;
   flex-direction: row;
   overflow: hidden;
   }
     .project-column-left {
       /* border-right: 2px solid var(--clr-secondary); */
-      width: 200px;
+      width: 190px;
     }
 
     .project-column-right {
       margin-left: auto;
       margin-right: auto;
-      width: 50%;
+      width: 60%;
     }
 }
-@media only screen and (min-width: 800px) and (max-width: 1500px){
-  .project-container {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-  }
-    .project-column-left {
-      /* border-right: 2px solid var(--clr-secondary); */
-      width: 200px;
-    }
-  
-    .project-column-right {
-      margin-left: auto;
-      margin-right: auto;
-      width: 50%;
-    }
-}
-@media only screen and (max-width: 800px){
+@media only screen and (min-width: 1000px) and (max-width: 1500px){
   .project-container {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+    height: 100%;
+  }
+    .project-column-left {
+      /* border-right: 2px solid var(--clr-secondary); */
+      width: auto;
+    }
+  
+    .project-column-right {
+      margin-left: 0;
+      margin-right: auto;
+    }
+}
+@media only screen and (max-width: 1000px){
+  .project-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    height: 100%;
   }
     .project-column-left {
       /* border-right: none; */
       /* border-bottom: 2px solid var(--clr-secondary); */
-      min-width: 100%;
+      width: auto;
     }
     .project-column-right {
       width: 100%;
@@ -84,8 +86,6 @@
     }
 
   .project-column-right {
-    width: 25vw;
-    max-width: 300px;
     margin-right: 10px;
     transition: all ease-in-out .5s;
   }
@@ -136,7 +136,7 @@
   white-space: pre-wrap;
 }
 .project-desc-app-type {
-  font-size: .9rem;
+  font-size: .8rem;
   white-space: pre-wrap;
 }
 .project-desc-short {
@@ -145,9 +145,10 @@
 }
 
 .project-details-btn {
-  font-size: 1rem;
+  font-size: .9rem;
   font-weight: 500;
-  width: max-content;
+  width: auto;
+  margin-right: auto;
   transform: scaleX(1.05);
   display: flex;
   justify-content: center;
@@ -157,9 +158,7 @@
   color: var(--clr-new-pop);
   border: none;
   background-color: transparent;
-  /* border-radius: 0.25em; */
   transition: all 0.5s;
-  /* padding: .5em; */
 }
   .project-details-btn:hover,
   .project-details-btn:focus {
