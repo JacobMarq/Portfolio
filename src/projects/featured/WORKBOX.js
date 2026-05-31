@@ -19,72 +19,68 @@ const description =
 "My work spans modernizing legacy architectures, improving reliability, and scaling systems that process millions of transactions and documents annually.";
 
 const modernization = 
-"I served as a key developer in a large-scale modernization initiative, migrating a legacy Struts2-based enterprise platform to AngularJS.\n\n" +
-"My contributions focused on maintaining feature parity during the transition while improving usability, API consistency, and backend support for new workflows. " +
-"I worked across both frontend and backend layers to ensure smooth integration with existing systems.\n\n" +
-"This effort improved maintainability and positioned the platform for future scalability without disrupting existing client operations.";
+"I served as a key developer in a large-scale modernization initiative, migrating a legacy Struts2-based enterprise platform to AngularJS. " +
+"\n\nMy contributions focused on maintaining feature parity during the transition while improving usability, API consistency, and backend support for new workflows. " +
+"I worked across both frontend and backend layers to ensure smooth integration with existing systems. " +
+"\n\nThis effort improved maintainability and positioned the platform for future scalability without disrupting existing client operations.";
 const secureMessaging =
-"Owned the integration and customization of a secure messaging system used by credit unions to communicate with applicants and members within financial workflows. " +
-"\n\nContext\n" +
-"Secure messaging is a critical component in financial applications, enabling institutions to communicate sensitive information while maintaining compliance and user trust. " +
-"As part of a broader modernization effort, this functionality needed to be extended, integrated across systems, and adapted to client-specific workflows. " +
-"\n\nScope & Ownership\n" +
-"I was responsible for implementing and customizing this integration for multiple credit union clients, handling both frontend scripting and backend system behavior. " +
-"This included tailoring workflows to meet client-specific operational requirements. " +
-"\n\nFrontend Integration\n" +
-"Developed custom UI scripts that interfaced directly with Corelation systems. " +
-"These scripts validated user identity by reconciling Corelation users with Workbox users before dynamically retrieving and displaying relevant data within the secure messaging interface. " +
-"\n\nBackend & Workflow Logic\n" +
-"Extended backend services and API endpoints to support messaging workflows, including categorization and automated routing of messages based on application context. " +
-"Implemented email notification logic to ensure messages were delivered to the appropriate internal teams, enabling faster response times and reducing manual triage." +
-"\n\nSystem Integration\n" +
-"Integrated secure messaging functionality into the modernized Workbox 2 platform, allowing credit union employees to access and manage messages directly within the new system. " +
-"Also supported SSO-based access for applicants, ensuring secure and seamless interaction across systems." +
-"\n\nOutcome\n" +
-"Enabled more efficient communication workflows between financial institutions and their members, ensured secure and role-based access across systems, " +
-"and reduced operational bottlenecks caused by shared inbox workflows and rigid assignment constraints through the introduction of automated routing and workflow-aware messaging logic.";
+"I owned the integration and customization of a secure messaging system that enabled credit unions to communicate with applicants and members throughout the account opening and lending process. " +
+"\n\nContext:\n\n" +
+"Secure communication is a critical component of financial applications, allowing institutions to exchange sensitive information while maintaining compliance, security, and user trust. As part of a broader modernization initiative, messaging capabilities needed to be integrated into existing workflows, connected with multiple systems, and adapted to the operational requirements of individual credit unions. " +
+"\n\nChallenge:\n\n" +
+"The existing communication process relied heavily on manual assignment and shared inbox workflows, creating operational bottlenecks and making it difficult to ensure messages reached the appropriate teams efficiently. The solution also needed to support secure access for both applicants and employees while integrating with existing financial systems and authentication mechanisms. " +
+"\n\nSolution & Implementation:\n\n" +
+"I implemented and customized secure messaging workflows for multiple credit union clients, working across both frontend and backend layers of the platform. " +
+"\n\nOn the frontend, I developed custom integration scripts that interfaced with Corelation systems to validate user identities and dynamically retrieve messaging data within the secure messaging experience. " +
+"\n\nOn the backend, I extended services and API endpoints to support message categorization, workflow-aware routing, and automated notification delivery. This allowed messages to be directed to the appropriate departments based on application context, reducing manual triage and improving response times. " +
+"\n\nSystem Integration:\n\n" +
+"The messaging platform was integrated directly into the modernized Workbox 2 application, allowing employees to manage communications without leaving their primary workflow. I also supported secure SSO-based access for applicants, ensuring a seamless experience across systems while maintaining appropriate security controls and role-based access. " +
+"\n\nOutcome:\n\n" +
+"The integration transformed messaging from a manual communication process into a workflow-aware system that connected applicants, employees, and core financial platforms. Automated routing reduced operational bottlenecks, improved response efficiency, and ensured secure, role-based communication throughout the application lifecycle. ";
 
-const dataVisualization =
-"Worked on data reporting workflows used by credit unions to generate financial documents such as eStatements, tax forms, and operational reports.\n\n" +
-"Built and maintained SQL queries and Java services to aggregate data from internal systems and third-party providers including Corelation and Symitar.\n\n" +
-"Supported reporting pipelines utilizing Jaspersoft for report generation and Adobe Acrobat for document formatting and delivery, ensuring accuracy and reliability in high-volume financial outputs.";
-const Wbmas =
-"In the FinTech sector, identity verification is the primary line of defense against fraud. " +
-"At IMS Integration, I owned the implementation of the IDology iFrame, a solution designed to balance robust security with a frictionless applicant experience. " +
-"\n\nThe Engineering Challenge\n\n" +
-"Identity scans are inherently sensitive to environmental variables like low lighting, poor camera quality, or improper document placement. " +
-"These factors often lead to low-confidence results, requiring a sophisticated strategy to determine when to accept, reject, or manually review " +
-"an attempt without alienating legitimate users. " +
-"\n\nTechnical Strategy & Implementation\n\n" +
-"I integrated the iFrame because its extensive feature set allowed our existing interceptors to hook into the workflow with minimal back-end and database overhead. " +
-"The solution’s flexibility was critical, providing the granular settings necessary to meet the diverse security requirements of our broad credit union client list. " +
-"\n\nStakeholder Collaboration\n\n" +
-'To minimize user error and improve "pass rates", I collaborated directly with stakeholders at various credit unions. ' +
-"By gathering feedback on specific friction points, I was able to refine the UI and provide clear, instructional guidance " +
-"that helped applicants successfully complete the verification process on their first attempt.";
+
+const dataVisualization = 
+"Credit unions depend on accurate reporting and document generation systems to support member communications, regulatory compliance, and operational decision-making. These workflows process large volumes of financial data and transform information from multiple internal and third-party systems into reports, statements, notices, and business intelligence tools. " +
+"\n\nI developed and maintained SQL queries, Java services, and reporting workflows responsible for aggregating data from systems including Corelation and Symitar. My work supported the generation of member-facing documents such as eStatements and tax forms, as well as operational reports used by internal teams to monitor onboarding workflows, identify processing failures, and track application status. " +
+"\n\nI also supported reporting pipelines built on Jaspersoft and Adobe Acrobat, helping ensure the accuracy, reliability, and timely delivery of high-volume financial documents across multiple credit union clients.";
+const memberStatements = 
+"Context:\n\n" +
+"Member statements and notices are critical communication channels for financial institutions, delivering account information, regulatory disclosures, and other important documents to members. These workflows must operate reliably at scale while accommodating client-specific requirements and delivery schedules. " +
+"\n\nChallenge:\n\n" +
+"Document generation pipelines rely on large-scale data processing, reporting logic, and scheduled batch operations. Failures can delay document delivery, create operational overhead, and require detailed investigation to identify root causes and restore processing. " +
+"\n\nSolution & Implementation:\n\n" +
+"I investigated and resolved issues affecting statement and notice generation while developing backend jobs to support new document workflows and client requirements. " +
+"\n\nMy responsibilities included troubleshooting reporting failures, validating generated outputs, maintaining reporting logic, and implementing enhancements that improved reliability and supported evolving business needs. I also worked with underlying data aggregation services and reporting infrastructure to ensure documents were generated accurately and delivered successfully. " +
+"\n\nOutcome:\n\n" +
+"Improved reliability of member communication workflows, reduced operational disruptions caused by reporting failures, and enabled new statement and notice capabilities for credit union clients.";
+const additionalReporting = 
+"Tax Document Processing:\n\n" +
+"Supported workflows responsible for generating tax-related financial documents, ensuring accurate reporting and reliable document production for credit union members. " +
+"\n\nCore Banking Data Aggregation:\n\n" +
+"Developed and maintained SQL queries and Java services that aggregated data from Corelation, Symitar, and internal systems to support reporting and document generation workflows. " +
+"\n\nOperational Reporting & Analytics:\n\n" +
+"Created and maintained reports that helped internal teams monitor onboarding workflows, identify applications stuck in specific states, track processing failures, and surface operational trends requiring attention.";
+
 
 const security =
-"Working with Credit Unions means having the highest quality security. " +
-"With Fraud being an evergrowing problem, and experiencing exponential growth in the last 2 years, " +
-"I was responsible for handling new and existing integrations with 3rd party identity verification providers such as Idology, Geolocation services, and Chexsystems. " +
-"This process was challenging and required collaboration between IMSI, our clients, and 3rd party providers. ";
-const idology =
-"I contributed to the enhancement of existing identity verification workflows by implementing IDology’s iFrame-based verification component and improving ID scan UI. " +
-"\n\nContext\n" +
-"Identity verification was already a core part of the platform, but required improvements to balance fraud prevention with a smooth applicant experience across a diverse set of credit union clients. " +
-"\n\nThe Challenge\n" +
-"Identity scans are inherently sensitive to environmental variables like low lighting, poor camera quality, or improper document placement. " +
-"These factors often lead to low-confidence results, requiring a sophisticated strategy to determine when to accept, reject, or manually review " +
-"an attempt without alienating legitimate users. " +
-"\n\nTechnical Strategy & Implementation\n" +
-"I integrated the iFrame because its extensive feature set allowed our existing interceptors to hook into the workflow with minimal back-end and database overhead. " +
-"The solution’s flexibility was critical, providing the granular settings necessary to meet the diverse security requirements of our credit union client list. " +
-"\n\nStakeholder Collaboration\n" +
-'To minimize user error and improve "pass rates", I collaborated directly with stakeholders at various credit unions. ' +
-"By gathering feedback on specific friction points, I was able to refine the UI and provide clear, instructional guidance " +
-"that helped applicants successfully complete the verification process on their first attempt. " +
-"\n\nOutcome\n" +
-"Improved reliability of the verification flow and reduced friction for end users, while delivering strong fraud prevention standards.";
+"Financial institutions must balance strong fraud prevention measures with a seamless applicant experience. Identity verification, risk assessment, and regulatory compliance workflows play a critical role in protecting both credit unions and their members while ensuring legitimate applicants can successfully complete the account opening process. " +
+"\n\nI worked on the integration and enhancement of several security-focused services, including IDology, geolocation verification providers, and ChexSystems. These integrations required collaboration between internal teams, credit union stakeholders, and third-party vendors to ensure solutions met diverse security requirements while remaining maintainable and user-friendly. " +
+"\n\nMy responsibilities included implementing verification workflows, supporting fraud prevention initiatives, improving user experience around identity validation, and integrating external systems into existing onboarding and application processing platforms.";
+const iFrame = 
+"I enhanced the platform's identity verification workflow by integrating IDology's document verification system and improving the applicant experience surrounding ID scans. " +
+"\n\nContext:\n\n" +
+"Identity verification is a critical component of online account opening and loan application workflows. Credit unions must balance strong fraud prevention measures with a seamless user experience, ensuring legitimate applicants can successfully complete verification without unnecessary friction. " +
+"\n\nChallenge:\n\n" +
+"Document verification is highly sensitive to real-world conditions such as poor lighting, low camera quality, glare, and incorrect document positioning. These factors can produce low-confidence verification results, increasing manual review workloads and creating frustration for applicants. " +
+"The challenge was to strengthen fraud prevention while minimizing unnecessary verification failures across a diverse set of credit union clients with varying security requirements. " +
+"\n\nSolution & Implementation:\n\n" +
+"I integrated IDology's iFrame-based verification component into the existing application workflow, leveraging its flexibility to support a wide range of client-specific security configurations without requiring significant backend or database changes. " +
+"The integration was designed to work alongside existing interceptors and validation workflows, allowing verification results to be incorporated into established application processing logic with minimal disruption to the surrounding platform. " +
+"\n\nUser Experience Improvements:\n\n" +
+"To improve verification success rates, I collaborated directly with credit union stakeholders to identify common points of user confusion. Using this feedback, I refined the verification interface and introduced clearer instructions that helped applicants successfully complete identity verification on their first attempt. " +
+"\n\nOutcome:\n\n" +
+"The enhanced verification workflow improved reliability, reduced user friction, and supported strong fraud prevention standards. The solution provided credit unions with greater flexibility in configuring verification requirements while helping legitimate applicants move through the application process more efficiently."
+
 
 const impact =
 "- Supported systems processing millions of financial documents annually across 100+ institutions\n" +
@@ -119,60 +115,72 @@ const sectionWorkDescription = new DetailedProjectSection({
     paragraph: description
 });
 
+const sectionWorkboxSecureMessaging = new DetailedProjectSection({
+    header: "Workbox Secure Messaging Integration",
+    paragraph: secureMessaging,
+    diagrams: [secureMessagingDiagram],
+});
 const sectionModernization  = new DetailedProjectSection({
     header: "Enterprise Systems & Legacy Modernization",
+    subtitle: 'Migrated a legacy enterprise platform to modern technologies while preserving client workflows and expanding system capabilities.',
     image: WBLANDINGPAGE,
     imgType: "L",
-    paragraph: modernization
-});
-const sectionWorkboxSecureMessaging = new DetailedProjectSection({
-    header: "Workbox Secure Messaging Application",
-    paragraph: secureMessaging
-});
-const sectionSecureMessagingDiagram = new DetailedProjectSection({
-    header: "Workbox Secure Messaging",
-    paragraph: secureMessagingDiagram
+    paragraph: modernization,
+    subsections: [
+        sectionWorkboxSecureMessaging,
+    ],
 });
 
+const additionalReportingSubSection = new DetailedProjectSection({
+    header: "Additional Reporting Initiatives",
+    paragraph: additionalReporting,
+});
+const makeAStatementSubSection = new DetailedProjectSection({
+    header: "Member Statements & Notices (MAS)",
+    paragraph: memberStatements,
+});
 const sectionDataVisualization = new DetailedProjectSection({
     header: "Data Visualization & Report Generation",
+    subtitle: 'Built and maintained reporting and document generation systems supporting financial statements, tax documents, operational reporting, and client onboarding workflows.',
     image: WBDATACHART,
     imgType: "S",
-    paragraph: dataVisualization
-});
-const sectionWbMAS = new DetailedProjectSection({
-    header: "Workbox & Make A Statement",
-    paragraph: Wbmas
+    paragraph: dataVisualization,
+    subsections: [
+        makeAStatementSubSection,
+        additionalReportingSubSection,
+    ],
 });
 
-const sectionSecurity = new DetailedProjectSection({
-    header: "Security & Compliance",
-    image: OAOIDSCAN,
-    imgType: "P",
-    paragraph: security
-});
 const sectionIDScan = new DetailedProjectSection({
     header: "IDology - ID Scan integration",
-    paragraph: idology
+    paragraph: iFrame
+});
+const sectionSecurity = new DetailedProjectSection({
+    header: "Security & Compliance",
+    subtitle: 'Implemented and enhanced identity verification workflows that balanced fraud prevention, regulatory compliance, and user experience.',
+    image: OAOIDSCAN,
+    imgType: "P",
+    paragraph: security,
+    subsections: [
+        sectionIDScan
+    ],
 });
 
-export const IMSIDetailed = new DetailedProject(
-    1001,
-    name,
-    IMSILOGO,
-    sectionWorkDescription,
-    sectionModernization,
-    sectionWorkboxSecureMessaging,
-    // sectionSecureMessagingDiagram,
-    sectionDataVisualization,
-    // sectionWbMAS,
-    sectionSecurity,
-    sectionIDScan
-);
+export const IMSIDetailed = new DetailedProject({
+    id: 1001,
+    name: name,
+    mainImg: IMSILOGO,
+    introduction: sectionWorkDescription,
+    sections:  [
+        sectionModernization,
+        sectionDataVisualization,
+        sectionSecurity,
+    ],
+});
 
 function secureMessagingDiagram() {
     return (
-        <div className="flow-diagram">
+        <div key="secure-message-diagram" className="flow-diagram" style={{marginLeft:"5%", padding:"5%", background: "rgba(0,0,0,.20)", border: "1px solid rgba(255,255,255,.05)", borderRadius: "12px"}}>
             {/* Applicant Entry */}
             <div className="diagram-row center">
                 <div className="diagram-node">Applicant Portal (SSO)</div>

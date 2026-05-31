@@ -1,0 +1,59 @@
+.accordion {
+    /* border: 1px solid var(--border); */
+    border: 2px solid var(--clr-card-border);
+    border-radius: 0;
+    overflow: hidden;
+    background: var(--surface);
+}
+
+.accordion-header {
+    width: 100%;
+    border: none;
+    background-color: var(--clr-background-mid);
+    padding: 1.25rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    cursor: pointer;
+    text-align: left;
+}
+
+.accordion-text h2 {
+    margin: 0;
+}
+
+.accordion-text p {
+    margin-top: .5rem;
+    opacity: .75;
+}
+
+.accordion-icon {
+    font-size: 3rem;
+    line-height: 1;
+    color: var(--clr-new-text);
+}
+
+.accordion-content {
+    display: grid;
+    grid-template-rows: 0fr;
+    background-color: var(--clr-new-background);
+
+    transition:
+        grid-template-rows 250ms ease;
+}
+
+.accordion-content.open {
+    grid-template-rows: 1fr;
+}
+
+.accordion-inner {
+    overflow: hidden;
+    padding: 0 1.25rem;
+}
+
+.accordion.open .accordion-inner {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+}

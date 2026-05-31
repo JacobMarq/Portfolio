@@ -44,7 +44,7 @@
 
 .detailed-desc {
     white-space: pre-wrap;
-    padding-bottom: 30px;
+    padding-bottom: 0;
     /* border-bottom: solid 2px var(--clr-tertiary); */
 }
 
