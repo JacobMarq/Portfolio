@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.e7715323.css",
-    "main.js": "/Portfolio/static/js/main.654a6829.js",
+    "main.js": "/Portfolio/static/js/main.0541d5d7.js",
     "static/js/453.c69f1bde.chunk.js": "/Portfolio/static/js/453.c69f1bde.chunk.js",
     "static/media/Wireframe_Dove_Blend_3.png": "/Portfolio/static/media/Wireframe_Dove_Blend_3.9638ee27e016ed05873d.png",
     "static/media/article-show.png": "/Portfolio/static/media/article-show.c785ea41228edd8d9405.png",
@@ -60,11 +60,11 @@
     "index.html": "/Portfolio/index.html",
     "static/media/down-chevron-svgrepo-com.svg": "/Portfolio/static/media/down-chevron-svgrepo-com.8b440f1acbd2ccaabe7ad6e40fe95166.svg",
     "main.e7715323.css.map": "/Portfolio/static/css/main.e7715323.css.map",
-    "main.654a6829.js.map": "/Portfolio/static/js/main.654a6829.js.map",
+    "main.0541d5d7.js.map": "/Portfolio/static/js/main.0541d5d7.js.map",
     "453.c69f1bde.chunk.js.map": "/Portfolio/static/js/453.c69f1bde.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e7715323.css",
-    "static/js/main.654a6829.js"
+    "static/js/main.0541d5d7.js"
   ]
 }
