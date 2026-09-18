@@ -7,7 +7,7 @@ import { techJavaScript, techHTML, techCSS, techReact, techAdobeIllustrator } fr
 
 const name = "Stained Glass Curiel Windows";
 const appType = "Lead Generation Website";
-const descriptionShort = "Small client work to assist a local stained glass company expand their outreach.";
+const descriptionShort = "Small client work to help a local stained glass company expand their outreach.";
 const description = 
 "A prototype for a client's business site " +
 "made with focused calls-to-action to meet " +
