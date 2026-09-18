@@ -2,13 +2,13 @@ import Project from "../../project";
 import JSCalcPicOne from '../../img/JavaScript Calculator/main.png';
 import { techJavaScript, techHTML, techCSS } from "../../technologies/technologies";
 
-const name = "JavaScript Calculator";
+const name = "Pratt Parser/AST Calculator";
 const appType = "Single-Page Web Application";
-const descriptionShort = "JavaScript Calculator with expanded feature set, including History and Memory functionality, and keyboard functionality. Part of The Odin Project programming course";
+const descriptionShort = "Pratt Parser/AST Calculator with expanded feature set, including history, memory, and keyboard functionality. Part of The Odin Project programming course";
 const description = 
-"A JavaScript calculator " +
-"featuring a history/memory tab " +
-"that allows keyboard inputs.";
+"Pratt Parser/AST Calculator " +
+"featuring history/memory functionality " +
+"and keyboard inputs.";
 
 const JSCALC = new Project(
     4,
