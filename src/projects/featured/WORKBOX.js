@@ -16,7 +16,7 @@ const descriptionShort = "Powers account management, application processing, and
 const description = 
 "Enterprise fintech platform powering account management, application processing, and document workflows across 100+ credit unions.\n\n" +
 "I contribute to the design and evolution of high-volume backend systems that handle sensitive financial data, focusing on API development, workflow automation, and system performance. " +
-"My work spans modernizing legacy architectures, improving reliability, and scaling systems that process millions of transactions and documents annually.";
+"My work spans modernizing legacy architectures, improving reliability, and scaling systems that process millions of transactions and documents monthly.";
 
 const modernization = 
 "I served as a key developer in a large-scale modernization initiative, migrating a legacy Struts2-based enterprise platform to AngularJS. " +
@@ -83,7 +83,7 @@ const iFrame =
 
 
 const impact =
-"- Supported systems processing millions of financial documents annually across 100+ institutions\n" +
+"- Supported systems processing millions of financial documents monthly across 100+ institutions\n" +
 "- Improved onboarding success rates through identity verification UX improvements\n" +
 "- Contributed to modernization of legacy architecture to support long-term scalability\n" +
 "- Reduced operational friction through workflow automation and API enhancements";
