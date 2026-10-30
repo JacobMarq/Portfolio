@@ -13,9 +13,9 @@ const Contact = () => {
 
                     <div className='contact-desc'>
                         <p className='default-cursor unselectable'>For business inquiries, send me a message using the information provided below:</p>
-                        <p><span>Email:</span> <a aria-label='email-link' className='link' href="mailto:jacobmarq@gmail.com">Jacobmarq@gmail.com</a></p>
+                        <p><span>Email:</span> <a aria-label='email-link' className='link' href="mailto:jacobmarq@gmail.com" target="_blank" rel="noopener noreferrer">Jacobmarq@gmail.com</a></p>
                         
-                        <p><span>Phone:</span> <a aria-label='phone-number-link' className='link' href="tel:+19496109447">(949)610-9447</a></p>
+                        <p><span>Phone:</span> <a aria-label='phone-number-link' className='link' href="tel:+19496109447" target="_blank" rel="noopener noreferrer">(949)610-9447</a></p>
                         <div>
                             <p><span>Links:</span></p>
                             <SocialsBar/>

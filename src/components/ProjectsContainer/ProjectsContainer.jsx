@@ -210,7 +210,11 @@ class ProjectsContainer extends React.Component {
                                     <p className="project-catalog-eyebrow mb-0 mt-0"><span>// PROJECT CATALOG </span></p>
                                     <h2 className="project-catalog-h2 mb-0 mt-0">More Work</h2>
                                 </div>
-                                <p className='ml-auto mb-auto'>Hover over project images to preview slideshow. (tap if on mobile)</p>
+                                <div>
+                                    <p className='ml-auto mb-auto'>* = Professional Work Experience</p>
+                                    <p className='ml-auto mb-auto'>Hover over project images to preview slideshow. (tap if on mobile)</p>
+                                </div>
+                                
                                 {/* TODO: setup categorizations and filtering accordingly
                                 <div className='d-flex flex-row flex-jc-right ml-auto other-project-tabs-wrapper'>
                                     <button className='other-project-tab-btn'>All Projects</button>

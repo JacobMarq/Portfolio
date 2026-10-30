@@ -11,13 +11,14 @@ import BENEVVPAYMENTS from "../../img/BENEVV/BenevvPayments.png";
 import { DetailedProject, DetailedProjectSection } from "../../detailedProject";
 import { techExpo, techPHP, techLaravel, techTypeScript, techReact, techMySQL, techReactNative } from "../../technologies/technologies";
 
-const name = "BENEVV Web & Mobile";
+const name = "Smarttwigs*";
 
-const appType = "Social Platform";
+const appType = "BENEVV Web & Mobile · Social Platform";
 
 const descriptionShort = "Social platform built to support community and corporate events, programs, and social campaigns.";
 
 const description = 
+"Professional Junior Engineer @ Smarttwigs\n\n" +
 "Owned by SmartTwigs, BENEVV is a social platform meant for sharing and " +
 "supporting community/organization campaigns, programs, and events. ";
 

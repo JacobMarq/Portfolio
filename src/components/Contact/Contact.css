@@ -113,6 +113,10 @@
   filter: brightness(0) saturate(100%) invert(78%) sepia(0%) saturate(7467%) hue-rotate(22deg) brightness(121%) contrast(83%);
 }
 
+.red-link {
+  color: var(--clr-new-pop);
+}
+
 
 
 

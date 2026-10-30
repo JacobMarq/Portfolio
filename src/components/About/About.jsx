@@ -29,7 +29,7 @@ const About = () => {
           <br/>
           <div className='about-desc'>
             <p className='default-cursor'>
-              I'm a software engineer with 5 years of experience building and improving enterprise applications. At <span>IMS Integration</span>, I contributed to modernizing legacy systems and extending the backend logic, APIs, and integrations behind financial workflows used by credit unions.
+              I'm a software engineer with 5 years of experience building and improving enterprise applications. At <a aria-label='IMS-Integrations-link' className='red-link'  href='https://web.imsintegration.com' target="_blank" rel="noopener noreferrer">IMS Integration</a>, I contributed to modernizing legacy systems and extending the backend logic, APIs, and integrations behind financial workflows used by credit unions.
               <br/>
               <br/>
               My work spans the layers of an application, from database queries and business rules to frontend behavior and system integrations. I focus on understanding how a system works, where it falls short, and how to improve it without disrupting the processes people depend on.

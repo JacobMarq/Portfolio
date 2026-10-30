@@ -7,16 +7,20 @@ import KEYSTONE from "../../img/Workbox/KEYSTONE-CORE.png";
 import { DetailedProject, DetailedProjectSection } from "../../detailedProject";
 import { techAngular, techJava, techMySQL, techIBMDb2, techTypeScript, techPython } from "../../technologies/technologies";
 
-const name = "IMS Integration Platform";
+const name = "IMS Integrations*";
 
-const appType = "Enterprise Fintech Platform";
+const appType = "Enterprise Software · Financial Technology";
 
-const descriptionShort = "Powers account management, application processing, and document workflows across 150+ credit union."
+const descriptionShort = "I contributed to the development and maintenance of enterprise applications supporting credit union operations, including account onboarding, loan processing, financial document generation, and application management."
 
 const description = 
-"Enterprise fintech platform powering account management, application processing, and document workflows across 150+ credit unions.\n\n" +
-"I contribute to the design and evolution of high-volume backend systems that handle sensitive financial data, focusing on API development, workflow automation, and system performance. " +
-"My work spans modernizing legacy architectures, improving reliability, and scaling systems that process millions of transactions and documents monthly.";
+"Professional Software Engineer @ IMS Integrations\n\n" +
+"I contributed to the development and maintenance of enterprise applications supporting credit union operations, including account onboarding, loan processing, financial document generation, and application management.\n\n" +
+"My work covered frontend modernization, backend business logic, REST APIs, database development, and integrations with external services. I also developed internal automation tools that reduced recurring maintenance and simplified complex troubleshooting workflows.";
+
+// "Enterprise fintech platform powering account management, application processing, and document workflows across 150+ credit unions.\n\n" +
+// "I contribute to the design and evolution of high-volume backend systems that handle sensitive financial data, focusing on API development, workflow automation, and system performance. " +
+// "My work spans modernizing legacy architectures, improving reliability, and scaling systems that process millions of transactions and documents monthly.";
 
 const modernization = 
 "I served as a key developer in a large-scale modernization initiative, migrating a legacy Struts2-based enterprise platform to AngularJS. " +
