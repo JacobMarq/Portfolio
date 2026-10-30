@@ -4,9 +4,9 @@ import { techJavaScript, techHTML, techCSS } from "../../technologies/technologi
 
 const name = "Pratt Parser/AST Calculator";
 const appType = "Single-Page Web Application";
-const descriptionShort = "Pratt Parser/AST Calculator with expanded feature set, including history, memory, and keyboard functionality. Part of The Odin Project programming course";
+const descriptionShort = "Calulator built using tokenized inputs and a Pratt Parser + AST to handle complex equations. Includes an expanded feature set to traditional calulator projects, such as history, memory, and keyboard functionality.";
 const description = 
-"Pratt Parser/AST Calculator " +
+"Expanded on the common calculator app by tokenizing input and utilizing the Pratt Parser algorithm with ASTs to handle layered mathematical equations." +
 "featuring history/memory functionality " +
 "and keyboard inputs.";
 

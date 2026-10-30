@@ -6,13 +6,13 @@ import Contact from './components/Contact/Contact';
 import About from './components/About/About';
 import ProjectsContainer from './components/ProjectsContainer/ProjectsContainer';
 import { Projects } from './projects';
-import Home from './components/Home/Home';
+// import Home from './components/Home/Home';
 import Navbar from './components/Navbar/Navbar';
 import Filterbar from './components/ProjectsContainer/Filterbar/Filterbar';
 import { ScrollProvider } from './context/ScrollContext';
 
 const App = () => {
-  const sectionIds = ["home", "work", "about", "contact"];
+  const sectionIds = ["home", "work", "contact"];
 
   return (
     <div className='App'>
@@ -22,19 +22,17 @@ const App = () => {
         <div className='content'>
           <Switch>
             <Route exact path="/">
-              <Home />
+              <About />
               <Filterbar filterValues={[]} click={() => {}}/>
               <ProjectsContainer />
-              <Filterbar filterValues={[]} click={() => {}}/>
-              <About />
               <Filterbar filterValues={[]} click={() => {}}/>
               <Contact />
             </Route>
+            <Route path="/">
+              <About />
+            </Route>
             <Route path="/work">
               <ProjectsContainer />
-            </Route>
-            <Route path="/about">
-              <About />
             </Route>
             <Route path="/contact">
               <Contact />

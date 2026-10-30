@@ -31,7 +31,7 @@ const Navbar = () => {
                   Jacob Marquez
               </h1>
               <p className="nav-text m-0 no-pe">
-                  Software Developer
+                  Software Engineer
               </p>
             </NavLink>
             <BurgerButton click={navMenuClickHandler} active={navMenuActive} />

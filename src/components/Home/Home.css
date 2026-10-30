@@ -7,7 +7,7 @@
     min-height: calc(100vh - 80px);
   }
   .home-hook {
-    font-size: 15vh;
+    font-size: 5vh;
     align-self: flex-start;
   }
   .home-text-muted {
@@ -38,7 +38,7 @@
     min-height: calc(100vh - 80px);
   }
   .home-hook {
-    font-size: 7.5vw;
+    font-size: 3vw;
     align-self: flex-start;
   }
   .home-text-muted {
@@ -80,7 +80,6 @@
   }
   .home-hook {
     font-size: 13.5vh;
-    line-height: 1em;
   }
   .home-text-wrapper {
     margin-bottom: 10vh;
@@ -105,7 +104,6 @@
   }
   .home-hook {
     font-size: 12vw;
-    line-height: 1em;
   }
   .home-text-wrapper {
     margin-bottom: 10vh;
@@ -144,7 +142,6 @@
   }
   .home-hook {
     font-size: 10vw;
-    line-height: 1em;
     align-self: flex-start;
   }
   .home-text-muted {
@@ -160,7 +157,6 @@
   }
   .home-hook {
     font-size: 10vw;
-    line-height: 1em;
     align-self: flex-start;
   }
   .home-text-muted {
@@ -195,8 +191,8 @@
   justify-content: flex-start;
   font-size: calc(10px + 2vmin);
   color: var(--clr-white);
-  padding-left: 5%;
-  padding-right: 5%;
+  padding-left: 10%;
+  padding-right: 10%;
   overflow: visible;
   position: relative;
 }
@@ -212,8 +208,8 @@
   text-shadow: 0 0 1px rgb(49, 49, 49), 0 0 1px rgb(63, 62, 62), 0 0 1px rgb(78, 78, 78);
 }
 .home-hook {
-  line-height: .75em;
-  transform: scaleY(1.10);
+  line-height: .9em;
+  /* transform: scaleY(1.10); */
   font-family: 'ErasITCDemi';
   font-weight: normal !important;
   margin-right: auto;

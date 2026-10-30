@@ -5,41 +5,43 @@ import Pdf from '../../documents/Jacob_Marquez_Resume.pdf';
 import StyledDownButton from '../ButtonComponent/StyledDownButton/StyledDownButton.jsx';
 import AboutImg from '../../img/About-Img/Non-Selfie-Sq.JPG'
 import SocialsBar from '../SocialsBar/SocialsBar.jsx';
+import { useScroll } from '../../context/ScrollContext.js';
 
 const About = () => {
   const viewResume = () => {
     window.open(Pdf)
   }
 
+  const { scrollToSection } = useScroll();
+
   return (
-    <div id='about' className="container">
+    <div id="home" className="container">
       <div className='about-content'>
         <AnimationOnScroll 
           className='about-text-container'
           animateIn='animate__fadeInRight'
           animateOnce={true}
         >
+          <p className='home-stack-text'>Software | Systems | Automation</p>
           <h1 className="section-title default-cursor mb-0 mt-0">
-            Hi, my name is Jacob!
+            I build software that makes business workflows work better.
           </h1>
           <br/>
           <div className='about-desc'>
             <p className='default-cursor'>
-              Software Developer with 4+ years of experience building and maintaining enterprise software. At <span>IMS Integration</span>, I worked on onboarding systems, document-processing workflows, reporting platforms, and applications integrated with Corelation CORE environments used by credit unions across the United States.
+              I'm a software engineer with 5 years of experience building and improving enterprise applications. At <span>IMS Integration</span>, I contributed to modernizing legacy systems and extending the backend logic, APIs, and integrations behind financial workflows used by credit unions.
               <br/>
               <br/>
-              My work has included modernizing legacy applications, developing APIs and automation tools, and supporting production systems that process <span>millions of documents monthly</span>.
-              <br/>
-              <br/>
-              I’ve collaborated directly with stakeholders from <span>100+ credit unions</span> to improve operational workflows, reduce manual processes, and support day-to-day business operations.
+              My work spans the layers of an application, from database queries and business rules to frontend behavior and system integrations. I focus on understanding how a system works, where it falls short, and how to improve it without disrupting the processes people depend on.
               <br/>
               <br/>
             </p>
-            <p className='core-stack-header mb-0'>Core Stack</p>
-            <p className='core-stack-list mt-0'>Java • Angular • TypeScript • SQL</p>
-            <button onClick={viewResume} className="unselectable primary-btn mr-auto" label='Resume'>
-              View Resume
-            </button>
+            <div className="d-flex flex-row ml-0 mr-auto">
+              <button className='ml-0 mr-5p mt-10 primary-btn home-cta' onClick={() => scrollToSection('work')}>View Featured Work</button>
+              <button onClick={viewResume} className="ml-0 mr-auto mt-10 unselectable secondary-btn mr-auto" label='Resume'>
+                View Resume
+              </button>
+            </div>
           </div>
         </AnimationOnScroll>
 

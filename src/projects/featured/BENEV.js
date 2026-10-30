@@ -15,13 +15,11 @@ const name = "BENEVV Web & Mobile";
 
 const appType = "Social Platform";
 
-const descriptionShort = "built to support community and corporate events, programs, and social campaigns.";
+const descriptionShort = "Social platform built to support community and corporate events, programs, and social campaigns.";
 
 const description = 
 "Owned by SmartTwigs, BENEVV is a social platform meant for sharing and " +
-"supporting community/organization campaigns, programs, " +
-"and events to give back to the community and " +
-"promote social change. ";
+"supporting community/organization campaigns, programs, and events. ";
 
 const extendedDesc =
 "BENEVV is a full scale web app built using React.js, with Redux, " +

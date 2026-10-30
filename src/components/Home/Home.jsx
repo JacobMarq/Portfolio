@@ -14,18 +14,22 @@ const Home = () => {
     <div id="home" className='mb-5p'>
       <header className="app-header">
         <div className='home-text-wrapper'>
+          <br/>
+          <br/>
+          <p className='home-stack-text'>Software. Systems. Automation</p>
           <h1 className="home-hook default-cursor">
-            FROM CONCEPT <br/> TO REALITY
+            Software Engineer <br/>
+            Enterprise Systems & Automation
           </h1>
-          <HomeSubText/>
-          <p className='home-stack-text'>Java • Angular • TypeScript • MySQL</p>
+          {/* <HomeSubText/> */}
+          <p className='home-stack-text'>I AM A SOFTWARE GUY</p>
           <button className='ml-0 mr-auto mt-10 primary-btn home-cta' onClick={() => scrollToSection('work')}>View Featured Work</button>
         </div>
 
 
         <StyledDownButton/>
-        <img src={WireframeDove3} className="wf-dove" alt='wf-dove'/>
-        <img src={WireframeLandscape2} className='wf-ls' alt='wf-ls'/>
+        {/* <img src={WireframeDove3} className="wf-dove" alt='wf-dove'/> */}
+        {/* <img src={WireframeLandscape2} className='wf-ls' alt='wf-ls'/> */}
       </header>
     </div>
   );

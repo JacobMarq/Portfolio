@@ -5,9 +5,9 @@ import FSAThree from "../../img/FrontendAssessment/tagSearch.png";
 import FSAFour from "../../img/FrontendAssessment/nameTagSearch.png";
 import { techNetlify, techReact, techHTML, techCSS } from "../../technologies/technologies";
 
-const name = "Students Assessment";
+const name = "Student Search";
 const appType = "React Integration Assignment";
-const descriptionShort = "Integrates with a 3rd party API to filter and query a list of students";
+const descriptionShort = "React app that integrates with a 3rd party API to obtain a dataset of students, and allow easy search and filter capabilities";
 
 const description = 
 "A react application that displays " +

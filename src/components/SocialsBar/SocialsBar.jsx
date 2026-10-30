@@ -23,7 +23,7 @@ const SocialsBar = () => {
                     </a>
                 </li>
                 <li>
-                    <a target='_blank' rel='noreferrer' href="https://www.linkedin.com/in/jacob-marquez-6a34b3219">
+                    <a target='_blank' rel='noreferrer' href="https://www.linkedin.com/in/jacobmarqdev/">
                         <LinkedInLogoSymbol/>
                     </a>
                 </li>

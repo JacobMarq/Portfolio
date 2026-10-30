@@ -2,9 +2,9 @@
 <--------------- About ---------------> 
 */
 @media only screen and (min-width: 1400px){
-  #about {
-    scroll-margin-top: 2vh;
-    padding-top: 10%;
+  #home {
+    scroll-margin-top: 1.5vh;
+    padding-top: 8%;
     padding-bottom: 10%;
   }
 
@@ -40,9 +40,9 @@
 }
 
 @media only screen and (min-width: 800px) and (max-width: 1400px){
-  #about {
-    scroll-margin-top: 4vw;
-    padding-top: 10%;
+  #home {
+    scroll-margin-top: 3.5vw;
+    padding-top: 8%;
     padding-bottom: 10%;
   }
 
@@ -78,9 +78,9 @@
 }
 
 @media only screen and (max-width: 800px){
-  #about {
+  #home {
     scroll-margin-top: -3vh;
-    padding-top: 20%;
+    padding-top: 18%;
     padding-bottom: 20%;
   }
 
@@ -120,9 +120,9 @@
 }
 
 @media only screen and (max-width: 500px){
-  #about {
+  #home {
     scroll-margin-top: 3.7vh;
-    padding-top: 20%;
+    padding-top: 18%;
     padding-bottom: 20%;
   }
 
