@@ -1,11 +1,9 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.e7715323.css",
-    "main.js": "/Portfolio/static/js/main.e5aee140.js",
+    "main.css": "/Portfolio/static/css/main.abccae85.css",
+    "main.js": "/Portfolio/static/js/main.5db60c43.js",
     "static/js/453.c69f1bde.chunk.js": "/Portfolio/static/js/453.c69f1bde.chunk.js",
-    "static/media/Wireframe_Dove_Blend_3.png": "/Portfolio/static/media/Wireframe_Dove_Blend_3.9638ee27e016ed05873d.png",
     "static/media/article-show.png": "/Portfolio/static/media/article-show.c785ea41228edd8d9405.png",
-    "static/media/Wireframe_Landscape_Darker.png": "/Portfolio/static/media/Wireframe_Landscape_Darker.b6a3b733257c94ad3a8f.png",
     "static/media/StainedGlassCW1.png": "/Portfolio/static/media/StainedGlassCW1.fa4f128ed949396ba03d.png",
     "static/media/home.png": "/Portfolio/static/media/home.8633fb30d1847d9cd819.png",
     "static/media/IrisDecisionTreeClassifier.pdf": "/Portfolio/static/media/IrisDecisionTreeClassifier.7a0d710521a2fcb2d642.pdf",
@@ -22,7 +20,7 @@
     "static/media/OrganizationHome.png": "/Portfolio/static/media/OrganizationHome.585085bb7c5dd72241c3.png",
     "static/media/Beauty.ttf": "/Portfolio/static/media/Beauty.17efd45acf38dcea2253.ttf",
     "static/media/Lemon.ttf": "/Portfolio/static/media/Lemon.2bf6b5276aabe7e19e82.ttf",
-    "static/media/Jacob_Marquez_Resume.pdf": "/Portfolio/static/media/Jacob_Marquez_Resume.3bbfdffd1aedeb7560b7.pdf",
+    "static/media/Jacob_Marquez_Resume.pdf": "/Portfolio/static/media/Jacob_Marquez_Resume.4c3193f05a2d0f4acd84.pdf",
     "static/media/analytics.png": "/Portfolio/static/media/analytics.698018c8c223ed66aed5.png",
     "static/media/IDSCAN.png": "/Portfolio/static/media/IDSCAN.c394d8e2d835938b6ae0.png",
     "static/media/BenevvPayments.png": "/Portfolio/static/media/BenevvPayments.fc143e74bf2e61064ce7.png",
@@ -59,12 +57,12 @@
     "static/media/down-chevron-svgrepo-com (1).svg": "/Portfolio/static/media/down-chevron-svgrepo-com (1).77a025f01e248936131e4b58339fc08f.svg",
     "index.html": "/Portfolio/index.html",
     "static/media/down-chevron-svgrepo-com.svg": "/Portfolio/static/media/down-chevron-svgrepo-com.8b440f1acbd2ccaabe7ad6e40fe95166.svg",
-    "main.e7715323.css.map": "/Portfolio/static/css/main.e7715323.css.map",
-    "main.e5aee140.js.map": "/Portfolio/static/js/main.e5aee140.js.map",
+    "main.abccae85.css.map": "/Portfolio/static/css/main.abccae85.css.map",
+    "main.5db60c43.js.map": "/Portfolio/static/js/main.5db60c43.js.map",
     "453.c69f1bde.chunk.js.map": "/Portfolio/static/js/453.c69f1bde.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e7715323.css",
-    "static/js/main.e5aee140.js"
+    "static/css/main.abccae85.css",
+    "static/js/main.5db60c43.js"
   ]
 }
