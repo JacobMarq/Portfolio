@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.abccae85.css",
-    "main.js": "/Portfolio/static/js/main.5db60c43.js",
+    "main.css": "/Portfolio/static/css/main.ef708134.css",
+    "main.js": "/Portfolio/static/js/main.ea2dc37b.js",
     "static/js/453.c69f1bde.chunk.js": "/Portfolio/static/js/453.c69f1bde.chunk.js",
     "static/media/article-show.png": "/Portfolio/static/media/article-show.c785ea41228edd8d9405.png",
     "static/media/StainedGlassCW1.png": "/Portfolio/static/media/StainedGlassCW1.fa4f128ed949396ba03d.png",
@@ -57,12 +57,12 @@
     "static/media/down-chevron-svgrepo-com (1).svg": "/Portfolio/static/media/down-chevron-svgrepo-com (1).77a025f01e248936131e4b58339fc08f.svg",
     "index.html": "/Portfolio/index.html",
     "static/media/down-chevron-svgrepo-com.svg": "/Portfolio/static/media/down-chevron-svgrepo-com.8b440f1acbd2ccaabe7ad6e40fe95166.svg",
-    "main.abccae85.css.map": "/Portfolio/static/css/main.abccae85.css.map",
-    "main.5db60c43.js.map": "/Portfolio/static/js/main.5db60c43.js.map",
+    "main.ef708134.css.map": "/Portfolio/static/css/main.ef708134.css.map",
+    "main.ea2dc37b.js.map": "/Portfolio/static/js/main.ea2dc37b.js.map",
     "453.c69f1bde.chunk.js.map": "/Portfolio/static/js/453.c69f1bde.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.abccae85.css",
-    "static/js/main.5db60c43.js"
+    "static/css/main.ef708134.css",
+    "static/js/main.ea2dc37b.js"
   ]
 }
